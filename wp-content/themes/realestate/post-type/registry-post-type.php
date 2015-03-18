@@ -1,79 +1,114 @@
 <?php
-/*Home Design*/
-add_action( 'init', 'register_custom_post_homedesign' );
-function register_custom_post_homedesign() {
-	$news_label = array(
-    'name' => _x('Home Design', 'Home Design'),
-    'singular_name' => _x('homedesign', 'homedesign'),
-    'add_new' => _x('Add New', 'Home Design'),
-    'add_new_item' => __('Add New'),
-    'edit_item' => __('Edit '),
-    'new_item' => __('Add New'),
-    'all_items' => __('View All'),
-    'view_item' => __('View'),
-    'search_items' => __('Search'),
-    'not_found' =>  __('Not Find'),
-    'not_found_in_trash' => __('Not Find in Trash'), 
-    'parent_item_colon' => '',
-    'menu_name' => 'Home Design'
-  );
-  $news= array(
-    'labels' => $news_label,
-    'public' => true,
-    'publicly_queryable' => true,
-    'show_ui' => true, 
-    'show_in_menu' => true, 
-   'show_in_nav_menus'=>true,
-    'query_var' => true,
-    'rewrite' =>  array('slug'=>'homedesign'),
-    'capability_type' => 'post',
-    'has_archive' => true, 
-    'hierarchical' => false,
-    'menu_position' => 5,  
-    'menu_icon'	=> get_bloginfo('template_url').'/post-type/images/slider.jpg',
-  	'taxonomies'		=> array(''),
-    'supports' => array('title','editor','thumbnail', 'excerpt'),
-    
-  ); 
- register_post_type('homedesign',$news);
+//Promotion
+add_action( 'init', 'register_custom_promotion' );
+function register_custom_promotion() {
+    $promotion_label = array(
+        'name' => _x('Promotions', 'Promotions'),
+        'singular_name' => _x('promotion', 'promotion'),
+        'add_new' => _x('Add New', 'Promotions'),
+        'add_new_item' => __('Add New'),
+        'edit_item' => __('Edit '),
+        'new_item' => __('Add New'),
+        'all_items' => __('View All'),
+        'view_item' => __('View'),
+        'search_items' => __('Search'),
+        'not_found' =>  __('Not Find'),
+        'not_found_in_trash' => __('Not Find in Trash'),
+        'parent_item_colon' => '',
+        'menu_name' => 'Promotions'
+    );
+    $promotion= array(
+        'labels' => $promotion_label,
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'show_in_nav_menus'=>true,
+        'query_var' => true,
+        'rewrite' =>  array('slug'=>'promotion'),
+        'capability_type' => 'post',
+        'has_archive' => true,
+        'hierarchical' => false,
+        'menu_position' => 5,
+        'menu_icon'	=> get_bloginfo('template_url').'/post-type/images/facities.png',
+        //'taxonomies'		=> array('category'),
+        'supports' => array('title','editor','thumbnail'),
+    );
+    register_post_type('promotion',$promotion);
 }
 
+//Testimonials
+add_action( 'init', 'register_custom_testimonials' );
+function register_custom_testimonials() {
+    $testimonials_label = array(
+        'name' => _x('Testimonials', 'Testimonials'),
+        'singular_name' => _x('testimonials', 'testimonials'),
+        'add_new' => _x('Add New', 'Testimonials'),
+        'add_new_item' => __('Add New'),
+        'edit_item' => __('Edit '),
+        'new_item' => __('Add New'),
+        'all_items' => __('View All'),
+        'view_item' => __('View'),
+        'search_items' => __('Search'),
+        'not_found' =>  __('Not Find'),
+        'not_found_in_trash' => __('Not Find in Trash'),
+        'parent_item_colon' => '',
+        'menu_name' => 'Testimonials'
+    );
+    $testimonials= array(
+        'labels' => $testimonials_label,
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'show_in_nav_menus'=>true,
+        'query_var' => true,
+        'rewrite' =>  array('slug'=>'testimonials'),
+        'capability_type' => 'post',
+        'has_archive' => true,
+        'hierarchical' => false,
+        'menu_position' => 5,
+        'menu_icon'	=> get_bloginfo('template_url').'/post-type/images/facities.png',
+        //'taxonomies'		=> array('category'),
+        'supports' => array('title','editor','thumbnail'),
+    );
+    register_post_type('testimonials',$testimonials);
+}
 
-/*music*/
-add_action( 'init', 'register_custom_post_music' );
-function register_custom_post_music() {	
-	$news_label = array(
-    'name' => _x('Music', 'Music'),
-    'singular_name' => _x('music', 'music'),
-    'add_new' => _x('Add New', 'Music'),
-    'add_new_item' => __('Add New'),
-    'edit_item' => __('Edit '),
-    'new_item' => __('Add New'),
-    'all_items' => __('View All'),
-    'view_item' => __('View'),
-    'search_items' => __('Search'),
-    'not_found' =>  __('Not Find'),
-    'not_found_in_trash' => __('Not Find in Trash'), 
-    'parent_item_colon' => '',
-    'menu_name' => 'Music'
-  );
-  $news= array(
-    'labels' => $news_label,
-    'public' => true,
-    'publicly_queryable' => true,
-    'show_ui' => true, 
-    'show_in_menu' => true, 
-   'show_in_nav_menus'=>true,
-    'query_var' => true,
-    'rewrite' =>  array('slug'=>'music'),
-    'capability_type' => 'post',
-    'has_archive' => true, 
-    'hierarchical' => false,
-    'menu_position' => 5,  
-    'menu_icon'	=> get_bloginfo('template_url').'/post-type/images/slider.jpg',
-  	'taxonomies'		=> array(''),
-    'supports' => array('title','editor','thumbnail', 'excerpt'),
-    
-  ); 
- register_post_type('Music',$news);
+//Contact Us
+add_action( 'init', 'register_custom_contacts' );
+function register_custom_contacts() {
+    $contacts_label = array(
+        'name' => _x('Contacts', 'Contacts'),
+        'singular_name' => _x('contacts', 'contacts'),
+        'add_new' => _x('Add New', 'Contacts'),
+        'add_new_item' => __('Add New'),
+        'edit_item' => __('Edit '),
+        'new_item' => __('Add New'),
+        'all_items' => __('View All'),
+        'view_item' => __('View'),
+        'search_items' => __('Search'),
+        'not_found' =>  __('Not Find'),
+        'not_found_in_trash' => __('Not Find in Trash'),
+        'parent_item_colon' => '',
+        'menu_name' => 'Contacts'
+    );
+    $contacts= array(
+        'labels' => $contacts_label,
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'show_in_nav_menus'=>true,
+        'query_var' => true,
+        'rewrite' =>  array('slug'=>'contacts'),
+        'capability_type' => 'post',
+        'has_archive' => true,
+        'hierarchical' => false,
+        'menu_position' => 5,
+        'menu_icon'	=> get_bloginfo('template_url').'/post-type/images/facities.png',
+        //'taxonomies'		=> array('category'),
+        'supports' => array('title','editor','thumbnail'),
+    );
+    register_post_type('contacts',$contacts);
 }

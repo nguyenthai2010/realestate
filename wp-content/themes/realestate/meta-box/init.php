@@ -1,24 +1,5 @@
 <?php
-/**
- * Registering meta boxes
- *
- * All the definitions of meta boxes are listed below with comments.
- * Please read them CAREFULLY.
- *
- * You also should read the changelog to know what has been changed before updating.
- *
- * For more information, please visit:
- * @link http://www.deluxeblogtips.com/meta-box/
- */
 
-/********************* META BOX DEFINITIONS ***********************/
-
-/**
- * Prefix of meta keys (optional)
- * Use underscore (_) at the beginning to make keys hidden
- * Alt.: You also can make prefix empty to disable it
- */
-// Better has an underscore as last sign
 $prefix = 'tt_';
 
 global $meta_boxes;
@@ -34,7 +15,7 @@ $meta_boxes[] = array(
     'title' => 'Home Design',
 
     // Post types, accept custom post types as well - DEFAULT is array('post'). Optional.
-    'pages' => array( 'homedesign'),
+    'pages' => array( 'post'),
 
     // Where the meta box appear: normal (default), advanced, side. Optional.
     'context' => 'normal',
@@ -47,29 +28,29 @@ $meta_boxes[] = array(
         // TEXT
         array(
             'name'  => 'Text',
-            'id'    => "{$prefix}homedesign_type",
+            'id'    => "{$prefix}type",
             'type'  => 'text'
         ),
         array(
             'name' => 'Size (SQM)',
-            'id'   => $prefix . 'size',
-            'type' => 'text'
+            'id'   =>  "{$prefix}size",
+            'type' => 'text',
         ),
         array(
             'name' => 'Width (Metres)',
-            'id'   => $prefix . 'width',
+            'id'   => "{$prefix}width",
             'type' => 'number',
             'min'  => 0,
             'step' => 1,
         ),
         array(
             'name' => 'Picture',
-            'id'   => $prefix . 'picture',
+            'id'   => "{$prefix}picture",
             'type' => 'image_advanced'
         ),
         array(
             'name' => 'Bedrooms',
-            'id'   => $prefix . 'bedrooms',
+            'id'   => "{$prefix}bedrooms",
             'type'    => 'select',
             'options' => array(
                 '0' => 'None',
@@ -82,7 +63,7 @@ $meta_boxes[] = array(
         ),
         array(
             'name' => 'Bathrooms',
-            'id'   => $prefix . 'bathrooms',
+            'id'   => "{$prefix}bathrooms",
             'type'    => 'select',
             'options' => array(
                 '0' => 'None',
@@ -94,7 +75,7 @@ $meta_boxes[] = array(
         ),
         array(
             'name' => 'Garages',
-            'id'   => $prefix . 'garages',
+            'id'   => "{$prefix}garages",
             'type'    => 'select',
             'options' => array(
                 '0' => 'None',
