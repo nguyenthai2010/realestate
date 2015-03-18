@@ -112,3 +112,41 @@ function register_custom_contacts() {
     );
     register_post_type('contacts',$contacts);
 }
+
+//Contact Us
+add_action( 'init', 'register_custom_sliders' );
+function register_custom_sliders() {
+    $sliders_label = array(
+        'name' => 'Sliders',
+        'singular_name' => 'sliders',
+        'add_new' => 'Add New',
+        'add_new_item' => 'Add New',
+        'edit_item' => 'Edit',
+        'new_item' => 'Add New',
+        'all_items' => 'View All',
+        'view_item' => 'View',
+        'search_items' => 'Search',
+        'not_found' =>  __('Not Find'),
+        'not_found_in_trash' => __('Not Find in Trash'),
+        'parent_item_colon' => '',
+        'menu_name' => 'Sliders'
+    );
+    $sliders= array(
+        'labels' => $sliders_label,
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'show_in_nav_menus'=>true,
+        'query_var' => true,
+        'rewrite' =>  array('slug'=>'sliders'),
+        'capability_type' => 'post',
+        'has_archive' => true,
+        'hierarchical' => false,
+        'menu_position' => 5,
+        'menu_icon'	=> get_bloginfo('template_url').'/post-type/images/facities.png',
+        //'taxonomies'		=> array('category'),
+        'supports' => array('title','editor','thumbnail'),
+    );
+    register_post_type('sliders',$sliders);
+}

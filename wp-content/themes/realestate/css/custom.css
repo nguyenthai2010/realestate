@@ -1,0 +1,11 @@
+.navbar {
+  margin-bottom: 0; }
+
+#main-carousel {
+  padding-top: 0;
+  height: auto; }
+  #main-carousel .carousel-inner .item img {
+    height: auto;
+    max-height: auto; }
+
+/*@ sourceMappingURL=custom.css.map */

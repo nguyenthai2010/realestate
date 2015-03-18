@@ -3,36 +3,10 @@
 ?>
   
   <div id="content">
-    <div class="now_carousel">
-      <div id="main-carousel" class="carousel slide"> 
-        <!-- Carousel items -->
-        <div class="carousel-inner">
-          <div class="active item"> <img src="http://cdn.pimg.co/p/1400x790/456987/fff/img.png" alt=""/>
-            <div class="carousel-caption">
-              <h4 class="extrabold text-center">Donec odio. Quisque volutpat mattis eros.</h4>
-              <p class="text-center">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. </p>
-            </div>
-          </div>
-          <div class="item"> <img src="http://cdn.pimg.co/p/1400x790/145214/fff/img.png" alt=""/>
-            <div class="carousel-caption">
-              <h4 class="extrabold text-center">Donec odio. Quisque volutpat mattis eros.</h4>
-              <p class="text-center">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. </p>
-            </div>
-          </div>
-          <div class="item"> <img src="http://cdn.pimg.co/p/1400x790/121212/fff/img.png" alt=""/>
-            <div class="carousel-caption">
-              <h4 class="extrabold text-center">Donec odio. Quisque volutpat mattis eros.</h4>
-              <p class="text-center">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. </p>
-            </div>
-          </div>
-        </div>
-        <!-- Carousel nav --> 
-        <a class="carousel-control left" href="#main-carousel" data-slide="prev">&nbsp;</a> <a class="carousel-control right" href="#main-carousel" data-slide="next">&nbsp;</a> </div>
-      <!-- carousel --> 
-    </div>
-    <!-- now_carousel -->
+    <?php get_template_part('tpl','slider')?>
+
     
-    <div class="resize top">
+    <div class="resize margin">
       <div class="now_page">
         <div class="container">
           <div class="content_box">

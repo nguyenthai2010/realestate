@@ -1,0 +1,13 @@
+#main-carousel {
+  padding-top:  0;
+  height: auto;
+  .carousel-inner {
+
+    .item {
+      img {
+        height: auto;
+        max-height: auto;
+      }
+    }
+  }
+}

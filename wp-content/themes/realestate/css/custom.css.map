@@ -1,0 +1,6 @@
+{
+"version": "3",
+"mappings": "AAAA,OAAQ;EACN,aAAa,EAAE,CAAC;;ACDlB,cAAe;EACb,WAAW,EAAG,CAAC;EACf,MAAM,EAAE,IAAI;EAIR,wCAAI;IACF,MAAM,EAAE,IAAI;IACZ,UAAU,EAAE,IAAI",
+"sources": ["../sass/_header.scss","../sass/_slider.scss"],
+"file": "custom.css"
+}

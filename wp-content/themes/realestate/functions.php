@@ -1,6 +1,6 @@
 <?php
     //add theme support
-    add_theme_support('post-thumbnails',array('post','page','slider'));
+    add_theme_support('post-thumbnails',array('post','page','sliders'));
 
     //register post type
     include TEMPLATEPATH.'/post-type/registry-post-type.php';
