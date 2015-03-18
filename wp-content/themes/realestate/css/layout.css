@@ -122,15 +122,24 @@
 		
 		#header, .navbar { height: auto; }
 		#header .pull-left { float: none; } 
-		.logo { margin: 10px auto 20px; width: 155px; } 
+		.logo { margin: 10px auto 20px; width: 388px; } 
 		#header .navbar-search { float: none; margin: 0px auto; width: 210px; }
 		#header .social { margin: 20px auto 20px; float: none; overflow: hidden; text-align: center; }
 		#header .social a { display: inline-block; text-align: center; float: none; } 
 		#header .social img { display: inline; text-align: center; }
 		.menu { float: none; margin: 0px; overflow: hidden; height: auto; } 
 		#header .navbar .nav.pull-right { float: none; }
-		
-		.menu .tinynav { padding: 5px 0px; margin-bottom: 20px; width: 100%; display: block; }
+		#header .phone{
+			float: none;
+  			padding-bottom: 8px;
+		}
+		.menu .tinynav { 
+			padding: 5px 0px;
+		  margin-bottom: 0px;
+		  width: 350px;
+		  display: block;
+		  margin-top: 9px; 
+		}
 		.navbar-fixed-top, .navbar-fixed-bottom { position: relative; }
 		.menu ul.l_tinynav1 { display: none; }
 		.navbar-inner { height: auto; }
@@ -213,7 +222,7 @@
 		.separator { margin: 10px auto; } 
 		
 		#main-carousel img { height: 400px; }
-		#main-carousel { height: 400px; }
+		#main-carousel { height: 400px; padding-top: 0;}
 		.margin { margin-top: 485px; }		
 		.maps_view { height: 220px; }
 		

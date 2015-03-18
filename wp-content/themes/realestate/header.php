@@ -25,27 +25,30 @@
 
 <body>
 <div id="wrapper">
-  <div id="header">
-    <div class="navbar navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-inner">
-          <div class="logo pull-left">
-            <div class="sep_small" style="width:45%"></div>
-            <a href="index.html" class="extrabold">Five<span>pulse</span></a> </div>
-          <form class="navbar-search pull-right" id="search" action="" method="get">
-            <div class="input-append">
-              <input type="text" class="input-search" placeholder="Search:" >
-              <button type="submit" class="search-submit btn"><i class="icon-search"></i></button>
-            </div>
-          </form>
-          <div class="social pull-right"> <a class="soc" href="#"><img src="images/spacer.gif" class="soc1" /></a> <a class="soc" href="#"><img src="images/spacer.gif" class="soc2" /></a> <a class="soc" href="#"><img src="images/spacer.gif" class="soc3" /></a> <a class="soc" href="#"><img src="images/spacer.gif" class="soc4" /></a> <a class="soc" href="#"><img src="images/spacer.gif" class="soc5" /></a> <a class="soc" href="#"><img src="images/spacer.gif" class="soc6" /></a> <a class="soc" href="#"><img src="images/spacer.gif" class="soc7" /></a> </div>
-          <div class="nav nav-collapse pull-right">
-            <div class="menu"> 
-              <script type="text/javascript" src="js/menu_html_block.js"></script> 
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  
+  <div class="navbar navbar-fixed-top">
+      <div id="header">
+      	<div class="container-fluid">
+	        <div class="navbar-inner">
+	          <div class="logo pull-left">
+	            <a href="<?php echo bloginfo('home');?>" class="extrabold"><img src="images/logo.jpg"/></a> </div>
+	          	<div class="social pull-right"> 
+	          		<div>
+	          			<a class="soc" href="#"><img src="images/fb.jpg" /></a> 
+		          		<a class="soc" href="#"><img src="images/twitter.jpg" /></a> 
+		          		<a class="soc" href="#"><img src="images/pinterest.jpg" /></a> 
+		          		<a class="soc" href="#"><img src="images/rss.jpg" /></a> 
+		          		<a class="soc" href="#"><img src="images/share.jpg" /></a> 
+		          		<a class="soc" href="#"><img src="images/favourite.jpg" /></a> 
+	          		</div>
+	          		<div class="phone pull-right">
+		          		<span>1300 44 66 37</span>
+		          	</div>
+	          	</div>
+	          	
+	        </div>
+	      </div>
+	  </div>
+	  <!-- header -->
+	  <?php get_template_part('tpl','menu')?>
   </div>
-  <!-- header -->
