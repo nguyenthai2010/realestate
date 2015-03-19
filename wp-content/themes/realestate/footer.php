@@ -3,50 +3,76 @@
     <div class="cols">
       <div class="container">
         <div class="row">
-          <div class="span3">
-            <div class="sep_small"></div>
-            <h4>Latest Tweets</h4>
-            <!-- DC Twitter Start --> 
-            <!-- Generate your own embedded timeline: https://dev.twitter.com/docs/embedded-timelines --> 
-            <a class="twitter-timeline" href="https://twitter.com/DevCodes" data-widget-id="346557522754293760" width="230" height="200" data-chrome="nofooter noheader transparent noscrollbar" data-theme="dark" data-link-color="#ccc">Tweets</a> 
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
-            <!-- DC Twitter End --> 
-          </div>
-          <div class="span3">
-            <div class="sep_small"></div>
-            <h4>Sign up for our Newsletter</h4>
-            <p>Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
-            <form id="subscribe" name="subscribe" action="#" method="post" class="validate" target="_blank">
-              <div class="input-append">
-                <input type="email" id="email" name="email" placeholder="Your Email" class="subscribe-input">
-                <button class="subscribe-button btn" type="submit">SUBSCRIBE</button>
-              </div>
-            </form>
-          </div>
-          <div class="span3">
-            <div class="sep_small"></div>
-            <h4>Flickr Stream</h4>
-            <ul class="thumbnails">
-              <li><a href="#"><img src="http://cdn.pimg.co/p/60x60/456987/fff/img.png" width="60" height="60" alt=""></a></li>
-              <li><a href="#" ><img src="http://cdn.pimg.co/p/60x60/452112/fff/img.png" width="60" height="60" alt=""></a></li>
-              <li><a href="#" ><img src="http://cdn.pimg.co/p/60x60/525252/fff/img.png" width="60" height="60" alt=""></a></li>
-              <li><a href="#" ><img src="http://cdn.pimg.co/p/60x60/125521/fff/img.png" width="60" height="60"  alt=""></a></li>
-              <li><a href="#" ><img src="http://cdn.pimg.co/p/60x60/147741/fff/img.png" width="60" height="60"  alt=""></a></li>
-              <li><a href="#" ><img src="http://cdn.pimg.co/p/60x60/987789/fff/img.png" width="60" height="60"  alt=""></a></li>
+          <div class="span2 col1">
+            <h4><a href="#">ABOUT</a></h4>
+            <ul>
+            	<li><a href="#">History</a></li>
+            	<li><a href="#">Awards</a></li>
+            	<li><a href="#">Latest News</a></li>
+            	<li><a href="#">The Masterton Story</a></li>
+            	<li><a href="#">Where We Build</a></li>
             </ul>
           </div>
-          <div class="span3">
-            <div class="sep_small"></div>
-            <h4>Stay Connected</h4>
-            <p> 123 Example Way<br />
-              San Francisco, CA 94108<br />
-              USA <br />
-              <br />
-              Phone: (888) 123-4567 <br />
-              Fax: (887) 123-4567 <br />
-              contact&#64;example.com <br />
-            </p>
-            <br />
+          <div class="span2 col2">
+            <h4><a href="#">HOME Designs</a></h4>
+            <ul>
+            	<li><a href="#">Single Storey</a></li>
+            	<li><a href="#">Double Storey</a></li>
+            	<li><a href="#">Split Level & Slopping Blocks</a></li>
+            	<li><a href="#">Duplex</a></li>
+            	<li><a href="#">Country Style Homes</a></li>
+            	<li><a href="#">Inclusions</a></li>
+            	<li><a href="#">Knock Down Rebuild</a></li>
+            	<li><a href="#">Duplex Living</a></li>
+            </ul>
+            <h4><a href="#">HOME & LAND</a></h4>
+            <ul>
+            	<li><a href="#">Home & Land Packages</a></li>
+            	<li><a href="#">Home & Land Process</a></li>
+            </ul>
+          </div>
+          <div class="span2 col3">
+            <h4>Display Homes</h4>
+            <ul>
+            	<li><a href="#">Display Centre Locations</a></li>
+            	<li><a href="#">Display Homes for Sale</a></li>
+            	<li><a href="#">Warwick Farm Display Village</a></li>
+            </ul>
+            <h4><a href="#">Promotions</a></h4>
+            <ul>
+            	<li><a href="#">Mansion Package</a></li>
+            	<li><a href="#">Yes Inclusions</a></li>
+            	<li><a href="#">Design Workshop</a></li>
+            </ul>
+          </div>
+          <div class="span2 col4">
+            <h4><a href="#">SERVICES</a></h4>
+            <ul>
+            	<li><a href="#">Book A Meeting</a></li>
+            	<li><a href="#">Finance</a></li>
+            	<li><a href="#">Subscribe Newsletter</a></li>
+            	<li><a href="#">Suppliers & Trade</a></li>
+            	<li><a href="#">Terms Of Use</a></li>
+            	<li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="span2 col5">
+            <h4><a href="#">QUICKLINKS</a></h4>
+            <ul>
+            	<li><a href="#">Home</a></li>
+            	<li><a href="#">Contact Us</a></li>
+            	<li><a href="#">Login</a></li>
+            </ul>
+          </div>
+          <div class="span2 followus  col6">
+            <h4>Follow Us</h4>
+            <div class="link">
+            	<a class="soc" href="#"><img src="images/fb.jpg" /></a> 
+          		<a class="soc" href="#"><img src="images/twitter.jpg" /></a> 
+          		<a class="soc" href="#"><img src="images/pinterest.jpg" /></a> 
+          		<a class="soc" href="#"><img src="images/rss.jpg" /></a>
+          		<a class="soc" href="#"><img src="images/youtube.jpg" /></a> 
+            </div>
           </div>
         </div>
       </div>
@@ -55,7 +81,12 @@
     <!-- cols --> 
   </div>
   <!-- resize -->
-  <div class="copyright text-center">�&copy; Copyright SiteName. All Rights Reserved. Design by <a href="http://www.dreamtemplate.com/" target="_blank" title="Dream Templates">dreamtemplate</a>.</div>
+  <div class="copyright">
+  	<div class="container">
+  		<div class="pull-left">&copy; Copyright 2015 Masterton Homes Pty Limited</div> 
+  		<div class="pull-right">Web Design & Development by Involve Digital</div>
+  	</div>
+  </div>
 </div>
 <!-- #footer --> 
 

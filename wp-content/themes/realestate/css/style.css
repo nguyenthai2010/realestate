@@ -600,12 +600,68 @@ a.zoom{position:absolute; display:none; top:50%; margin-top:-30px; left:50%; mar
 -----------------------------------------------------------------------------*/
 #footer {
 	margin: 0 auto ;
-	height: 440px;
+	height: 415px;
 	position: relative;
+	background: #b2b2b2;
 }
-
+#footer .container{
+	width: 1050px;
+}
+#footer .cols{
+	padding-top: 53px;
+}
+#footer .cols h4{
+	font-family: "Arial";
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 17px 0 5px 0;
+}
+#footer .cols h4 a{
+	color: #fff;
+}
+#footer .cols h4 a:hover{
+	color: #f38233;
+}
+#footer .cols ul{
+	font-family: "Arial";
+	font-size: 12px;
+	list-style-type: none;
+	margin-left: 0;
+	margin-top: 0;
+}
+#footer .cols ul li a{
+	color: #444;
+}
+#footer .cols ul li a:hover{
+	color: #f38233;
+}
+#footer .cols .span2{
+	background: url(../images/line-footer.png) no-repeat right center;
+	min-height: 300px;
+}
+#footer .cols .span2.col1{
+	width: 126px;
+	margin-left: 10px;
+}
+#footer .cols .span2.col2{
+	width: 190px;
+}
+#footer .cols .span2.col3{
+	width: 190px;
+}
+#footer .cols .span2.col4{
+	width: 145px;
+}
+#footer .cols .span2.col5{
+	width: 145px;
+}
+#footer .cols .span2.col6{
+	width: 160px;
+	background: transparent;
+}
 .cols{
-	background:#4b4b4b;
+	background:#b2b2b2;
 	height:335px;
 	font-family:'Liberation Sans',Arial, Helvetica,sans-serif;
 	
@@ -685,8 +741,7 @@ a.zoom{position:absolute; display:none; top:50%; margin-top:-30px; left:50%; mar
 div.dc_pricingtable03 { float: left; z-index: 1; position: relative; }
 
 .copyright{
-	color:#757575;
-	padding: 40px 0;
+	color:#fff;
 	font-size:12px;
 	font-family:'Liberation Sans', Arial, Helvetica, sans-serif;
 }

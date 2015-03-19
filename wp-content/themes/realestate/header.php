@@ -39,7 +39,8 @@
 	          			<a class="soc" href="#"><img src="images/fb.jpg" /></a> 
 		          		<a class="soc" href="#"><img src="images/twitter.jpg" /></a> 
 		          		<a class="soc" href="#"><img src="images/pinterest.jpg" /></a> 
-		          		<a class="soc" href="#"><img src="images/rss.jpg" /></a> 
+		          		<a class="soc" href="#"><img src="images/rss.jpg" /></a>
+		          		<a class="soc" href="#"><img src="images/youtube.jpg" /></a>  
 		          		<a class="soc" href="#"><img src="images/share.jpg" /></a> 
 		          		<a class="soc" href="#"><img src="images/favourite.jpg" /></a> 
 	          		</div>
