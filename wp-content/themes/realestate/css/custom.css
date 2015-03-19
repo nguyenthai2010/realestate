@@ -102,61 +102,65 @@ h3, h4, h5 {
   .row-slider .resize {
     background: #ececec; }
 
-#gallery.sliderStyle1 .item {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 10px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 10px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 10px; }
-  #gallery.sliderStyle1 .item:hover .item-caption p {
-    color: #444; }
-  #gallery.sliderStyle1 .item .item-caption {
-    height: auto;
-    background: #fff;
-    font-size: 12px;
-    position: relative;
-    padding: 10px; }
-    #gallery.sliderStyle1 .item .item-caption ul {
-      list-style: none;
-      position: absolute;
-      top: 10px;
-      right: 0; }
-      #gallery.sliderStyle1 .item .item-caption ul li {
-        float: left;
-        width: 30px;
-        height: 20px;
-        text-align: right;
-        background: url("../images/pages/home/ico-homedesign.png") no-repeat; }
-        #gallery.sliderStyle1 .item .item-caption ul li.icon1 {
-          background-position: 0 0;
-          width: 32px; }
-        #gallery.sliderStyle1 .item .item-caption ul li.icon2 {
-          background-position: 0 -20px;
-          width: 32px;
-          margin-left: 5px; }
-        #gallery.sliderStyle1 .item .item-caption ul li.icon3 {
-          background-position: 0 -40px;
-          width: 32px;
-          margin-left: 5px;
-          margin-top: -2px; }
-        #gallery.sliderStyle1 .item .item-caption ul li.icon4 {
-          background-position: 0 -60px;
-          width: 26px; }
-  #gallery.sliderStyle1 .item a.zoom {
-    background: #f38233 url(../images/zoom.png) center center no-repeat; }
-#gallery.sliderStyle1 .jcarousel-skin-tango .jcarousel-prev-horizontal {
-  top: 70px;
-  left: -50px;
-  width: 24px;
-  height: 44px;
-  background: url(../images/pages/home/ico-arrow.png) 0 0 no-repeat; }
-#gallery.sliderStyle1 .jcarousel-skin-tango .jcarousel-next-horizontal {
-  top: 70px;
-  right: -50px;
-  width: 24px;
-  height: 44px;
-  background: url(../images/pages/home/ico-arrow.png) 0 -44px no-repeat; }
+#gallery.sliderStyle1 {
+  padding-bottom: 70px; }
+  #gallery.sliderStyle1 .submenu {
+    margin: 15px; }
+  #gallery.sliderStyle1 .item {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 10px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 10px; }
+    #gallery.sliderStyle1 .item:hover .item-caption p {
+      color: #444; }
+    #gallery.sliderStyle1 .item .item-caption {
+      height: auto;
+      background: #fff;
+      font-size: 12px;
+      position: relative;
+      padding: 10px; }
+      #gallery.sliderStyle1 .item .item-caption ul {
+        list-style: none;
+        position: absolute;
+        top: 10px;
+        right: 0; }
+        #gallery.sliderStyle1 .item .item-caption ul li {
+          float: left;
+          width: 30px;
+          height: 20px;
+          text-align: right;
+          background: url("../images/pages/home/ico-homedesign.png") no-repeat; }
+          #gallery.sliderStyle1 .item .item-caption ul li.icon1 {
+            background-position: 0 0;
+            width: 32px; }
+          #gallery.sliderStyle1 .item .item-caption ul li.icon2 {
+            background-position: 0 -20px;
+            width: 32px;
+            margin-left: 5px; }
+          #gallery.sliderStyle1 .item .item-caption ul li.icon3 {
+            background-position: 0 -40px;
+            width: 32px;
+            margin-left: 5px;
+            margin-top: -2px; }
+          #gallery.sliderStyle1 .item .item-caption ul li.icon4 {
+            background-position: 0 -60px;
+            width: 26px; }
+    #gallery.sliderStyle1 .item a.zoom {
+      background: #f38233 url(../images/zoom.png) center center no-repeat; }
+  #gallery.sliderStyle1 .jcarousel-skin-tango .jcarousel-prev-horizontal {
+    top: 70px;
+    left: -50px;
+    width: 24px;
+    height: 44px;
+    background: url(../images/pages/home/ico-arrow.png) 0 0 no-repeat; }
+  #gallery.sliderStyle1 .jcarousel-skin-tango .jcarousel-next-horizontal {
+    top: 70px;
+    right: -50px;
+    width: 24px;
+    height: 44px;
+    background: url(../images/pages/home/ico-arrow.png) 0 -44px no-repeat; }
 
 @media only screen and (min-width: 768px) and (max-width: 1090px) {
   #footer .container {

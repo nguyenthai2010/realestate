@@ -44,7 +44,7 @@
                       <div class="row">
                           <div class="row-fluid text-center extrabold">
                               <h2>HOME DESIGNS</h2>
-                              <div>
+                              <div class="submenu">
                                   <a class="btn-homepage-menu active" href="#">Single</a><a class="btn-homepage-menu" href="#">Double</a><a class="btn-homepage-menu" href="#">Duplex</a><a class="btn-homepage-menu" href="#">All</a>
                               </div>
                           </div>
@@ -157,6 +157,162 @@
           <!-- #now_page -->
 
       </div>
+
+    <div class="container row-promotion" style="background:none;">
+        <div class="row">
+            <div class="separator"></div>
+            <h1 class="text-center extrabold">CURRENT PROMOTIONS</h1>
+            <div class="separator"></div>
+            <div class="row">
+                <div class="span4 gap15">
+                    <div class="pic"><a class=""><img src="images/pages/home/promotion_03.png" style="visibility: visible; opacity: 1;"></a> <a href="http://cdn.pimg.co/p/800x600/456987/fff/img.png" class="zoom img-circle" rel="prettyPhoto[id]"> </a> </div>
+                    <h3><a href="#">Masterton Mansion Package</a></h3>
+                    <p>The Masterton Mansion Package is the most popular promotion we've EVER offered and it's easy to see why. </p>
+                    <a class="btn-homepage-menu btnpromotion" href="#">LEARN MORE</a>
+                </div>
+                <div class="span4 gap15">
+                    <div class="pic"><a class=""><img src="images/pages/home/promotion_02.png" style="visibility: visible; opacity: 1;"></a> <a href="http://cdn.pimg.co/p/800x600/254125/fff/img.png" class="zoom img-circle" rel="prettyPhoto[id]"> </a> </div>
+                    <h3><a href="#">YES INCLUSSIONS Special Offers</a></h3>
+                    <p>A huge choice of bonus features and inclusions. Now on offer when you say YES…to your new Masterton Home. </p>
+                    <a class="btn-homepage-menu btnpromotion" href="#">LEARN MORE</a>
+                </div>
+                <div class="span4 gap15">
+                    <div class="pic"><a class=""><img src="images/pages/home/promotion_01.png" style="visibility: visible; opacity: 1;"></a> <a href="http://cdn.pimg.co/p/800x600/632563/fff/img.png" class="zoom img-circle" rel="prettyPhoto[id]"> </a> </div>
+                    <h3><a href="#">Interior Design Workshop</a></h3>
+                    <p>
+                        Learn the secrets of successful styling by incorporating the elements and principles of design.
+                    </p>
+                    <a class="btn-homepage-menu btnpromotion" href="#">LEARN MORE</a>
+                </div>
+                <div class="clr"></div>
+            </div>
+            <!-- /now_page -->
+        </div>
+
+        <div class="clr separator"></div>
+    </div>
+
+    <div class="row-slider fullscreen">
+        <div class="resize">
+            <div id="gallery" class="sliderStyle1">
+                <div class="container">
+                    <div class="row">
+                        <div class="row-fluid text-center extrabold">
+                            <h2>HOME DESIGNS</h2>
+                            <div class="submenu">
+                                <a class="btn-homepage-menu active" href="#">Single</a><a class="btn-homepage-menu" href="#">Double</a><a class="btn-homepage-menu" href="#">Duplex</a><a class="btn-homepage-menu" href="#">All</a>
+                            </div>
+                        </div>
+                    </div>
+                    <ul id="gallery-carousel" class="jcarousel-skin-tango" >
+                        <li>
+                            <div class="item">
+                                <div class="pic"> <img src="images/pages/home/thum1.png" alt="" height="234" width="139" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
+                                <div class="item-caption">
+                                    <p>1 Affinity</p>
+                                    <ul>
+                                        <li class="icon1">4</li>
+                                        <li class="icon4">2</li>
+                                        <li class="icon2">2</li>
+                                        <li class="icon3"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="pic"> <img src="images/pages/home/thum1.png" alt="" height="234" width="139" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
+                                <div class="item-caption">
+                                    <p>2 Affinity</p>
+                                    <ul>
+                                        <li class="icon1">4</li>
+                                        <li class="icon4">2</li>
+                                        <li class="icon2">2</li>
+                                        <li class="icon3"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="pic"> <img src="images/pages/home/thum1.png" alt="" height="234" width="139" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
+                                <div class="item-caption">
+                                    <p>3 Affinity</p>
+                                    <ul>
+                                        <li class="icon1">4</li>
+                                        <li class="icon4">2</li>
+                                        <li class="icon2">2</li>
+                                        <li class="icon3"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="pic"> <img src="images/pages/home/thum1.png" alt="" height="234" width="139" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
+                                <div class="item-caption">
+                                    <p>4 Affinity</p>
+                                    <ul>
+                                        <li class="icon1">4</li>
+                                        <li class="icon4">2</li>
+                                        <li class="icon2">2</li>
+                                        <li class="icon3"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="pic"> <img src="images/pages/home/thum1.png" alt="" height="234" width="139" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
+                                <div class="item-caption">
+                                    <p>5 Affinity</p>
+                                    <ul>
+                                        <li class="icon1">4</li>
+                                        <li class="icon4">2</li>
+                                        <li class="icon2">2</li>
+                                        <li class="icon3"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="pic"> <img src="images/pages/home/thum1.png" alt="" height="234" width="139" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
+                                <div class="item-caption">
+                                    <p> 6 Affinity</p>
+                                    <ul>
+                                        <li class="icon1">4</li>
+                                        <li class="icon4">2</li>
+                                        <li class="icon2">2</li>
+                                        <li class="icon3"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="pic"> <img src="images/pages/home/thum1.png" alt="" height="234" width="139" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
+                                <div class="item-caption">
+                                    <p>Affinity</p>
+                                    <ul>
+                                        <li class="icon1">4</li>
+                                        <li class="icon4">2</li>
+                                        <li class="icon2">2</li>
+                                        <li class="icon3"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- container -->
+            </div>
+
+        </div>
+        <!-- #now_page -->
+
+    </div>
+
   </div>
   <!-- #content--> 
   

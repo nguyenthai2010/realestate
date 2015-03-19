@@ -29,7 +29,11 @@
   }
 }
 #gallery.sliderStyle1 {
+  padding-bottom: 70px;
 
+  .submenu {
+    margin: 15px;
+  }
   .item {
     &:hover .item-caption {
       p {
