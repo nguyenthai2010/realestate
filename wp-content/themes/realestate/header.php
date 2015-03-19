@@ -17,12 +17,12 @@
 <link rel="stylesheet" type="text/css" href="css/menusm.css" />
 <link type="text/css" href="ui_totop/css/ui.totop.css" rel="stylesheet" />
 <link type="text/css" href="twitter_tweet/jquery.tweet.css" rel="stylesheet" />
-<link type="text/css" href="css/jquery.thumbnailScroller.css" rel="stylesheet" />
-<link rel="stylesheet" type="text/css" href="css/layout.css">
-<link rel="stylesheet" type="text/css" href="css/custom.css">
+<link type="text/css" href="css/jquery.thumbnailScroller.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/dc_columns.css"/>
+<link rel="stylesheet" type="text/css" href="css/layout.css"/>
 
-<link href='http://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,600,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/custom.css"/>
+
 </head>
 
 <body>

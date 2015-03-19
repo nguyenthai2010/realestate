@@ -23,8 +23,8 @@
                                     <div class="content_box">
                                         <h1 class="text-center">Masterton Homes have been building homes throughout NSW for over 52 years and are one of themost awarded builders in Australia.</h1>
                                         <p class="text-center">
-                                            “ Masterton brings excellence in building standards and customer service to each and every home we build <br>
-                                            which is proven by continually winning industry awards for our innovative home designs.”
+                                            <span>“</span> Masterton brings excellence in building standards and customer service to each and every home we build <br>
+                                            which is proven by continually winning industry awards for our innovative home designs.<span>”</span>
 
                                         </p>
                                     </div>
@@ -40,8 +40,12 @@
             ?>
         </div>
         <!-- Carousel nav -->
-        <a class="carousel-control left" href="#main-carousel" data-slide="prev">&nbsp;</a> <a class="carousel-control right" href="#main-carousel" data-slide="next">&nbsp;</a> </div>
+        <nav>
+            <a class="carousel-control left" href="#main-carousel" data-slide="prev">&nbsp;</a> <a class="carousel-control right" href="#main-carousel" data-slide="next">&nbsp;</a>
+        </nav>
 
+
+    </div>
     <!-- carousel -->
 </div>
 <!-- now_carousel -->

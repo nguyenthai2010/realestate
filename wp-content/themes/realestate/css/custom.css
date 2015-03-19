@@ -29,7 +29,18 @@
           text-transform: none;
           color: #fff; }
         .resize.fullscreen .now_page .container .content_box p {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 18px;
+          line-height: 1.2;
+          font-weight: normal;
+          font-style: italic;
+          text-transform: none;
           color: #444; }
+          .resize.fullscreen .now_page .container .content_box p span {
+            font-size: 44px;
+            line-height: 0;
+            bottom: -17px;
+            position: relative; }
 
 @media only screen and (min-width: 768px) and (max-width: 1090px) {
   #footer .container {

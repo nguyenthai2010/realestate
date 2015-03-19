@@ -5,17 +5,22 @@
   <div id="content">
     <?php get_template_part('tpl','slider')?>
 
-    
-    <div class="resize margin">
-      <div class="now_page">
-        <div class="container">
-          <div class="content_box">
-            <h1 class="text-center">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</h1>
-            <p class="text-center">Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.</p>
-          </div>
+
+    <div class="resize ">
+
+        <div class="content_page">
+            <div class="content_full_size">
+                <div class="one_half_pad">
+                    a
+                </div>
+                <div class="one_half_pad column-last">
+                    b
+                </div>
+            </div>
+
         </div>
-      </div>
-      <!-- #now_page -->
+
+        <!-- #now_page -->
       
       <div id="gallery">
         <div class="container">
