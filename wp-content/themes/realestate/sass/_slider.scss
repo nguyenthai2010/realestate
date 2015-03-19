@@ -9,5 +9,36 @@
         max-height: auto;
       }
     }
+
+
+  }
+}
+
+.resize.fullscreen {
+  width: 100%;
+
+  .now_page {
+    background: #b2b2b2;
+    height: auto;
+
+    .container {
+      width: 90%;
+      .content_box {
+        padding: 30px 50px;
+
+        h1 {
+          @include Arial(32px);
+          font-weight: bold;
+          font-style: italic;
+          text-transform: none;
+          color: #fff;
+        }
+
+        p {
+          color: #444;
+        }
+      }
+    }
+
   }
 }

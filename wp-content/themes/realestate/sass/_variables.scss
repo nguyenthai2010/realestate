@@ -1,0 +1,23 @@
+/*font*/
+@mixin Arial( $value, $line:1.1  ) {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:$value;
+  line-height:$line;
+  font-weight:normal;
+}
+
+/*function*/
+@mixin objAbsoluteLeft() {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@mixin setOpacity ($value) {
+  opacity: $value;
+  filter: alpha(opacity=$value*100);
+}
+
+@function em($size) {
+  @return #{$size / 13px}em;
+}
