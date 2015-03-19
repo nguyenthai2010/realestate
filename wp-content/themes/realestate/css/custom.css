@@ -1,5 +1,23 @@
 /*font*/
 /*function*/
+body, p {
+  color: #444; }
+
+h1, h2, h3, h4, h5 {
+  color: #333333;
+  line-height: 1.2em;
+  font-weight: normal;
+  font-family: Arial; }
+
+h1 {
+  font-size: 32px; }
+
+h2 {
+  font-size: 24px; }
+
+h3, h4, h5 {
+  font-size: 20px; }
+
 .navbar {
   margin-bottom: 0; }
 
@@ -41,6 +59,17 @@
             line-height: 0;
             bottom: -17px;
             position: relative; }
+
+.row-history {
+  margin-top: 55px; }
+  .row-history .one_half_pad .imghistor {
+    text-align: center; }
+  .row-history .one_half_pad h2 {
+    color: #b2b2b2; }
+  .row-history .one_half_pad h2, .row-history .one_half_pad h4 {
+    font-style: italic; }
+  .row-history .one_half_pad p {
+    font-size: 15px; }
 
 @media only screen and (min-width: 768px) and (max-width: 1090px) {
   #footer .container {

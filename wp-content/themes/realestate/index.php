@@ -6,16 +6,27 @@
     <?php get_template_part('tpl','slider')?>
 
 
-    <div class="resize ">
+    <div class="resize row-history">
 
         <div class="content_page">
             <div class="content_full_size">
                 <div class="one_half_pad">
-                    a
+                    <h2>The Masterton Story</h2>
+                    <p class="imghistor"><img src="images/pages/home/history.jpg"></p>
                 </div>
                 <div class="one_half_pad column-last">
-                    b
+                    <h4>Building quality homes since 1962,  Masterton Homes has become one of the largest and most respected builders in Australia. </h4>
+                    <p>
+                        There aren't too many people in NSW that haven't heard of Jim Masterton. Truthfully, Jim's also pretty well known around the other states of Australia too, which isn't surprising when you've spent over fifty years of your life in the same industry, and can boast to have built 50,000 new homes for Australian families over that time.<br><br>
+
+                        Ask anyone at Masterton how "Jim's Way" influences the work we do and the way we look after our customers, and they'll tell you that even in his early 80's, Jim still plays a very active and valuable part in our company.<br><br>
+
+                        Masterton Homes has now been part of the NSW home building community for half a century. Jim's legacy will live on for decades to come, through generations of the Masterton family now actively involved in the business - and through the values he instilled in all of us over the years.<br><br>
+
+                        There will always be "Jim's Way", and we'll always respect and honour the lessons Jim taught us.
+                    </p>
                 </div>
+                <div class="dc_clear"></div>
             </div>
 
         </div>
@@ -128,153 +139,7 @@
       </div>
       <!-- gallery --> 
     </div>
-    <div class="resize margin">
-      <div class="separator"></div>
-      <div class="container">
-        <div class="now_page">
-          <div class="main pull-left">
-            <h3>Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Sed adipiscing ornare risus. Pellentesque fermentum dolor.</h3>
-          </div>
-          <a href="#" class="button pull-right">purchase now</a> </div>
-        <!-- now_page --> 
-      </div>
-      <!-- container -->
-      
-      <div class="separator"></div>
-      <div class="services">
-        <div class="container">
-          <div class="separator"></div>
-          <div class="row">
-            <div class="span4 serv_ico"> <a href="#" class="ico ico1 img-circle pull-left"></a>
-              <div class="serv">
-                <h3>Super Clean Design</h3>
-                <span>Suitable for corporate business</span>
-                <p >Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.</p>
-              </div>
-            </div>
-            <div class="span4 serv_ico"> <a href="#" class="ico ico2 img-circle pull-left"></a>
-              <div class="serv">
-                <h3>Premium Support</h3>
-                <span>24x7 handled by support ticket</span>
-                <p>Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
-              </div>
-            </div>
-            <div class="span4 serv_ico"> <a href="#" class="ico ico3 img-circle pull-left"></a>
-              <div class="serv">
-                <h3>Responsive Layout</h3>
-                <span>Works great on all screen sizes</span>
-                <p>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus.</p>
-              </div>
-            </div>
-          </div>
-          <div class="separator"></div>
-        </div>
-      </div>
-      <!-- services -->
-      
-      <div class="separator"></div>
-      <div class="middle_block">
-        <div class="container">
-          <div class="row">
-            <div class="span4">
-              <div class="sep_small"></div>
-              <h2>Latest From Blog</h2>
-              <div class="separator_small"></div>
-              <div class="pic"> <img  src="http://cdn.pimg.co/p/300x100/653356/fff/img.png" width="300" height="100" alt="" /> <a href="http://cdn.pimg.co/p/800x600/653356/fff/img.png" rel="PrettyPhoto[thumbnail]" class="zoom img-circle"></a> </div>
-              <div class="date pull-left text-center"><span>04</span><br />
-                mar</div>
-              <div class="thumb_caption pull-right">
-                <h3><a href="#" class="h3_href">Suspendis se eget orci ligula</a></h3>
-                <p class="comments">by Admin   /   12 Comments</p>
-              </div>
-              <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.</p>
-              <a href="#">Read more</a> </div>
-            <div class="span4">
-              <div class="sep_small"></div>
-              <h2>Special Offers</h2>
-              <div class="separator_small"></div>
-              <div class="accordion" id="accordion2">
-                <div class="accordion-group">
-                  <div class="accordion-heading"> <a class="accordion-toggle active" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne"> Suspendis se eget orci ligula </a> </div>
-                  <div id="collapseOne" class="accordion-body collapse in">
-                    <div class="accordion-inner"> Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. </div>
-                  </div>
-                </div>
-                <div class="accordion-group">
-                  <div class="accordion-heading"> <a class="accordion-toggle " data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo"> Consectetur adipiscing elit </a> </div>
-                  <div id="collapseTwo" class="accordion-body collapse">
-                    <div class="accordion-inner"> Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. </div>
-                  </div>
-                </div>
-                <div class="accordion-group">
-                  <div class="accordion-heading"> <a class="accordion-toggle " data-toggle="collapse" data-parent="#accordion2" href="#collapseThree"> Vivamus bi bendum sem </a> </div>
-                  <div id="collapseThree" class="accordion-body collapse">
-                    <div class="accordion-inner"> Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. </div>
-                  </div>
-                </div>
-                <div class="accordion-group">
-                  <div class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour"> Donec elit non mi porta gravida </a> </div>
-                  <div id="collapseFour" class="accordion-body collapse">
-                    <div class="accordion-inner"> Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="span4">
-              <div class="sep_small"></div>
-              <h2>Testimonials</h2>
-              <div class="separator_small"></div>
-              <div id="testimonials" class="carousel slide">
-                <div class="carousel-inner">
-                  <div class="item active"> <img src="http://cdn.pimg.co/p/54x54/653356/fff/img.png" class="pull-left" width="54" height="54" alt="" />
-                    <div class="testimonial pull-right">
-                      <p class="quote">"Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat."</p>
-                      <p class="author">John Doe<span>Creative director</span></p>
-                    </div>
-                  </div>
-                  <div class="item"> <img src="http://cdn.pimg.co/p/54x54/653356/fff/img.png" class="pull-left" width="54" height="54" alt="" />
-                    <div class="testimonial pull-right">
-                      <p class="quote">"Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat."</p>
-                      <p class="author">John Doe<span>Creative director</span></p>
-                    </div>
-                  </div>
-                  <div class="item"> <img src="http://cdn.pimg.co/p/54x54/653356/fff/img.png" class="pull-left" width="54" height="54" alt="" />
-                    <div class="testimonial pull-right">
-                      <p class="quote">"Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat."</p>
-                      <p class="author">John Doe<span>Creative director</span></p>
-                    </div>
-                  </div>
-                </div>
-                <!-- Carousel nav --> 
-                <a class="carousel-control left" href="#testimonials" data-slide="prev">&nbsp;</a> <a class="carousel-control right" href="#testimonials" data-slide="next">&nbsp;</a> </div>
-              <!-- testimonials --> 
-            </div>
-          </div>
-        </div>
-        <!-- container --> 
-      </div>
-      <!-- middle_block -->
-      
-      <div class="clients">
-        <div class="container">
-          <div class="row">
-            <div class="span4">
-              <div class="sep_small"></div>
-              <h2>Latest Projects</h2>
-              <div class="separator"></div>
-            </div>
-          </div>
-          <div id="tS2" class="jThumbnailScroller" >
-            <div class="jTscrollerContainer">
-              <div class="jTscroller"> <a href="#"><img src="images/spacer.gif" class="logo1" alt=""/></a> <a href="#"><img src="images/spacer.gif" class="logo2" alt=""/></a> <a href="#"><img src="images/spacer.gif" class="logo3" alt=""/></a> <a href="#"><img src="images/spacer.gif" class="logo4" alt=""/></a> <a href="#"><img src="images/spacer.gif" class="logo5" alt=""/></a> <a href="#"><img src="images/spacer.gif" class="logo1" alt=""/></a> <a href="#"><img src="images/spacer.gif" class="logo2" alt=""/></a> <a href="#"><img src="images/spacer.gif" class="logo3" alt=""/></a> <a href="#"><img src="images/spacer.gif" class="logo4" alt=""/></a> <a href="#"><img src="images/spacer.gif" class="logo5" alt=""/></a> <a href="#"><img src="images/spacer.gif" class="logo1" alt=""/></a> </div>
-            </div>
-            <a href="#" class="jTscrollerPrevButton"></a> <a href="#" class="jTscrollerNextButton"></a> </div>
-        </div>
-      </div>
-      <!-- clients --> 
-      
-    </div>
-    <!-- resize --> 
+
   </div>
   <!-- #content--> 
   
