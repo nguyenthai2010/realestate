@@ -32,114 +32,131 @@
         </div>
 
         <!-- #now_page -->
-      
-      <div id="gallery">
-        <div class="container">
-          <div class="row">
-            <div class="span4">
-              <div class="sep_small"></div>
-              <h2>Latest Projects</h2>
-              <div class="separator"></div>
-            </div>
-          </div>
-          <ul id="gallery-carousel" class="jcarousel-skin-tango" >
-            <li>
-              <div class="item">
-                <div class="pic"> <img src="http://cdn.pimg.co/p/220x186/183381/fff/img.png" alt="" height="186" width="220" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
-                <div class="item-caption">
-                  <h4>Suspendisse sollicitudin</h4>
-                  <p>Nullam malesuada erat ut turpis.</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item">
-                <div class="pic"> <img src="http://cdn.pimg.co/p/220x186/927729/fff/img.png" alt="" height="186" width="220" /> <a href="http://cdn.pimg.co/p/800x600/927729/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
-                <div class="item-caption">
-                  <h4>Cras iaculis ultricies</h4>
-                  <p>Suspendisse urna nibh, viverra non</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item">
-                <div class="pic"> <img src="http://cdn.pimg.co/p/220x186/114422/fff/img.png" alt="" height="186" width="220" /> <a href="http://cdn.pimg.co/p/800x600/114422/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
-                <div class="item-caption">
-                  <h4>Vivamus molestie gravida</h4>
-                  <p>Nullam malesuada erat ut turpis.</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item">
-                <div class="pic"> <img src="http://cdn.pimg.co/p/220x186/528521/fff/img.png" alt="" height="186" width="220" /> <a href="http://cdn.pimg.co/p/800x600/528521/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
-                <div class="item-caption">
-                  <h4>Praesent placerat risus quis</h4>
-                  <p>Donec nec justo eget felis facilisis</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item">
-                <div class="pic"> <img src="http://cdn.pimg.co/p/220x186/114422/fff/img.png" alt="" height="186" width="220" /> <a href="http://cdn.pimg.co/p/800x600/114422/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
-                <div class="item-caption">
-                  <h4>Suspendisse sollicitudin</h4>
-                  <p>Nullam malesuada erat ut turpis.</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item">
-                <div class="pic"> <img src="http://cdn.pimg.co/p/220x186/114422/fff/img.png" alt="" height="186" width="220" /> <a href="http://cdn.pimg.co/p/800x600/114422/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
-                <div class="item-caption">
-                  <h4>Cras iaculis ultricies</h4>
-                  <p>Suspendisse urna nibh, viverra non</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item">
-                <div class="pic"> <img src="http://cdn.pimg.co/p/220x186/252514/fff/img.png" alt="" height="186" width="220" /> <a href="http://cdn.pimg.co/p/800x600/252514/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
-                <div class="item-caption">
-                  <h4>Vivamus molestie gravida</h4>
-                  <p>Nullam malesuada erat ut turpis.</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item">
-                <div class="pic"> <img src="http://cdn.pimg.co/p/220x186/114422/fff/img.png" alt="" height="186" width="220" /> <a href="http://cdn.pimg.co/p/800x600/114422/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
-                <div class="item-caption">
-                  <h4>Praesent placerat risus quis</h4>
-                  <p>Donec nec justo eget felis facilisis</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item">
-                <div class="pic"> <img src="http://cdn.pimg.co/p/220x186/215215/fff/img.png" alt="" height="186" width="220" /> <a href="http://cdn.pimg.co/p/800x600/215215/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
-                <div class="item-caption">
-                  <h4>Suspendisse sollicitudin</h4>
-                  <p>Nullam malesuada erat ut turpis.</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item">
-                <div class="pic"> <img src="http://cdn.pimg.co/p/220x186/653356/fff/img.png" alt="" height="186" width="220" /> <a href="http://cdn.pimg.co/p/800x600/653356/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
-                <div class="item-caption">
-                  <h4>Cras iaculis ultricies</h4>
-                  <p>Suspendisse urna nibh, viverra non</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <!-- container --> 
-      </div>
-      <!-- gallery --> 
+
+
+      <!-- gallery -->
     </div>
 
+    <div class="row-slider fullscreen">
+          <div class="resize">
+              <div id="gallery" class="sliderStyle1">
+                  <div class="container">
+                      <div class="row">
+                          <div class="row-fluid text-center extrabold">
+                              <h2>HOME DESIGNS</h2>
+                              <div>
+                                  <a class="btn-homepage-menu active" href="#">Single</a><a class="btn-homepage-menu" href="#">Double</a><a class="btn-homepage-menu" href="#">Duplex</a><a class="btn-homepage-menu" href="#">All</a>
+                              </div>
+                          </div>
+                      </div>
+                      <ul id="gallery-carousel" class="jcarousel-skin-tango" >
+                          <li>
+                              <div class="item">
+                                  <div class="pic"> <img src="images/pages/home/thum1.png" alt="" height="234" width="139" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
+                                  <div class="item-caption">
+                                      <p>1 Affinity</p>
+                                      <ul>
+                                          <li class="icon1">4</li>
+                                          <li class="icon4">2</li>
+                                          <li class="icon2">2</li>
+                                          <li class="icon3"></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="item">
+                                  <div class="pic"> <img src="images/pages/home/thum1.png" alt="" height="234" width="139" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
+                                  <div class="item-caption">
+                                      <p>2 Affinity</p>
+                                      <ul>
+                                          <li class="icon1">4</li>
+                                          <li class="icon4">2</li>
+                                          <li class="icon2">2</li>
+                                          <li class="icon3"></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="item">
+                                  <div class="pic"> <img src="images/pages/home/thum1.png" alt="" height="234" width="139" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
+                                  <div class="item-caption">
+                                      <p>3 Affinity</p>
+                                      <ul>
+                                          <li class="icon1">4</li>
+                                          <li class="icon4">2</li>
+                                          <li class="icon2">2</li>
+                                          <li class="icon3"></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="item">
+                                  <div class="pic"> <img src="images/pages/home/thum1.png" alt="" height="234" width="139" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
+                                  <div class="item-caption">
+                                      <p>4 Affinity</p>
+                                      <ul>
+                                          <li class="icon1">4</li>
+                                          <li class="icon4">2</li>
+                                          <li class="icon2">2</li>
+                                          <li class="icon3"></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="item">
+                                  <div class="pic"> <img src="images/pages/home/thum1.png" alt="" height="234" width="139" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
+                                  <div class="item-caption">
+                                      <p>5 Affinity</p>
+                                      <ul>
+                                          <li class="icon1">4</li>
+                                          <li class="icon4">2</li>
+                                          <li class="icon2">2</li>
+                                          <li class="icon3"></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="item">
+                                  <div class="pic"> <img src="images/pages/home/thum1.png" alt="" height="234" width="139" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
+                                  <div class="item-caption">
+                                      <p> 6 Affinity</p>
+                                      <ul>
+                                          <li class="icon1">4</li>
+                                          <li class="icon4">2</li>
+                                          <li class="icon2">2</li>
+                                          <li class="icon3"></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="item">
+                                  <div class="pic"> <img src="images/pages/home/thum1.png" alt="" height="234" width="139" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
+                                  <div class="item-caption">
+                                      <p>Affinity</p>
+                                      <ul>
+                                          <li class="icon1">4</li>
+                                          <li class="icon4">2</li>
+                                          <li class="icon2">2</li>
+                                          <li class="icon3"></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+                  <!-- container -->
+              </div>
+
+          </div>
+          <!-- #now_page -->
+
+      </div>
   </div>
   <!-- #content--> 
   

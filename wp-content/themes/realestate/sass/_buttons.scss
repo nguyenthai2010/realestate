@@ -1,0 +1,27 @@
+.btn-homepage-menu, .btn-homepage-menu:visited {
+  text-transform: uppercase;
+  background-color: #b2b2b2;
+  color: #444;
+  font-size: 14px;
+  padding: 8px 14px 9px;
+
+  margin: 3px;
+  border-bottom: 1px solid rgba(0,0,0,0.25);
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  cursor: pointer;
+  display: inline-block;
+  moz-border-radius: 5px;
+  moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  padding: 8px 10px 6px;
+  position: relative;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px rgba(0,0,0,0.1);
+  webkit-border-radius: 5px;
+  webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.btn-homepage-menu:hover, .btn-homepage-menu.active {
+  background-color: #444;
+  color: #fff;
+}
