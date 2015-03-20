@@ -18,11 +18,12 @@
 <link type="text/css" href="ui_totop/css/ui.totop.css" rel="stylesheet" />
 <link type="text/css" href="twitter_tweet/jquery.tweet.css" rel="stylesheet" />
 <link type="text/css" href="css/jquery.thumbnailScroller.css" rel="stylesheet"/>
-    <link rel="stylesheet" type="text/css" href="css/dc_columns.css"/>
+<link rel="stylesheet" type="text/css" href="css/dc_columns.css"/>
 <link rel="stylesheet" type="text/css" href="css/layout.css"/>
 
 <link rel="stylesheet" type="text/css" href="css/custom.css"/>
-
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
 </head>
 
 <body>

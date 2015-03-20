@@ -12,3 +12,107 @@ h1,h2,h3,h4,h5{
 h1{ font-size: 32px; }
 h2{ font-size: 24px; }
 h3,h4,h5{ font-size:20px;}
+
+.bgGray{
+  background: #efefef;
+}
+
+select.select{
+  -webkit-appearance: button;
+    -moz-appearance: button;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -webkit-padding-end: 20px;
+    -moz-padding-end: 20px;
+    -webkit-padding-start: 15px;
+    -moz-padding-start: 15px;
+    background-color: #fff; /* fallback color if gradients are not supported */
+    background-image: url(../images/select-arrow.png), -webkit-linear-gradient(top, #fff, #fff); /* For Chrome and Safari */
+    background-image: url(../images/select-arrow.png), -moz-linear-gradient(top, #fff, #fff); /* For old Fx (3.6 to 15) */
+    background-image: url(../images/select-arrow.png), -ms-linear-gradient(top, #fff, #fff); /* For pre-releases of IE 10*/
+    background-image: url(../images/select-arrow.png), -o-linear-gradient(top, #fff, #fff); /* For old Opera (11.1 to 12.0) */ 
+    background-image: url(../images/select-arrow.png), linear-gradient(to bottom, #fff, #fff); /* Standard syntax; must be last */
+    background-position: center right;
+    background-repeat: no-repeat;
+    border: 1px solid #dfdfdf;
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    color: #666;
+    font-size: inherit;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 36px;
+    width: 145px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    outline: none;
+}
+input[type="text"]{
+  height: 36px;
+  width: 216px;
+  line-height: 36px;
+  padding: 0 20px;
+  border: 1px solid #dfdfdf;
+  color: #666;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 0;
+  &::-webkit-input-placeholder{ /* WebKit browsers */
+    color:    #666;
+  }
+  &:-moz-placeholder{ /* Mozilla Firefox 4 to 18 */
+      color:    #666;
+  }
+  &::-moz-placeholder{ /* Mozilla Firefox 19+ */
+      color:    #666;
+  }
+  &:-ms-input-placeholder{ /* Internet Explorer 10+ */
+      color:    #666;
+  }
+}
+input[type="submit"]{
+  background: #f38233;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  border: none;
+  width: 106px;
+  height: 36px;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
+/*-------------------------
+CHECKBOX FOR GRID
+-------------------------*/
+.checkboxStyle label {
+  margin-bottom: 0px;
+  background-image:url(../images/checkbox.png);
+  user-select: none;
+}
+.checkboxStyle input[type=checkbox] + label {
+  padding-left:20px;
+  height:24px; 
+  display:inline-block;
+  line-height:17px;
+  background-repeat:no-repeat;
+  background-position: 0 0;
+  font-size:14px;
+  vertical-align:middle;
+  cursor:pointer;
+}
+.checkboxStyle input[type=checkbox]:checked + label {
+  background-position: 0 -24px;
+}
+.checkboxStyle input[type=checkbox] {
+  margin-top: 0px;
+  position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+}
