@@ -20,3 +20,100 @@
     }
   }
 }
+
+.row-slider {
+  background: #ececec;
+
+  .resize {
+    background: #ececec;
+  }
+}
+#gallery.sliderStyle1 {
+  padding-bottom: 70px;
+
+  .submenu {
+    margin: 15px;
+  }
+  .item {
+    &:hover .item-caption {
+      p {
+        color: #444;
+      }
+    }
+    @include setShadowBoxSmall();
+
+    .item-caption {
+      height: auto;
+      background: #fff;
+      font-size: 12px;
+      position: relative;
+      padding: 10px;
+      
+      p {
+      }
+
+      ul {
+        list-style: none;
+        position:  absolute;
+        top: 10px;
+        right: 0;
+
+        li {
+          float: left;
+          width: 30px;
+          height: 20px;
+          text-align: right;
+          background: url("../images/pages/home/ico-homedesign.png") no-repeat;
+
+          &.icon1 {
+            background-position: 0 0;
+            width: 32px;
+
+          }
+
+          &.icon2 {
+            background-position: 0 -20px;
+            width: 32px;
+            margin-left: 5px;
+          }
+
+          &.icon3 {
+            background-position: 0 -40px;
+            width: 32px;
+            margin-left: 5px;
+            margin-top: -2px;
+          }
+
+          &.icon4 {
+            background-position: 0 -60px;
+            width: 26px;
+
+          }
+        }
+      }
+    }
+
+    a.zoom {
+     background: $color_main url(../images/zoom.png) center center no-repeat;
+    }
+  }
+
+  .jcarousel-skin-tango {
+
+    .jcarousel-prev-horizontal {
+      top: 70px;
+      left: -50px;
+      width: 24px;
+      height: 44px;
+      background: url(../images/pages/home/ico-arrow.png) 0 0 no-repeat;
+    }
+
+    .jcarousel-next-horizontal {
+      top: 70px;
+      right: -50px;
+      width: 24px;
+      height: 44px;
+      background: url(../images/pages/home/ico-arrow.png) 0 -44px no-repeat;
+    }
+  }
+}
