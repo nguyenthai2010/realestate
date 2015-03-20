@@ -1,9 +1,62 @@
+@media only screen and (min-width: 890px) and (max-width: 1060px) {
+  .menu ul li a, .menu ul li a.ms_top{
+    font-size: 13px;
+    padding: 14px 10px;
+  }
+  .menu ul li.ms_home a{
+    padding-top: 10px;
+  }
+  .contactPage .container{
+    width: 100%;
+    .span8{
+      display: table;
+      margin: 0 auto;
+      border-right: 0;
+      float: none;
+    }
+    .rightContact{
+      float: none;
+      width: 73%;
+      margin: 30px auto;
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 890px) {
+  .menu ul li a, .menu ul li a.ms_top {
+    font-size: 11px;
+    padding: 14px 8px;
+  }
+  .menu ul li.ms_home a{
+    padding-top: 10px;
+  }
+  .contactPage .container{
+    width: 100%;
+    .span8{
+      display: table;
+      margin: 0 auto;
+      border-right: 0;
+      float: none;
+      .span4{
+         margin-left: 17px;
+        margin-right: 8px;
+      }
+    }
+    .rightContact{
+      float: none;
+      width: 73%;
+      margin: 30px auto;
+    }
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 1090px) {
   #footer .container{
     width: 92%; 
   }
   #footer{
     padding-bottom: 10px;
+    .resize{
+      width: 100%;
+    }
   }
   #footer, .cols{
     height: auto;
@@ -21,6 +74,9 @@
   }
   #footer{
     padding-bottom: 10px;
+    .resize{
+      width: 100%;
+    }
   }
   #footer, .cols{
     height: auto;
@@ -38,6 +94,25 @@
     background: transparent;
     &.col1{
       margin-left: 0;
+    }
+  }
+  .contactPage .container{
+    width: 100%;
+    .span8{
+      display: table;
+      margin: 0 auto;
+      border-right: 0;
+      float: none;
+        width: auto;
+      .span4{
+        display: table;
+        margin: 0 auto 20px;
+        float: none;
+      }
+    }
+    .rightContact{
+        float: none;
+      margin: 30px auto;
     }
   }
 }
