@@ -3,7 +3,7 @@
     padding-top: 40px;
   }
   .container{
-    width: 1045px;
+    width: 1065px;
   }
   .span8{
     h2{
@@ -11,6 +11,9 @@
       font-size: 24px;
       color: #f38233;
       text-transform: uppercase;
+    }
+    &.spanRightcontent{
+      width: 740px;
     }
   }
 }
@@ -194,4 +197,18 @@
       text-transform: capitalize;
     }
   }
+  
+}
+.homedesignGallery{
+  .jcarousel-skin-tango .jcarousel-item{
+    width: 157px;
+    height: 107px; 
+  }
+}
+#gallery .homedesignGallery .item{
+   width: 157px;
+}
+#gallery .homedesignGallery .item .pic img{
+  width: 157px;
+    height: 107px; 
 }
