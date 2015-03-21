@@ -22,7 +22,7 @@
 <link rel="stylesheet" type="text/css" href="css/layout.css"/>
 
 <link rel="stylesheet" type="text/css" href="css/custom.css"/>
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
 </head>
 

@@ -144,28 +144,28 @@ window.onload=function(){
 })(jQuery);
 
 $(document).ready (function (){
-	$("a.oba1").mouseover(function () {$('img.oba1').fadeIn(400);});
-	$("a.oba1").mouseleave(function () {$('img.oba1').fadeOut(400);});
-	
-	$("a.oba2").mouseover(function () {$('img.oba2').fadeIn(400);});
-	$("a.oba2").mouseleave(function () {$('img.oba2').fadeOut(400);});
-	
-	$("a.oba3").mouseover(function () {$('img.oba3').fadeIn(400);});
-	$("a.oba3").mouseleave(function () {$('img.oba3').fadeOut(400);});
-	
-	$("a.oba4").mouseover(function () {$('img.oba4').fadeIn(400);});
-	$("a.oba4").mouseleave(function () {$('img.oba4').fadeOut(400);});
-	
-	$("a.oba5").mouseover(function () {$('img.oba5').fadeIn(400);});
-	$("a.oba5").mouseleave(function () {$('img.oba5').fadeOut(400);});
-	
-	$("a.oba6").mouseover(function () {$('img.oba6').fadeIn(400);});
-	$("a.oba6").mouseleave(function () {$('img.oba6').fadeOut(400);});
-	
-	
-	$('.accordion').on('show hide', function (n) {
-    $(n.target).siblings('.accordion-heading').find('.accordion-toggle').toggleClass('active');
-});
+			$("a.oba1").mouseover(function () {$('img.oba1').fadeIn(400);});
+			$("a.oba1").mouseleave(function () {$('img.oba1').fadeOut(400);});
+			
+			$("a.oba2").mouseover(function () {$('img.oba2').fadeIn(400);});
+			$("a.oba2").mouseleave(function () {$('img.oba2').fadeOut(400);});
+			
+			$("a.oba3").mouseover(function () {$('img.oba3').fadeIn(400);});
+			$("a.oba3").mouseleave(function () {$('img.oba3').fadeOut(400);});
+			
+			$("a.oba4").mouseover(function () {$('img.oba4').fadeIn(400);});
+			$("a.oba4").mouseleave(function () {$('img.oba4').fadeOut(400);});
+			
+			$("a.oba5").mouseover(function () {$('img.oba5').fadeIn(400);});
+			$("a.oba5").mouseleave(function () {$('img.oba5').fadeOut(400);});
+			
+			$("a.oba6").mouseover(function () {$('img.oba6').fadeIn(400);});
+			$("a.oba6").mouseleave(function () {$('img.oba6').fadeOut(400);});
+			
+			
+			$('.accordion').on('show hide', function (n) {
+		    $(n.target).siblings('.accordion-heading').find('.accordion-toggle').toggleClass('active');
+		});
 	
 	})
 // ]]>

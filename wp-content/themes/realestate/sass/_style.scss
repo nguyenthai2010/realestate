@@ -77,6 +77,25 @@ input[type="text"]{
       color:    #666;
   }
 }
+textarea{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #666;
+    padding-left: 20px;
+   &::-webkit-input-placeholder{ /* WebKit browsers */
+    color:    #666;
+  }
+  &:-moz-placeholder{ /* Mozilla Firefox 4 to 18 */
+      color:    #666;
+  }
+  &::-moz-placeholder{ /* Mozilla Firefox 19+ */
+      color:    #666;
+  }
+  &:-ms-input-placeholder{ /* Internet Explorer 10+ */
+      color:    #666;
+  }
+}
 input[type="submit"]{
   background: #f38233;
   color: #fff;
@@ -113,6 +132,33 @@ CHECKBOX FOR GRID
   background-position: 0 -24px;
 }
 .checkboxStyle input[type=checkbox] {
+  margin-top: 0px;
+  position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+}
+
+/*-------------------------
+CHECKBOX FOR GRID
+-------------------------*/
+.radioStyle label {
+  margin-bottom: 0px;
+  background-image:url(../images/radio.png);
+  user-select: none;
+}
+.radioStyle input[type=radio] + label {
+  padding-left:20px;
+  height:23px; 
+  display:inline-block;
+  line-height:17px;
+  background-repeat:no-repeat;
+  background-position: 0 0;
+  font-size:14px;
+  vertical-align:middle;
+  cursor:pointer;
+}
+.radioStyle input[type=radio]:checked + label {
+  background-position: 0 -23px;
+}
+.radioStyle input[type=radio] {
   margin-top: 0px;
   position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
 }

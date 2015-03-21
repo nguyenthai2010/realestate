@@ -1,0 +1,197 @@
+.homedesignPage{
+  .pad40{
+    padding-top: 40px;
+  }
+  .container{
+    width: 1045px;
+  }
+  .span8{
+    h2{
+      font-family: "HelveticaNeueLTStd-Md";
+      font-size: 24px;
+      color: #f38233;
+      text-transform: uppercase;
+    }
+  }
+}
+.sidebar{
+  width: 300px;
+  float: left;
+  border-right: 1px solid #dadada;
+  h2{
+    font-family: "HelveticaNeueLTStd-Md";
+    font-size: 24px;
+    color: #f38233;
+  }
+  .row{
+    margin-left: 0;
+    margin-bottom: 25px;
+    select.select{
+      width: 260px;
+    }
+    label{
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      color: #666;
+    }
+    &.range{
+      margin-bottom: 33px;
+      &.r02{
+         margin-bottom: 37px;
+      }
+    }
+    &.brtop{
+      border-top: 1px solid #dadada;
+      padding-top: 25px;
+      margin-top: 22px;
+      clear: both;
+      width: 262px;
+    }
+    .ckrooms{
+       label{
+           font-size: 12px;
+          font-family: "Arial";
+          /* top: 5px; */
+          position: relative;
+          padding-left: 26px;
+          padding-top: 4px;
+          height: 19px;
+       }
+       .radioStyle{
+         float: left;
+         margin-right:  10px;
+       }
+    }
+  }
+  .range-container{
+    .theme-green .back-bar{
+      background: #d2d2d2;
+      height: 6px;
+      border-radius: 3px;
+      
+    }
+    .theme-green .back-bar .pointer{
+      border: none;
+      background: url(../images/rangedot.png) no-repeat;
+      width: 16px;
+      height: 20px;
+    }
+    .theme-green .back-bar .selected-bar{
+      background: #666;
+    }
+    .slider-container .scale ins{
+      font-size: 12px;
+      font-family: "Arial";
+      color: #666;
+      top: 8px;
+    }
+  }
+  .presstoJimForm{
+    padding-top: 30px;
+  }
+  .presstoJimForm{
+    h2{
+      
+    }
+    .enquiryBox{
+      padding-bottom: 70px;
+      position: relative;
+       width: 262px;
+       margin-top: 34px;
+      .line{
+        border-top: 2px solid #d2d2d2;
+      }
+      .num{
+        position: absolute;
+        top: -12px;
+        span.order{
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          background: #d2d2d2;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          font-size: 14px;
+          color: #fa812a;
+            display: block;
+          text-align: center;
+          line-height: 25px;
+        }
+        span.desc{
+            color: #666;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            font-size: 10px;
+            margin-left: -20px;
+            width: 65px;
+            display: block;
+            text-align: center;
+            line-height: 1.2;
+            padding-top: 6px;
+        }
+        &.num01{
+          left: 25px;
+        }
+        &.num02{
+          left: 118px;
+        }
+        &.num03{
+          left: 211px;
+        }
+      }
+    }
+    .selectGroup{
+      &.fullwidth{
+        select.select{
+          width: 260px;
+        }
+      }
+      .note{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 10px;
+        color: #9a9a9a;
+        padding-left: 30px;
+        padding-bottom: 15px;
+        display: block;
+        padding-top: 2px;
+      }
+      textarea{
+        clear: both;
+        resize: none;
+          width: 232px;
+          height: 101px;
+            padding-top: 8px;
+      }
+    }
+  }
+  .pressToBtn{
+    width: 260px;
+    padding-top: 10px;
+    .btnWrap{
+      display: table;
+       margin: 0 auto;
+    }
+    span{
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      color: #666;
+      display: block;
+      text-align: center;
+    }
+    input[type="submit"]{
+      width: 80px;
+      height: 80px;
+      background: #5a8409;
+      border-radius: 50%;
+      color: #fff;
+      border: none;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      text-transform: capitalize;
+    }
+  }
+}

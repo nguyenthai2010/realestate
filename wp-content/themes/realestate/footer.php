@@ -102,11 +102,31 @@
 <script type="text/javascript" src="js/jquery.easing.js" charset="utf-8"></script> 
 <script type="text/javascript" src="js/jquery.thumbnailScroller.js" charset="utf-8"></script> 
 <script type="text/javascript" src="js/tinynav.min.js"></script> 
+<link rel="stylesheet" type="text/css" href="js/rangejs/jquery.range.css"/>
+<script type="text/javascript" src="js/rangejs/jquery.range.js"></script>
 <script type="text/javascript">
 	$(function () {
 		$('#nav').tinyNav({
 			active: 'selected',
 			header: 'Navigation' 
+		});
+		$('.slider-input').jRange({
+		    from: 151,
+		    to: 313,
+		    step: 1,
+		    scale: [151,313],
+		    format: '%s',
+		    width: 255,
+		    showLabels: false
+		});
+		$('.slider-input-house').jRange({
+		    from: 8,
+		    to: 36,
+		    step: 1,
+		    scale: [8,36],
+		    format: '%s',
+		    width: 255,
+		    showLabels: false
 		});
 	});
 </script>
