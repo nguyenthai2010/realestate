@@ -47,7 +47,7 @@ function mycarousel_initCallback(carousel)
 };
 
 jQuery(document).ready(function() {
-    jQuery('#gallery-carousel, #client-carousel').jcarousel({
+    jQuery('#gallery-carousel, #client-carousel, #homedesign-carousel').jcarousel({
         wrap: 'circular',
         scroll: 2,
         initCallback: mycarousel_initCallback
