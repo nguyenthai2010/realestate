@@ -10,3 +10,17 @@
 
     //change label post
     include 'inc/change_label_post.php';
+	
+	//register menu
+	function register_menu() {
+	  register_nav_menu('menu_top',__( 'menu_top' ));
+	  
+		register_nav_menus( array(
+			'menu_top' => 'Header - Menu',
+			'menu_footer' => 'Footer - Menu',
+			'menu_service' => 'Service - Menu'
+		) );
+	  register_nav_menu('menu_service',__( 'menu_service' ));
+	  register_nav_menu('menu_footer',__( 'menu_footer' ));
+	}
+	add_action( 'init', 'register_menu' );
