@@ -1,3 +1,24 @@
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=620d89bd-dea0-40b4-b6fd-a544b97a0221");
+@font-face {
+  font-family: "HelveticaNeueW01-55Roma";
+  src: url("../fonts/b7693a83-b861-4aa6-85e0-9ecf676bc4d6.eot?#iefix");
+  src: url("../fonts/b7693a83-b861-4aa6-85e0-9ecf676bc4d6.eot?#iefix") format("eot"), url("../fonts/b0868b4c-234e-47d3-bc59-41ab9de3c0db.woff2") format("woff2"), url("../fonts/bcf54343-d033-41ee-bbd7-2b77df3fe7ba.woff") format("woff"), url("../fonts/b0ffdcf0-26da-47fd-8485-20e4a40d4b7d.ttf") format("truetype"), url("../fonts/da09f1f1-062a-45af-86e1-2bbdb3dd94f9.svg#da09f1f1-062a-45af-86e1-2bbdb3dd94f9") format("svg"); }
+
+@font-face {
+  font-family: "HelveticaNeueW01-56It";
+  src: url("../fonts/58a5cbff-d570-4c18-a5e3-60868dc07ae8.eot?#iefix");
+  src: url("../fonts/58a5cbff-d570-4c18-a5e3-60868dc07ae8.eot?#iefix") format("eot"), url("../fonts/462d508d-efc7-478f-b84e-288eeb69a160.woff2") format("woff2"), url("../fonts/2c056da8-4920-4e20-8c69-8a6b315458a9.woff") format("woff"), url("../fonts/2381d918-136d-444f-8391-db0cba6da388.ttf") format("truetype"), url("../fonts/d0697971-6f58-4597-942e-8beabd1adc87.svg#d0697971-6f58-4597-942e-8beabd1adc87") format("svg"); }
+
+@font-face {
+  font-family: "HelveticaNeueW01-65Medi";
+  src: url("../fonts/07fe0fec-b63f-4963-8ee1-535528b67fdb.eot?#iefix");
+  src: url("../fonts/07fe0fec-b63f-4963-8ee1-535528b67fdb.eot?#iefix") format("eot"), url("../fonts/3600b37f-2bf1-45f3-be3a-03365f16d9cb.woff2") format("woff2"), url("../fonts/60be5c39-863e-40cb-9434-6ebafb62ab2b.woff") format("woff"), url("../fonts/4c6503c9-859b-4d3b-a1d5-2d42e1222415.ttf") format("truetype"), url("../fonts/36c182c6-ef98-4021-9b0d-d63122c2bbf5.svg#36c182c6-ef98-4021-9b0d-d63122c2bbf5") format("svg"); }
+
+@font-face {
+  font-family: "HelveticaNeueW01-66Medi";
+  src: url("../fonts/71c74bc5-e7c8-48ad-9b03-43f3e6760e4e.eot?#iefix");
+  src: url("../fonts/71c74bc5-e7c8-48ad-9b03-43f3e6760e4e.eot?#iefix") format("eot"), url("../fonts/9a31d352-a4be-4540-a6f2-f4ea3ea77d94.woff2") format("woff2"), url("../fonts/5f0efe11-b07a-49fc-ab86-7af6152fa368.woff") format("woff"), url("../fonts/fea58e5b-b0a7-43f7-8928-fc0639365852.ttf") format("truetype"), url("../fonts/398e1bb8-f2eb-41d5-b3b6-b9a889b52ee7.svg#398e1bb8-f2eb-41d5-b3b6-b9a889b52ee7") format("svg"); }
+
 /*color*/
 /*font*/
 /*function*/
@@ -321,11 +342,18 @@ CHECKBOX FOR GRID
   .row-history .one_half_pad .imghistor {
     text-align: center; }
   .row-history .one_half_pad h2 {
-    color: #b2b2b2; }
-  .row-history .one_half_pad h2, .row-history .one_half_pad h4 {
-    font-style: italic; }
+    color: #b2b2b2;
+    font-family: "HelveticaNeueW01-66Medi";
+    font-weight: normal;
+    line-height: 1.2; }
+  .row-history .one_half_pad h4 {
+    font-family: "HelveticaNeueW01-56It";
+    font-weight: normal;
+    line-height: 1.2; }
   .row-history .one_half_pad p {
-    font-size: 15px; }
+    font-family: "HelveticaNeueW01-55Roma";
+    font-weight: normal;
+    line-height: 1.2; }
 
 .row-slider {
   background: #ececec; }
@@ -501,10 +529,12 @@ CHECKBOX FOR GRID
     padding: 10px; }
   #gallery.gallery3 .span3 h3 {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400; }
+    font-weight: 400;
+    line-height: 1.2; }
   #gallery.gallery3 .span3 p {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    line-height: 1.2;
     padding: 10px 30px;
     background: url(../images/pages/testimonials/bg_quotes.png) no-repeat top center;
     min-height: 105px; }

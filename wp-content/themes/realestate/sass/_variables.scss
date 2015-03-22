@@ -12,8 +12,32 @@ $color_main:#f38233;
 @mixin Roboto_regular( $value, $line:1.2 ) {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  line-height: $line;
 }
 
+@mixin HelveticaNeue_Roman( $value, $line:1.2 ) {
+  font-family:"HelveticaNeueW01-55Roma";
+  font-weight: normal;
+  line-height: $line;
+}
+
+@mixin HelveticaNeue_Italic( $value, $line:1.2 ) {
+  font-family:"HelveticaNeueW01-56It";
+  font-weight: normal;
+  line-height: $line;
+}
+
+@mixin HelveticaNeue_Medium( $value, $line:1.2 ) {
+  font-family:"HelveticaNeueW01-65Medi";
+  font-weight: normal;
+  line-height: $line;
+}
+
+@mixin HelveticaNeue_MediumItalic( $value, $line:1.2 ) {
+  font-family:"HelveticaNeueW01-66Medi";
+  font-weight: normal;
+  line-height: $line;
+}
 
 /*function*/
 @mixin objAbsoluteLeft() {

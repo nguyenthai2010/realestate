@@ -8,15 +8,15 @@
 
     h2 {
       color: #b2b2b2;
+      @include HelveticaNeue_MediumItalic(34px);
     }
 
-    h2, h4 {
-      font-style: italic;
-
+    h4 {
+      @include HelveticaNeue_Italic(20px);
     }
 
     p{
-      font-size: 15px;
+      @include HelveticaNeue_Roman(15px);
     }
   }
 }
