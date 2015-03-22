@@ -58,58 +58,38 @@
 		                      </div>
 		                  </li>
 		                  <li>
-		                      <div class="item">
-		                          <div class="pic"> <img src="images/pages/home/thum1.png" alt="" height="234" width="139" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
+		                     <div class="item">
+		                          <div class="pic"> <img src="images/thumb-homedesign.jpg" alt="" height="156" width="107" /> </div>
 		                          <div class="item-caption">
-		                              <p>4 Affinity</p>
-		                              <ul>
-		                                  <li class="icon1">4</li>
-		                                  <li class="icon4">2</li>
-		                                  <li class="icon2">2</li>
-		                                  <li class="icon3"></li>
-		                              </ul>
+		                          	  <div class="shadow"></div>
+		                              <p>ALLURE LHS</p>
 		                          </div>
 		                      </div>
 		                  </li>
 		                  <li>
 		                      <div class="item">
-		                          <div class="pic"> <img src="images/pages/home/thum1.png" alt="" height="234" width="139" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
+		                          <div class="pic"> <img src="images/thumb-homedesign.jpg" alt="" height="156" width="107" /> </div>
 		                          <div class="item-caption">
-		                              <p>5 Affinity</p>
-		                              <ul>
-		                                  <li class="icon1">4</li>
-		                                  <li class="icon4">2</li>
-		                                  <li class="icon2">2</li>
-		                                  <li class="icon3"></li>
-		                              </ul>
+		                          	  <div class="shadow"></div>
+		                              <p>ALLURE LHS</p>
 		                          </div>
 		                      </div>
 		                  </li>
 		                  <li>
 		                      <div class="item">
-		                          <div class="pic"> <img src="images/pages/home/thum1.png" alt="" height="234" width="139" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
+		                          <div class="pic"> <img src="images/thumb-homedesign.jpg" alt="" height="156" width="107" /> </div>
 		                          <div class="item-caption">
-		                              <p> 6 Affinity</p>
-		                              <ul>
-		                                  <li class="icon1">4</li>
-		                                  <li class="icon4">2</li>
-		                                  <li class="icon2">2</li>
-		                                  <li class="icon3"></li>
-		                              </ul>
+		                          	  <div class="shadow"></div>
+		                              <p>ALLURE LHS</p>
 		                          </div>
 		                      </div>
 		                  </li>
 		                  <li>
 		                      <div class="item">
-		                          <div class="pic"> <img src="images/pages/home/thum1.png" alt="" height="234" width="139" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
+		                          <div class="pic"> <img src="images/thumb-homedesign.jpg" alt="" height="156" width="107" /> </div>
 		                          <div class="item-caption">
-		                              <p>Affinity</p>
-		                              <ul>
-		                                  <li class="icon1">4</li>
-		                                  <li class="icon4">2</li>
-		                                  <li class="icon2">2</li>
-		                                  <li class="icon3"></li>
-		                              </ul>
+		                          	  <div class="shadow"></div>
+		                              <p>ALLURE LHS</p>
 		                          </div>
 		                      </div>
 		                  </li>
