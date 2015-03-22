@@ -4,12 +4,18 @@
 .menu ul li a, .menu ul li a.ms_top{
   font-size: 15px;
   font-family: "Arial";
+  font-weight: normal;
+  color: #5a5a5a;
   span{
     font-family: "Arial";
     font-weight: normal;
   }
+  
 }
-
+.menu ul li.menu-item-home a{
+  text-indent: -9999px;
+  background: url(../images/i-home.png) no-repeat center;
+}
 .menu ul li ul li a{
   font-size: 11px;
 }
