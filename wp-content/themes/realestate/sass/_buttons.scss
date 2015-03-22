@@ -25,3 +25,29 @@
   background-color: #444;
   color: #fff;
 }
+
+.btn-color-watch{
+  background: #f38233;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  line-height: 25px;
+  font-weight: 400;
+  font-size: 14px;
+  border: none;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+
+  &:hover {
+    color: #fff;
+    opacity: 0.8;
+  }
+
+  img {
+    vertical-align: middle;
+    padding-right: 5px;
+  }
+}
