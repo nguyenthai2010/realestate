@@ -49,5 +49,33 @@
   img {
     vertical-align: middle;
     padding-right: 5px;
+    position: relative;
+    top: -2px;
+  }
+}
+
+.btn-showmore{
+
+  color: #fff;
+  line-height: 25px;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  margin: 10px;
+  padding: 10px 20px 20px 20px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  background: #b2b2b2 url(../images/pages/testimonials/arrow-down.png) no-repeat  center 30px;
+  &:hover {
+    color: #fff;
+    opacity: 0.8;
+  }
+
+  img {
+    vertical-align: middle;
+    padding-right: 5px;
+    position: relative;
+    top: -2px;
   }
 }

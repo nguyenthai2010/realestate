@@ -7,17 +7,21 @@
     @include setShadowBoxSmall();
     background: #fff;
 
-    h3 {
+    p, h3{
+      text-align: center;
+      text-transform: uppercase;
+      padding: 10px;
+    }
 
+    h3 {
+      @include Roboto_regular(16px);
     }
 
     p {
-
-    }
-
-    p, h3{
-      text-align: center;
-      padding: 0 10px;
+      @include Roboto_regular(13px);
+      padding: 10px 30px;
+      background: url(../images/pages/testimonials/bg_quotes.png) no-repeat top center;
+      min-height:  105px;
     }
   }
   a.zoom {
