@@ -18,7 +18,7 @@
 		                          	<img src="images/singledesign/i-1.jpg" alt="" height="220" width="140" />
 		                          	<div class="detailBox">
 		                          		<div class="shadow"></div>
-		                          		<a href="#">
+		                          		<a href="/single-designs-subpage/">
 		                          			<i></i>
 		                          			<span>ACCENT <br/> DOUBLE STOREY</span>
 		                          		</a>
@@ -41,7 +41,7 @@
 		                          	<img src="images/singledesign/i-2.jpg" alt="" height="220" width="140" />
 		                          	<div class="detailBox">
 		                          		<div class="shadow"></div>
-		                          		<a href="#">
+                                        <a href="/single-designs-subpage/">
 		                          			<i></i>
 		                          			<span>ACCENT <br/> DOUBLE STOREY</span>
 		                          		</a>
@@ -64,7 +64,7 @@
 		                          	<img src="images/singledesign/i-3.jpg" alt="" height="220" width="140" />
 		                          	<div class="detailBox">
 		                          		<div class="shadow"></div>
-		                          		<a href="#">
+                                        <a href="/single-designs-subpage/">
 		                          			<i></i>
 		                          			<span>ACCENT <br/> DOUBLE STOREY</span>
 		                          		</a>
@@ -87,7 +87,7 @@
 		                          	<img src="images/singledesign/i-4.jpg" alt="" height="220" width="140" />
 		                          	<div class="detailBox">
 		                          		<div class="shadow"></div>
-		                          		<a href="#">
+                                        <a href="/single-designs-subpage/">
 		                          			<i></i>
 		                          			<span>ACCENT <br/> DOUBLE STOREY</span>
 		                          		</a>
@@ -110,7 +110,7 @@
 		                          	<img src="images/singledesign/i-5.jpg" alt="" height="220" width="140" />
 		                          	<div class="detailBox">
 		                          		<div class="shadow"></div>
-		                          		<a href="#">
+                                        <a href="/single-designs-subpage/">
 		                          			<i></i>
 		                          			<span>ACCENT <br/> DOUBLE STOREY</span>
 		                          		</a>
@@ -133,7 +133,7 @@
 		                          	<img src="images/singledesign/i-6.jpg" alt="" height="220" width="140" />
 		                          	<div class="detailBox">
 		                          		<div class="shadow"></div>
-		                          		<a href="#">
+                                        <a href="/single-designs-subpage/">
 		                          			<i></i>
 		                          			<span>ACCENT <br/> DOUBLE STOREY</span>
 		                          		</a>

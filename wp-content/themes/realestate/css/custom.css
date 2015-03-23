@@ -351,6 +351,7 @@ CHECKBOX FOR GRID
           background: white url("../images/pages/home/ico-slider_05.png") 15px 20px no-repeat; }
   #main-carousel .search-slider {
     position: absolute;
+    display: none;
     bottom: 0;
     left: 0;
     width: 100%; }
