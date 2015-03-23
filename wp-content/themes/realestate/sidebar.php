@@ -4,9 +4,9 @@
 	    		<div class="row">
 	    			<label>HOME TYPE</label>
 	    			<select class="select">
-	    				<option value="mr">Select Home Type</option>
-	    				<option value="mrs">Medium</option>
-	    				<option value="mrs">Large</option>
+	    				<option value="0">Select Home Type</option>
+	    				<option value="medium">Medium</option>
+	    				<option value="large">Large</option>
 	    			</select>
 	    		</div>
 	    		<div class="row range">

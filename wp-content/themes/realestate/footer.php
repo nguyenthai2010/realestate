@@ -4,64 +4,85 @@
       <div class="container">
         <div class="row">
           <div class="span2 col1">
-            <h4><a href="#">ABOUT</a></h4>
-            <ul>
-            	<li><a href="#">History</a></li>
-            	<li><a href="#">Awards</a></li>
-            	<li><a href="#">Latest News</a></li>
-            	<li><a href="#">The Masterton Story</a></li>
-            	<li><a href="#">Where We Build</a></li>
-            </ul>
+            <h4><a href="<?php echo bloginfo('home')?>/about">ABOUT</a></h4>
+            <?php
+				$nav = array(
+					'theme_location'  => 'menu_about',
+					'menu'            => '',
+					'container'       => '',
+					'container_class' => '',
+					'container_id'    => '',
+					'menu_class'      => '',
+					'menu_id'         => '',
+					'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+				);
+				
+				wp_nav_menu( $nav );
+			?>
           </div>
           <div class="span2 col2">
-            <h4><a href="#">HOME Designs</a></h4>
-            <ul>
-            	<li><a href="#">Single Storey</a></li>
-            	<li><a href="#">Double Storey</a></li>
-            	<li><a href="#">Split Level & Slopping Blocks</a></li>
-            	<li><a href="#">Duplex</a></li>
-            	<li><a href="#">Country Style Homes</a></li>
-            	<li><a href="#">Inclusions</a></li>
-            	<li><a href="#">Knock Down Rebuild</a></li>
-            	<li><a href="#">Duplex Living</a></li>
-            </ul>
-            <h4><a href="#">HOME & LAND</a></h4>
-            <ul>
-            	<li><a href="#">Home & Land Packages</a></li>
-            	<li><a href="#">Home & Land Process</a></li>
-            </ul>
+            <h4><a href="<?php echo bloginfo('home')?>/home-designs">HOME Designs</a></h4>
+            <?php
+				$nav = array(
+					'theme_location'  => 'menu_home_designs',
+					'menu'            => '',
+					'container'       => '',
+					'container_class' => '',
+					'container_id'    => '',
+					'menu_class'      => '',
+					'menu_id'         => '',
+					'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+				);
+				
+				wp_nav_menu( $nav );
+			?>
+            <h4><a href="<?php echo bloginfo('home')?>/home-land">HOME & LAND</a></h4>
+            <?php
+				$nav = array(
+					'theme_location'  => 'menu_home_land',
+					'menu'            => '',
+					'container'       => '',
+					'container_class' => '',
+					'container_id'    => '',
+					'menu_class'      => '',
+					'menu_id'         => '',
+					'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+				);
+				
+				wp_nav_menu( $nav );
+			?>
           </div>
           <div class="span2 col3">
             <h4>Display Homes</h4>
             <ul>
-            	<li><a href="#">Display Centre Locations</a></li>
-            	<li><a href="#">Display Homes for Sale</a></li>
-            	<li><a href="#">Warwick Farm Display Village</a></li>
+            	<li><a href="<?php echo bloginfo('home')?>/display-centre-locations">Display Centre Locations</a></li>
+            	<li><a href="<?php echo bloginfo('home')?>/display-homes-for-sale">Display Homes for Sale</a></li>
+            	<li><a href="<?php echo bloginfo('home')?>/warwick-farm-display-village">Warwick Farm Display Village</a></li>
             </ul>
-            <h4><a href="#">Promotions</a></h4>
+            <h4><a href="<?php echo bloginfo('home')?>/promotions">Promotions</a></h4>
             <ul>
-            	<li><a href="#">Mansion Package</a></li>
-            	<li><a href="#">Yes Inclusions</a></li>
-            	<li><a href="#">Design Workshop</a></li>
+            	<li><a href="<?php echo bloginfo('home')?>/mansion-package">Mansion Package</a></li>
+            	<li><a href="<?php echo bloginfo('home')?>/yes-inclusions">Yes Inclusions</a></li>
+            	<li><a href="<?php echo bloginfo('home')?>/design-workshop">Design Workshop</a></li>
             </ul>
           </div>
           <div class="span2 col4">
-            <h4><a href="#">SERVICES</a></h4>
+            <h4><a href="<?php echo bloginfo('home')?>/services">SERVICES</a></h4>
             <ul>
-            	<li><a href="#">Book A Meeting</a></li>
-            	<li><a href="#">Finance</a></li>
-            	<li><a href="#">Subscribe Newsletter</a></li>
-            	<li><a href="#">Suppliers & Trade</a></li>
-            	<li><a href="#">Terms Of Use</a></li>
-            	<li><a href="#">Privacy Policy</a></li>
+            	<li><a href="<?php echo bloginfo('home')?>/book-a-meeting-2">Book A Meeting</a></li>
+            	<li><a href="<?php echo bloginfo('home')?>/finance">Finance</a></li>
+            	<li><a href="<?php echo bloginfo('home')?>/subscribe-newsletter">Subscribe Newsletter</a></li>
+            	<li><a href="<?php echo bloginfo('home')?>/suppliers-trade">Suppliers & Trade</a></li>
+            	<li><a href="<?php echo bloginfo('home')?>/terms-of-use">Terms Of Use</a></li>
+            	<li><a href="<?php echo bloginfo('home')?>/privacy-policy">Privacy Policy</a></li>
             </ul>
           </div>
           <div class="span2 col5">
-            <h4><a href="#">QUICKLINKS</a></h4>
+            <h4>>QUICKLINKS</h4>
             <ul>
-            	<li><a href="#">Home</a></li>
-            	<li><a href="#">Contact Us</a></li>
-            	<li><a href="#">Login</a></li>
+            	<li><a href="<?php echo bloginfo('home')?>">Home</a></li>
+            	<li><a href="<?php echo bloginfo('home')?>/contact">Contact Us</a></li>
+            	<li><a href="<?php echo bloginfo('home')?>/login">Login</a></li>
             </ul>
           </div>
           <div class="span2 followus  col6">

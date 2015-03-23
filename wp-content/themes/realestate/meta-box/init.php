@@ -32,6 +32,16 @@ $meta_boxes[] = array(
             'type'  => 'text'
         ),
         array(
+            'name' => 'Types',
+            'id'   => "{$prefix}types",
+            'type'    => 'select',
+            'options' => array(
+                '0' => 'None',
+                'medium' => 'Medium',
+                'large'   => 'Large'
+            )
+        ),
+        array(
             'name' => 'Size (SQM)',
             'id'   =>  "{$prefix}size",
             'type' => 'text',
