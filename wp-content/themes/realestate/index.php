@@ -199,9 +199,7 @@
                     <div class="row">
                         <div class="row-fluid text-center extrabold">
                             <h2>HOME DESIGNS</h2>
-                            <div class="submenu">
-                                <a class="btn-homepage-menu active" href="#">Single</a><a class="btn-homepage-menu" href="#">Double</a><a class="btn-homepage-menu" href="#">Duplex</a><a class="btn-homepage-menu" href="#">All</a>
-                            </div>
+                            <p>“our happy customer and their experience with Masterton Homes”</p>
                         </div>
                     </div>
                     <ul id="gallery-carousel" class="jcarousel-skin-tango" >

@@ -40,11 +40,38 @@
             ?>
         </div>
         <!-- Carousel nav -->
-        <nav>
+        <!--<nav>
             <a class="carousel-control left" href="#main-carousel" data-slide="prev">&nbsp;</a> <a class="carousel-control right" href="#main-carousel" data-slide="next">&nbsp;</a>
+        </nav>-->
+
+        <nav class="lookingfor">
+            <ul>
+                <li class="firstchild">I’M LOOKING FOR:</li>
+                <li class="icon1">Yes</li>
+                <li class="icon2">Mansion</li>
+                <li class="icon3">Knock down<br>rebuild </li>
+                <li class="icon4">Duplex</li>
+                <li class="icon5">More+ </li>
+            </ul>
         </nav>
 
-
+        <nav class="search-slider">
+            <ul>
+                <li class="prev"></li>
+                <li >
+                    <div class="search-detail">
+                        <span>Find your dream home</span>
+                        <ul>
+                            <li><a>Storey</a></li>
+                            <li><a>Bath</a></li>
+                            <li><a>Bed</a></li>
+                            <li><a>Lot width</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="next"></li>
+            </ul>
+        </nav>
     </div>
     <!-- carousel -->
 </div>
