@@ -21,6 +21,37 @@
   }
 }
 
+.row-promotion {
+  background: #bc8eda;
+  padding-bottom: 50px;
+
+
+
+  .span4 {
+    text-align: center;
+    background: #fff;
+
+    h3 {
+      a {
+        @include Arial(14px);
+        font-weight: bold;
+      }
+
+      padding: 5px 10px;
+    }
+
+    p {
+      padding: 10px 40px;
+      @include Arial(12px);
+    }
+
+    .btnpromotion {
+      margin-bottom: 20px;
+      color: #fff;
+    }
+  }
+}
+
 .row-slider {
   background: #ececec;
 

@@ -100,6 +100,9 @@ body, p {
 a:hover {
   color: #f38233; }
 
+a.zoom {
+  background: #f38233 url(../images/zoom.png) center center no-repeat; }
+
 h1, h2, h3, h4, h5 {
   color: #333333;
   line-height: 1.2em;
@@ -107,7 +110,9 @@ h1, h2, h3, h4, h5 {
   font-family: Arial; }
 
 h1 {
-  font-size: 32px; }
+  font-family: "HelveticaNeueW01-65Medi";
+  font-weight: normal;
+  line-height: 1.2; }
 
 h2 {
   font-size: 24px; }
@@ -429,6 +434,30 @@ CHECKBOX FOR GRID
     font-family: "HelveticaNeueW01-55Roma";
     font-weight: normal;
     line-height: 1.2; }
+
+.row-promotion {
+  background: #bc8eda;
+  padding-bottom: 50px; }
+  .row-promotion .span4 {
+    text-align: center;
+    background: #fff; }
+    .row-promotion .span4 h3 {
+      padding: 5px 10px; }
+      .row-promotion .span4 h3 a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: normal;
+        font-weight: bold; }
+    .row-promotion .span4 p {
+      padding: 10px 40px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      line-height: 1.2;
+      font-weight: normal; }
+    .row-promotion .span4 .btnpromotion {
+      margin-bottom: 20px;
+      color: #fff; }
 
 .row-slider {
   background: #ececec; }
