@@ -1,10 +1,10 @@
 <div class="sidebar">
 	    	<h2>FIND A DESIGN</h2>
-	    	<form action="" method="" id="searchDesign">
+	    	<form action="<?php echo bloginfo('url')?>/result/" method="get" id="searchDesign">
 	    		<div class="row">
 	    			<label>HOME TYPE</label>
-	    			<select class="select">
-	    				<option value="0">Select Home Type</option>
+	    			<select class="select" name="s_types">
+	    				<option value="">Select Home Type</option>
 	    				<option value="medium">Medium</option>
 	    				<option value="large">Large</option>
 	    			</select>
@@ -26,19 +26,19 @@
 	    			<label>BEDROOMS</label>
 	    			<div class="ckrooms">
 	    				<div class="radioStyle">
-	    					<input type="radio" value="" name="bedroom" id="bed01"/><label for="bed01">1</label>
+	    					<input type="radio" value="1" name="bedroom" id="bed01"/><label for="bed01">1</label>
 	    				</div>
 	    				<div class="radioStyle">
-	    					<input type="radio" value="" name="bedroom" id="bed02"/><label for="bed02">2</label>
+	    					<input type="radio" value="2" name="bedroom" id="bed02"/><label for="bed02">2</label>
 	    				</div>
 	    				<div class="radioStyle">
-	    					<input type="radio" value="" name="bedroom" id="bed03"/><label for="bed03">3</label>
+	    					<input type="radio" value="3" name="bedroom" id="bed03"/><label for="bed03">3</label>
 	    				</div>
 	    				<div class="radioStyle">
-	    					<input type="radio" value="" name="bedroom" id="bed04"/><label for="bed04">4</label>
+	    					<input type="radio" value="4" name="bedroom" id="bed04"/><label for="bed04">4</label>
 	    				</div>
 	    				<div class="radioStyle">
-	    					<input type="radio" value="" name="bedroom" id="bed05"/><label for="bed05">5</label>
+	    					<input type="radio" value="5" name="bedroom" id="bed05"/><label for="bed05">5</label>
 	    				</div>
 	    			</div>
 	    		</div>
@@ -46,19 +46,19 @@
 	    			<label>BATHROOMS</label>
 	    			<div class="ckrooms">
 	    				<div class="radioStyle">
-	    					<input type="radio" value="" name="bathroom" id="bath01"/><label for="bath01">1</label>
+	    					<input type="radio" value="1" name="bathroom" id="bath01"/><label for="bath01">1</label>
 	    				</div>
 	    				<div class="radioStyle">
-	    					<input type="radio" value="" name="bathroom" id="bath02"/><label for="bath02">2</label>
+	    					<input type="radio" value="2" name="bathroom" id="bath02"/><label for="bath02">2</label>
 	    				</div>
 	    				<div class="radioStyle">
-	    					<input type="radio" value="" name="bathroom" id="bath03"/><label for="bath03">3</label>
+	    					<input type="radio" value="3" name="bathroom" id="bath03"/><label for="bath03">3</label>
 	    				</div>
 	    				<div class="radioStyle">
-	    					<input type="radio" value="" name="bathroom" id="bath04"/><label for="bath04">4</label>
+	    					<input type="radio" value="4" name="bathroom" id="bath04"/><label for="bath04">4</label>
 	    				</div>
 	    				<div class="radioStyle">
-	    					<input type="radio" value="" name="bathroom" id="bath05"/><label for="bath05">5</label>
+	    					<input type="radio" value="5" name="bathroom" id="bath05"/><label for="bath05">5</label>
 	    				</div>
 	    			</div>
 	    		</div>
@@ -66,13 +66,13 @@
 	    			<label>GARAGES</label>
 	    			<div class="ckrooms">
 	    				<div class="radioStyle">
-	    					<input type="radio" value="" name="garage" id="garage01"/><label for="garage01">1</label>
+	    					<input type="radio" value="1" name="garage" id="garage01"/><label for="garage01">1</label>
 	    				</div>
 	    				<div class="radioStyle">
-	    					<input type="radio" value="" name="garage" id="garage03"/><label for="garage02">2</label>
+	    					<input type="radio" value="2" name="garage" id="garage02"/><label for="garage02">2</label>
 	    				</div>
 	    				<div class="radioStyle">
-	    					<input type="radio" value="" name="garage" id="garage03"/><label for="garage03">3</label>
+	    					<input type="radio" value="3" name="garage" id="garage03"/><label for="garage03">3</label>
 	    				</div>
 	    			</div>
 	    		</div>

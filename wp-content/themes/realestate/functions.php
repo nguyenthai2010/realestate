@@ -11,6 +11,9 @@
     //change label post
     include 'inc/change_label_post.php';
 	
+	//add type columns
+    include 'inc/type_column.php';
+	
 	//filter home
     include 'inc/filter_home.php';
 	
