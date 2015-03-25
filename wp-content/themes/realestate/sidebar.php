@@ -5,8 +5,17 @@
 	    			<label>HOME TYPE</label>
 	    			<select class="select" name="s_types">
 	    				<option value="">Select Home Type</option>
-	    				<option value="medium">Medium</option>
-	    				<option value="large">Large</option>
+	    				<?php
+							$categories = get_categories(); 
+							//print_r($categories);
+							$i = 0;
+							  foreach ($categories as $category) {
+							  	$i++;
+							  	$catname = $category->cat_name;
+								$catslug = $category->slug;
+						?>
+						<option value="<?php echo $catslug;?>"><?php echo $catname;?></option>
+						<?php }?>
 	    			</select>
 	    		</div>
 	    		<div class="row range">
