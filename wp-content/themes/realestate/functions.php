@@ -32,3 +32,12 @@
 	  register_nav_menu('menu_home_land',__( 'menu_home_land' ));
 	}
 	add_action( 'init', 'register_menu' );
+	
+	//rewrite view all category
+	function change_viewall_url_rewrite() {
+		if ( is_category()) {
+			wp_redirect( home_url( "/category/view-all" ));
+			exit();
+		}	
+	}
+	add_action( 'template_redirect', 'change_viewall_url_rewrite' );

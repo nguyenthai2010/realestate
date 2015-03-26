@@ -30,11 +30,15 @@ function search_home_design($homestyle, $housesize, $housewidth, $bedroom, $bath
 }
 
 function get_category_post($category){
+	print_r($category);
+	if ($category == 'view-all'){
+		$category = '';
+	}
 	$args_cat = array(
 		'post_type' 	 => 'post',
 		'posts_per_page' =>  9 ,
 		'order'			 => 'asc',
-		'cat'  => $category,
+		'category_name'  => $category,
 	);
 	
 	return query_posts($args_cat);

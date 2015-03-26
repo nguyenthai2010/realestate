@@ -1,7 +1,6 @@
 <?php
 	get_header();
 	$category = get_queried_object();
-	
 ?>
   
   <div id="content" class="homedesignPage bgGray">

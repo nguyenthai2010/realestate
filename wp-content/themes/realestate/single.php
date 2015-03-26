@@ -6,7 +6,12 @@
     <img src="images/home_design.jpg" width="100%"/>
     <div class="container pad40">
 	    <?php get_sidebar();?>
-	    
+	    <?php
+			while ( have_posts() ) : the_post();
+			$post = get_post(get_the_ID());
+			$bigImg = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()) );
+			$slideImg = get_post_meta(get_the_ID(),'tt_picture',false);
+		?>
 	    <div class="span8 spanRightcontent">
 	    	<div class="bgwhite">
 	    		<h2> Overture</h2>
@@ -23,76 +28,27 @@
                       </div>
 			    	<div class="homedesignGallery">
 			    		<div class="bigImage">
-			    			<img src="images/bighomedesign.jpg" />
+			    			<img src="<?php echo $bigImg;?>" />
 			    			<div class="description">
 			    				<div class="shadow"></div>
-			    				<p>TIMELESS LHS</p>
+			    				<p><?php echo get_the_title(get_the_ID())?></p>
 			    			</div>
 			    		</div>
 			    		<ul id="homedesign-carousel" class="jcarousel-skin-tango" >
+		                  <?php 
+							foreach ($slideImg as $slide) {
+								$thumb = wp_get_attachment_image_src( $slide,'medium' );
+		                  ?>
 		                  <li>
 		                      <div class="item">
-		                          <div class="pic"> <img src="images/thumb-homedesign.jpg" alt="" height="156" width="107" /> </div>
+		                          <div class="pic"> <img src="<?php echo $thumb[0];?>" alt="" height="156" width="107" /> </div>
 		                          <div class="item-caption">
 		                          	  <div class="shadow"></div>
-		                              <p>ALLURE LHS</p>
+		                              <p><?php echo get_the_title(get_the_ID())?></p>
 		                          </div>
 		                      </div>
 		                  </li>
-		                  <li>
-		                      <div class="item">
-		                          <div class="pic"> <img src="images/thumb-homedesign.jpg" alt="" height="156" width="107" /> </div>
-		                          <div class="item-caption">
-		                          	  <div class="shadow"></div>
-		                              <p>ALLURE LHS</p>
-		                          </div>
-		                      </div>
-		                  </li>
-		                  <li>
-		                      <div class="item">
-		                          <div class="pic"> <img src="images/thumb-homedesign.jpg" alt="" height="156" width="107" /> </div>
-		                          <div class="item-caption">
-		                          	  <div class="shadow"></div>
-		                              <p>ALLURE LHS</p>
-		                          </div>
-		                      </div>
-		                  </li>
-		                  <li>
-		                     <div class="item">
-		                          <div class="pic"> <img src="images/thumb-homedesign.jpg" alt="" height="156" width="107" /> </div>
-		                          <div class="item-caption">
-		                          	  <div class="shadow"></div>
-		                              <p>ALLURE LHS</p>
-		                          </div>
-		                      </div>
-		                  </li>
-		                  <li>
-		                      <div class="item">
-		                          <div class="pic"> <img src="images/thumb-homedesign.jpg" alt="" height="156" width="107" /> </div>
-		                          <div class="item-caption">
-		                          	  <div class="shadow"></div>
-		                              <p>ALLURE LHS</p>
-		                          </div>
-		                      </div>
-		                  </li>
-		                  <li>
-		                      <div class="item">
-		                          <div class="pic"> <img src="images/thumb-homedesign.jpg" alt="" height="156" width="107" /> </div>
-		                          <div class="item-caption">
-		                          	  <div class="shadow"></div>
-		                              <p>ALLURE LHS</p>
-		                          </div>
-		                      </div>
-		                  </li>
-		                  <li>
-		                      <div class="item">
-		                          <div class="pic"> <img src="images/thumb-homedesign.jpg" alt="" height="156" width="107" /> </div>
-		                          <div class="item-caption">
-		                          	  <div class="shadow"></div>
-		                              <p>ALLURE LHS</p>
-		                          </div>
-		                      </div>
-		                  </li>
+		                  <?php } ?>
 		              </ul>
 		              <!-- Pagination -->
 					  <p class="jcarousel-pagination" data-jcarouselpagination="true"></p>
@@ -109,6 +65,9 @@
 				 </div>
 	    	</div>
 	    </div>
+	    <?php 	
+			endwhile; 
+		?>
     </div>
   </div>
   <!-- #content--> 
