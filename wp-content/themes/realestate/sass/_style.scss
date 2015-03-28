@@ -91,6 +91,9 @@ input[type="text"]{
   &:-ms-input-placeholder{ /* Internet Explorer 10+ */
       color:    #666;
   }
+  &.error{
+    border: 1px solid red;
+  }
 }
 textarea{
   font-family: 'Roboto', sans-serif;
@@ -176,4 +179,8 @@ CHECKBOX FOR GRID
 .radioStyle input[type=radio] {
   margin-top: 0px;
   position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+}
+
+label[generated="true"]{
+  display: none!important;
 }

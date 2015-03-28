@@ -74,75 +74,104 @@
 	    		<a href="mailto:webmaster@masterton.com.au" class="link">webmaster@masterton.com.au</a>
 	    	</div>
 	    </div>
+	    <?php
+	    if(!empty($_POST['email']))
+    	{
+	    	$data['firstname'] = $_POST['firstname'];
+	        $data['surname'] = $_POST['surname'];
+	        $data['email'] = $_POST['email'];
+	        $data['phone'] = sha1($_POST['phone']);
+	        $data['ipinterests'] = $_POST['ipinterests'];
+	        $data['displayvillage'] = $_POST['displayvillage'];
+	        $data['contactyou'] = $_POST['contactyou'];
+			$sendmail = contact_form($data['first_name'],$data['surname'], $data['email'],$data['phone'],$data['ipinterests'],$data['displayvillage'], $data['contactyou']);
+			if($sendmail){ 
+			    $message = "Send message successful";
+			}		
+			else 
+			    $message = 'Current can not send message. Please try again.';
+		}
+	    ?>
 	    <div class="span4 rightContact">
 	    	<h2>Contact Us</h2>
-	    	<form action="" method="">
+	    	<?php
+                if($message != "")
+                {
+                    $alert = $logged == true ? "alert-success" : "alert-danger";
+                    echo '<div class="alert '.$alert.'">'.$message.'</div>';
+                }
+                    
+            ?> 
+	    	<form action="" id="contactForm" method="post">
 	    		<p>
-	    			<select class="select">
+	    			<select class="select" name="sexoption">
 	    				<option value="mr">Mr.</option>
 	    				<option value="mrs">Mrs.</option>
 	    			</select>
 	    		</p>
 	    		<p>
-	    			<input value="" type="text" name="" placeholder="First Name (Required)"/>
+	    			<input value="" type="text" name="firstname" placeholder="First Name (Required)"/>
 	    		</p>
 	    		<p>
-	    			<input value="" type="text" name="" placeholder="Surname"/>
+	    			<input value="" type="text" name="surname" placeholder="Surname"/>
 	    		</p>
 	    		<p>
-	    			<input value="" type="text" name="" placeholder="Email Address (Required)"/>
+	    			<input value="" type="text" name="email" placeholder="Email Address (Required)"/>
 	    		</p>
 	    		<p>
-	    			<input value="" type="text" name="" placeholder="Phone (Required)"/>
+	    			<input value="" type="text" name="phone" placeholder="Phone (Required)"/>
 	    		</p>
 	    		<div class="partiBox">
 	    			<h4>Particular Interests <span>(Required)</span></h4>
 	    			<ul>
 	    				<li class="checkboxStyle">
-	    					<input type="checkbox" id="interest01">
+	    					<input type="checkbox" id="interest01" name="ipinterests[]">
 	    					<label for="interest01">
 	    						Building a new home on vacant land
 	    					</label>
 	    				</li>
 	    				<li class="checkboxStyle">
-	    					<input type="checkbox" id="interest02">
+	    					<input type="checkbox" id="interest02" name="ipinterests[]">
 	    					<label for="interest02">
 	    						Knockdown Rebuild (KDR)
 	    					</label>
 	    				</li>
 	    				<li class="checkboxStyle">
-	    					<input type="checkbox" id="interest03">
+	    					<input type="checkbox" id="interest03" name="ipinterests[]">
 	    					<label for="interest03">
 	    						Home & Land Package
 	    					</label>
 	    				</li>
 	    				<li class="checkboxStyle">
-	    					<input type="checkbox" id="interest04">
+	    					<input type="checkbox" id="interest04" name="ipinterests[]">
 	    					<label for="interest04">
 	    						Dual Occupancy or Duplex
 	    					</label>
 	    				</li>
 	    				<li class="checkboxStyle">
-	    					<input type="checkbox" id="interest05">
+	    					<input type="checkbox" id="interest05" name="ipinterests">
 	    					<label for="interest05">
 	    						Building for Investment
 	    					</label>
 	    				</li>
 	    				<li class="checkboxStyle">
-	    					<input type="checkbox" id="interest06">
+	    					<input type="checkbox" id="interest06" name="ipinterests[]">
 	    					<label for="interest06">
 	    						Multi Residential
 	    					</label>
 	    				</li>
 	    			</ul>
 	    			<div class="selectGroup">
-	    				<select class="select">
-		    				<option value="">Closest Display Village?</option>
-		    				<option value="">Closest Display Village?</option>
+	    				<select class="select" name="displayvillage">
+		    				<option value="0">Closest Display Village?</option>
+		    				<option value="display-center-locations">Display Centre Locations</option>
+		    				<option value="display-home-for-sale">Display Homes for Sale</option>
+		    				<option value="warwick-farm-display-village">Warwick Farm Display Village</option>
 		    			</select>
-		    			<select class="select">
-		    				<option value="">How should we contact you?</option>
-		    				<option value="">How should we contact you?</option>
+		    			<select class="select" name="contactyou">
+		    				<option value="0">How should we contact you?</option>
+		    				<option value="phone">Phone</option>
+		    				<option value="email">Email</option>
 		    			</select>
 	    			</div>
 	    		</div>
@@ -155,5 +184,54 @@
   
 </div>
 <!-- #wrapper -->
-
 <?php get_footer(); ?>
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#contactForm").validate({
+		rules: {
+			'firstname': {
+				required: true
+			},
+			'surname': {
+				required: true
+			},
+			'phone': {
+				required: true
+			},
+            'email': { 
+                required: true, 
+                email: true,
+                remote: {
+                        url: "<?php echo  get_site_url();?>",
+                        type: "post",
+                        data: {
+                            email: function() {
+                                return $( "#email" ).val();
+                            }
+                        }
+                    }
+            },
+            "ipinterests[]": { 
+          		//required: true,
+	          	//minlength: 1
+	            required: function(elem)
+	            {
+	                return $("input[name=ipinterests]:checked").length > 0;
+	            }
+	             
+	        }
+		},
+		 
+		messages: {
+            "firstname": "",
+            "surname": "",
+            "phone": "",
+            "email":"",
+            "ipinterests[]":""
+        },
+		submitHandler: function(form) {
+            form.submit();
+		},
+	});
+});
+</script>

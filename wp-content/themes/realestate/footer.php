@@ -78,7 +78,7 @@
             </ul>
           </div>
           <div class="span2 col5">
-            <h4>>QUICKLINKS</h4>
+            <h4>QUICKLINKS</h4>
             <ul>
             	<li><a href="<?php echo bloginfo('home')?>">Home</a></li>
             	<li><a href="<?php echo bloginfo('home')?>/contact">Contact Us</a></li>
@@ -111,7 +111,7 @@
 </div>
 <!-- #footer --> 
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script> 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script> 
 <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script> 
 <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script> 
 <script type="text/javascript" src="prettyPhoto/js/jquery.prettyPhoto.js"></script> 
@@ -126,6 +126,7 @@
 <link rel="stylesheet" type="text/css" href="js/rangejs/jquery.range.css"/>
 <script type="text/javascript" src="js/rangejs/jquery.range.js"></script>
 <script type="text/javascript" src="js/search_homedesign.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.8/jquery.validate.min.js"></script>
 <script type="text/javascript">
 	$(function () {
 		$('#nav').tinyNav({
