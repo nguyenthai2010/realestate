@@ -116,6 +116,9 @@ textarea{
   &:-ms-input-placeholder{ /* Internet Explorer 10+ */
       color:    #666;
   }
+  &.error{
+    border: 1px solid red;
+  }
 }
 input[type="submit"]{
   background: #f38233;

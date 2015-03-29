@@ -21,6 +21,9 @@
 	include TEMPLATEPATH . '/email/smtp.php';
 	include TEMPLATEPATH . '/email/xtemplate.contact.php';
 	
+	//contact form
+	include TEMPLATEPATH . '/email/xtemplate.jimform.php';
+	
 	//register menu
 	function register_menu() {
 	  register_nav_menu('menu_top',__( 'menu_top' ));
