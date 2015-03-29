@@ -66,6 +66,9 @@ select.select{
     font-weight: 400;
     font-size: 14px;
     outline: none;
+    &.error{
+      border: 1px solid red;
+    }
 }
 input[type="text"]{
   height: 36px;
@@ -154,6 +157,9 @@ CHECKBOX FOR GRID
   position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
 }
 
+.checkboxStyle.error label{
+  background: url(../images/checkbox-error.png) no-repeat;
+}
 /*-------------------------
 CHECKBOX FOR GRID
 -------------------------*/

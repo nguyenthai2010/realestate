@@ -84,7 +84,7 @@
 	        $data['ipinterests'] = $_POST['ipinterests'];
 	        $data['displayvillage'] = $_POST['displayvillage'];
 	        $data['contactyou'] = $_POST['contactyou'];
-			$sendmail = contact_form($data['first_name'],$data['surname'], $data['email'],$data['phone'],$data['ipinterests'],$data['displayvillage'], $data['contactyou']);
+			$sendmail = contact_form($data['firstname'],$data['surname'], $data['email'],$data['phone'],$data['ipinterests'],$data['displayvillage'], $data['contactyou']);
 			if($sendmail){ 
 			    $message = "Send message successful";
 			}		
@@ -116,7 +116,7 @@
 	    			<input value="" type="text" name="surname" placeholder="Surname"/>
 	    		</p>
 	    		<p>
-	    			<input value="" type="text" name="email" placeholder="Email Address (Required)"/>
+	    			<input id="email" value="" type="text" name="email" placeholder="Email Address (Required)"/>
 	    		</p>
 	    		<p>
 	    			<input value="" type="text" name="phone" placeholder="Phone (Required)"/>
@@ -125,37 +125,37 @@
 	    			<h4>Particular Interests <span>(Required)</span></h4>
 	    			<ul>
 	    				<li class="checkboxStyle">
-	    					<input type="checkbox" id="interest01" name="ipinterests[]">
+	    					<input type="checkbox" id="interest01" name="ipinterests" class="ipinterests">
 	    					<label for="interest01">
 	    						Building a new home on vacant land
 	    					</label>
 	    				</li>
 	    				<li class="checkboxStyle">
-	    					<input type="checkbox" id="interest02" name="ipinterests[]">
+	    					<input type="checkbox" id="interest02" name="ipinterests" class="ipinterests">
 	    					<label for="interest02">
 	    						Knockdown Rebuild (KDR)
 	    					</label>
 	    				</li>
 	    				<li class="checkboxStyle">
-	    					<input type="checkbox" id="interest03" name="ipinterests[]">
+	    					<input type="checkbox" id="interest03" name="ipinterests" class="ipinterests">
 	    					<label for="interest03">
 	    						Home & Land Package
 	    					</label>
 	    				</li>
 	    				<li class="checkboxStyle">
-	    					<input type="checkbox" id="interest04" name="ipinterests[]">
+	    					<input type="checkbox" id="interest04" name="ipinterests" class="ipinterests">
 	    					<label for="interest04">
 	    						Dual Occupancy or Duplex
 	    					</label>
 	    				</li>
 	    				<li class="checkboxStyle">
-	    					<input type="checkbox" id="interest05" name="ipinterests">
+	    					<input type="checkbox" id="interest05" name="ipinterests" class="ipinterests">
 	    					<label for="interest05">
 	    						Building for Investment
 	    					</label>
 	    				</li>
 	    				<li class="checkboxStyle">
-	    					<input type="checkbox" id="interest06" name="ipinterests[]">
+	    					<input type="checkbox" id="interest06" name="ipinterests" class="ipinterests">
 	    					<label for="interest06">
 	    						Multi Residential
 	    					</label>
@@ -187,6 +187,10 @@
 <?php get_footer(); ?>
 <script type="text/javascript">
 $(document).ready(function() {
+	jQuery.validator.addMethod('selectcheck', function (value) {
+        return (value != '0');
+    }, "");
+    
     $("#contactForm").validate({
 		rules: {
 			'firstname': {
@@ -200,36 +204,45 @@ $(document).ready(function() {
 			},
             'email': { 
                 required: true, 
-                email: true,
-                remote: {
-                        url: "<?php echo  get_site_url();?>",
-                        type: "post",
-                        data: {
-                            email: function() {
-                                return $( "#email" ).val();
-                            }
-                        }
-                    }
+                email: true
             },
-            "ipinterests[]": { 
-          		//required: true,
-	          	//minlength: 1
-	            required: function(elem)
-	            {
-	                return $("input[name=ipinterests]:checked").length > 0;
-	            }
-	             
-	        }
+            'ipinterests': { 
+                required: true
+            },
+            'displayvillage': {
+            	selectcheck: true
+            },
+            'contactyou': {
+            	selectcheck: true
+            }
 		},
 		 
-		messages: {
-            "firstname": "",
-            "surname": "",
-            "phone": "",
-            "email":"",
-            "ipinterests[]":""
+        errorPlacement: function(error, element){},
+        highlight: function(element) {
+            //console.log(element);
+            if($(element).is(':checkbox'))
+            {
+                var name = $(element).attr('name');
+                $('input[name='+name+']').parent('.checkboxStyle').addClass('error');
+            }
+            else
+            {
+                $(element).addClass('error');
+            }
         },
+         unhighlight: function(element, errorClass, validClass) {
+		    $(element).removeClass(errorClass).addClass(validClass); // remove error class from elements/add valid class
+		    $('.checkboxStyle').removeClass(errorClass); // remove error class from ul element for checkbox groups and radio inputs
+		  },
 		submitHandler: function(form) {
+			var boxes = $('.ipinterests:checkbox');
+            if(boxes.length > 0) {
+                if( $('.ipinterests:checkbox:checked').length < 1) {
+                    alert('Please select at least one checkbox');
+                    boxes[0].focus();
+                    return false;
+                }
+            }
             form.submit();
 		},
 	});
