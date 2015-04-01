@@ -65,7 +65,7 @@
   .search-slider {
     position: absolute;
     display: block;
-    bottom: 0;
+    top: 500px;
     left: 0;
     width: 100%;
 
@@ -79,14 +79,20 @@
         display: table-cell;
         height: 44px;
         text-align: center;
+        line-height: 35px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        color: #fff;
+        text-transform: uppercase;
 
         &.prev, &.next {
           position: relative;
           width: 24px;
 
           padding: 5px 15px;
-          background: #000;
-          opacity: 0.4;
+
+          background: rgba(0, 0, 0, 0.4);
 
           img {
             width: 100% !important;
@@ -97,11 +103,47 @@
         }
 
         &.prev {
-          background: #000 url("../images/pages/home/ico-arrow-pre.png") 10px 10px no-repeat;
+          background: #000 url("../images/pages/home/ico-arrow-pre.png") 10px 5px no-repeat;
         }
 
         &.next {
-          background: #000 url("../images/pages/home/ico-arrow-next.png") 15px 10px no-repeat;
+          background: #000 url("../images/pages/home/ico-arrow-next.png") 15px 5px no-repeat;
+        }
+
+        &.title {
+          text-align: left;
+          padding-left: 10px;
+        }
+
+        &.line {
+          width: 1px;
+          div {
+            width: 1px;
+            height: 30px;
+            position: absolute;
+            background: #fff;
+            top: 15px;
+          }
+        }
+
+        &.button {
+          width: 140px;
+
+          a {
+            height: 20px;
+            line-height: 20px;
+            width: 70px;
+            margin-top: 10px;
+          }
+        }
+
+        &.selectbox {
+          width: 140px;
+          text-align: left;
+
+          margin-left: 5px;
+          margin-right: 5px;
+
         }
 
       }
@@ -110,8 +152,7 @@
     .search-detail {
       margin: 0 5px;
       height: 100%;
-      background: #000;
-      opacity: 0.4;
+      background: rgba(0, 0, 0, 0.4);
     }
   }
 }
@@ -160,10 +201,6 @@ select.selecthome{
   -moz-appearance: button;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -webkit-padding-end: 20px;
-  -moz-padding-end: 20px;
-  -webkit-padding-start: 15px;
-  -moz-padding-start: 15px;
   background-color: #fff; /* fallback color if gradients are not supported */
   background: transparent url(../images/pages/home/select.png) center right no-repeat;
 
@@ -177,13 +214,14 @@ select.selecthome{
   padding-bottom: 2px;
   text-overflow: ellipsis;
   white-space: nowrap;
-  height: 36px;
-  width: 145px;
+  height: 33px;
+  width: 130px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
   outline: none;
-  &.error{
-    border: 1px solid red;
+
+  option {
+    color: #000;
   }
 }

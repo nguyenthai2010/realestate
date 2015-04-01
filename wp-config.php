@@ -76,5 +76,9 @@ define('WP_DEBUG', false);
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 
+
+define('WP_HOME','http://localhost/PHP/BLISS/www/YVES/REAL-ESTATE/sourcecode/BE/');
+define('WP_SITEURL','http://localhost/PHP/BLISS/www/YVES/REAL-ESTATE/sourcecode/BE/');
+
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');

@@ -369,7 +369,7 @@ label[generated="true"] {
   #main-carousel .search-slider {
     position: absolute;
     display: block;
-    bottom: 0;
+    top: 500px;
     left: 0;
     width: 100%; }
     #main-carousel .search-slider ul {
@@ -380,27 +380,54 @@ label[generated="true"] {
       #main-carousel .search-slider ul li {
         display: table-cell;
         height: 44px;
-        text-align: center; }
+        text-align: center;
+        line-height: 35px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        color: #fff;
+        text-transform: uppercase; }
         #main-carousel .search-slider ul li.prev, #main-carousel .search-slider ul li.next {
           position: relative;
           width: 24px;
           padding: 5px 15px;
-          background: #000;
-          opacity: 0.4; }
+          background: rgba(0, 0, 0, 0.4); }
           #main-carousel .search-slider ul li.prev img, #main-carousel .search-slider ul li.next img {
             width: 100% !important;
             height: 100% !important;
             min-width: 0;
             min-height: 0; }
         #main-carousel .search-slider ul li.prev {
-          background: black url("../images/pages/home/ico-arrow-pre.png") 10px 10px no-repeat; }
+          background: black url("../images/pages/home/ico-arrow-pre.png") 10px 5px no-repeat; }
         #main-carousel .search-slider ul li.next {
-          background: black url("../images/pages/home/ico-arrow-next.png") 15px 10px no-repeat; }
+          background: black url("../images/pages/home/ico-arrow-next.png") 15px 5px no-repeat; }
+        #main-carousel .search-slider ul li.title {
+          text-align: left;
+          padding-left: 10px; }
+        #main-carousel .search-slider ul li.line {
+          width: 1px; }
+          #main-carousel .search-slider ul li.line div {
+            width: 1px;
+            height: 30px;
+            position: absolute;
+            background: #fff;
+            top: 15px; }
+        #main-carousel .search-slider ul li.button {
+          width: 140px; }
+          #main-carousel .search-slider ul li.button a {
+            height: 20px;
+            line-height: 20px;
+            width: 70px;
+            margin-top: 10px; }
+        #main-carousel .search-slider ul li.selectbox {
+          width: 140px;
+          text-align: left;
+          margin-left: 5px;
+          margin-right: 5px; }
     #main-carousel .search-slider .search-detail {
       margin: 0 5px;
       height: 100%;
-      background: #000;
-      opacity: 0.4; }
+      background: rgba(0, 0, 0, 0.4); }
 
 .resize.fullscreen {
   width: 100%; }
@@ -439,10 +466,6 @@ select.selecthome {
   -moz-appearance: button;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -webkit-padding-end: 20px;
-  -moz-padding-end: 20px;
-  -webkit-padding-start: 15px;
-  -moz-padding-start: 15px;
   background-color: #fff;
   /* fallback color if gradients are not supported */
   background: transparent url(../images/pages/home/select.png) center right no-repeat;
@@ -455,14 +478,14 @@ select.selecthome {
   padding-bottom: 2px;
   text-overflow: ellipsis;
   white-space: nowrap;
-  height: 36px;
-  width: 145px;
+  height: 33px;
+  width: 130px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
   outline: none; }
-  select.selecthome.error {
-    border: 1px solid red; }
+  select.selecthome option {
+    color: #000; }
 
 .row-history {
   margin-top: 55px; }

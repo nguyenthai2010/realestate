@@ -61,30 +61,37 @@
                 <li >
                     <div class="search-detail">
                         <ul>
-                            <li>
+                            <li class="title">
                                 Find your dream home
                             </li>
                             <li class="selectbox">
                                 <select class="selecthome" name="s_types">
                                     <option value="">STOREY</option>
+                                    <option value="">STOREY</option>
+                                    <option value="">STOREY</option>
+                                    <option value="">STOREY</option>
+                                    <option value="">STOREY</option>
                                 </select>
                             </li>
+                            <li class="line"><div></div></li>
                             <li class="selectbox">
                                 <select class="selecthome" name="s_types">
                                     <option value="">BATH</option>
                                 </select>
                             </li>
+                            <li class="line"><div></div></li>
                             <li class="selectbox">
                                 <select class="selecthome" name="s_types">
                                     <option value="">BED</option>
                                 </select>
                             </li>
+                            <li class="line"><div></div></li>
                             <li class="selectbox">
                                 <select class="selecthome" name="s_types">
                                     <option value="">LOT WIDTH</option>
                                 </select>
                             </li>
-                            <li>
+                            <li class="button">
                                 <a class="btn-homepage-menu btnpromotion" href="#">SEARCH</a>
                             </li>
                         </ul>
