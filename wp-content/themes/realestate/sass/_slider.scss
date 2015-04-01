@@ -64,7 +64,7 @@
 
   .search-slider {
     position: absolute;
-    display: none;
+    display: block;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -78,6 +78,7 @@
       li {
         display: table-cell;
         height: 44px;
+        text-align: center;
 
         &.prev, &.next {
           position: relative;
@@ -93,6 +94,14 @@
             min-width: 0;
             min-height: 0;
           }
+        }
+
+        &.prev {
+          background: #000 url("../images/pages/home/ico-arrow-pre.png") 10px 10px no-repeat;
+        }
+
+        &.next {
+          background: #000 url("../images/pages/home/ico-arrow-next.png") 15px 10px no-repeat;
         }
 
       }
@@ -143,5 +152,38 @@
       }
     }
 
+  }
+}
+
+select.selecthome{
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -webkit-padding-end: 20px;
+  -moz-padding-end: 20px;
+  -webkit-padding-start: 15px;
+  -moz-padding-start: 15px;
+  background-color: #fff; /* fallback color if gradients are not supported */
+  background: transparent url(../images/pages/home/select.png) center right no-repeat;
+
+  border: 0;
+
+  color: #fff;
+  font-size: inherit;
+  margin: 0;
+  overflow: hidden;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 36px;
+  width: 145px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  outline: none;
+  &.error{
+    border: 1px solid red;
   }
 }

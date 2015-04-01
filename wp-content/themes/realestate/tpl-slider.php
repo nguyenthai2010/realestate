@@ -60,12 +60,33 @@
                 <li class="prev"></li>
                 <li >
                     <div class="search-detail">
-                        <span>Find your dream home</span>
                         <ul>
-                            <li><a>Storey</a></li>
-                            <li><a>Bath</a></li>
-                            <li><a>Bed</a></li>
-                            <li><a>Lot width</a></li>
+                            <li>
+                                Find your dream home
+                            </li>
+                            <li class="selectbox">
+                                <select class="selecthome" name="s_types">
+                                    <option value="">STOREY</option>
+                                </select>
+                            </li>
+                            <li class="selectbox">
+                                <select class="selecthome" name="s_types">
+                                    <option value="">BATH</option>
+                                </select>
+                            </li>
+                            <li class="selectbox">
+                                <select class="selecthome" name="s_types">
+                                    <option value="">BED</option>
+                                </select>
+                            </li>
+                            <li class="selectbox">
+                                <select class="selecthome" name="s_types">
+                                    <option value="">LOT WIDTH</option>
+                                </select>
+                            </li>
+                            <li>
+                                <a class="btn-homepage-menu btnpromotion" href="#">SEARCH</a>
+                            </li>
                         </ul>
                     </div>
                 </li>
