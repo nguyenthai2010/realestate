@@ -57,7 +57,7 @@
 
         <nav class="search-slider">
             <ul>
-                <li class="prev"></li>
+                <li class="prev"><!--<a class="carousel-control left" href="#main-carousel" data-slide="prev">&nbsp;</a>--></li>
                 <li >
                     <div class="search-detail">
                         <ul>
@@ -97,7 +97,7 @@
                         </ul>
                     </div>
                 </li>
-                <li class="next"></li>
+                <li class="next"><!--<a class="carousel-control right" href="#main-carousel" data-slide="next">&nbsp;</a>--></li>
             </ul>
         </nav>
     </div>

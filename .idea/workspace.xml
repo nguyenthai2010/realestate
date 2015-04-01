@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be15e2a8-27e3-4f75-9e45-d26d02dd68ff" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/realestate/.sass-cache/87e8be333eae6486479da66c01ebf0936db022a8/_slider.scssc" afterPath="$PROJECT_DIR$/wp-content/themes/realestate/.sass-cache/87e8be333eae6486479da66c01ebf0936db022a8/_slider.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/realestate/sass/_slider.scss" afterPath="$PROJECT_DIR$/wp-content/themes/realestate/sass/_slider.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/realestate/css/custom.css.map" afterPath="$PROJECT_DIR$/wp-content/themes/realestate/css/custom.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/realestate/css/custom.css" afterPath="$PROJECT_DIR$/wp-content/themes/realestate/css/custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/realestate/tpl-slider.php" afterPath="$PROJECT_DIR$/wp-content/themes/realestate/tpl-slider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-config.php" afterPath="$PROJECT_DIR$/wp-config.php" />
     </list>
     <ignored path="BE.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,24 +27,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_slider.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_slider.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/sass/_slider.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33272058" vertical-offset="379" max-vertical-offset="4640">
+            <state vertical-scroll-proportion="-2.2407408" vertical-offset="439" max-vertical-offset="4640">
               <caret line="28" column="16" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tpl-slider.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tpl-slider.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/tpl-slider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.206897" vertical-offset="844" max-vertical-offset="1400">
-              <caret line="57" column="9" selection-start-line="57" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-              <folding>
-                <element signature="tag#nav#1;tag#div#0;tag#div#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.705036" vertical-offset="788" max-vertical-offset="2280">
+              <caret line="59" column="120" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="123" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -92,8 +84,8 @@
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/sass/_style.scss" />
         <option value="$PROJECT_DIR$/wp-config.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/index.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/realestate/tpl-slider.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/sass/_slider.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/realestate/tpl-slider.php" />
       </list>
     </option>
   </component>
@@ -689,20 +681,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/tpl-slider.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/sass/_slider.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.206897" vertical-offset="844" max-vertical-offset="1400">
-          <caret line="57" column="9" selection-start-line="57" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-          <folding>
-            <element signature="tag#nav#1;tag#div#0;tag#div#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="-2.2407408" vertical-offset="439" max-vertical-offset="4640">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/sass/_slider.scss">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/tpl-slider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33272058" vertical-offset="379" max-vertical-offset="4640">
-          <caret line="28" column="16" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.705036" vertical-offset="788" max-vertical-offset="2280">
+          <caret line="59" column="120" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="123" />
           <folding />
         </state>
       </provider>
