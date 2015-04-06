@@ -104,22 +104,40 @@
   }
   .landList{
     clear: both;
+    padding-top: 20px;
     .item{
+      border: 1px solid #dfdfdf;
+      border-radius: 2px;
+      background: #fff;
       .pad{
-        
+        padding: 15px;
       }
       img{
-        
+        float: left;
+        margin-right: 25px;
       }
       .desc{
-        .h3{
-          
+        float: left;
+        width: 495px;
+        padding-right: 120px;
+        h3{
+          color: #666;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400;
+          font-size: 18px;
+          text-transform: uppercase;
         } 
         .pos{
-          
+          color: #666;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400;
+          font-size: 14px;
         }
         .text{
-          
+          color: #666;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400;
+          font-size: 12px;
         }
       }
       .price{
