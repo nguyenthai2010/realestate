@@ -1,0 +1,148 @@
+.homeLand{
+  .margin-left-0{
+    margin-left: 0;
+  }
+  .bigtitle{
+    font-family: "HelveticaNeueLTStd-Md";
+    font-size: 24px;
+    color: #f38233;
+    text-transform: uppercase;
+  }
+  
+  .headerbox{
+    .paging{
+      .total-title{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #666;
+        span{
+          color: #f38233;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 500;
+          font-size: 16px;
+        }
+      }
+      ul{
+        list-style-type: none;
+        margin-left: 0;
+        padding-top: 10px;
+        li{
+          display: inline-block;
+          margin-right: 3px;
+          a, span.current{
+            padding: 3px 5px;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            background: #cdcdcd;
+            border-radius: 5px;
+          }
+          &:hovver a{
+            background: #f59b5c;
+          }
+          span.current{
+            background: #f59b5c;
+          }
+        }
+      }
+    }
+    .viewhomeland{
+      .middle{
+        margin: 28px auto 0;
+          display: table;
+      }
+      a{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        color: #fff;
+        padding: 8px 11px;
+          word-wrap: normal;
+          display: inline-block;
+        border-radius: 10px;
+          line-height: 1;
+        &.viewlist{
+          background: #f59b5c;
+          margin-right: 4px;
+          span{
+            background: url(../images/homeland/list.png) no-repeat left center;
+            padding-left: 27px;
+            word-break: inherit;
+            display: inline-block;
+          }
+        }
+        &.viewmap{
+          background: #cdcdcd;
+          span{
+            background: url(../images/homeland/map.png) no-repeat left center;
+            padding-left: 31px;
+            word-break: inherit;
+      display: inline-block;
+          }
+        }
+      }
+    }
+    .orderbybox{
+      .orderbyleft{
+          padding-top: 10px;
+      }
+      label{
+        color: #f38233;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+      }
+      .select{
+        width: 260px;
+      }
+    }
+  }
+  .headerbox .paging ul li a:hover{
+    background: #f59b5c;
+  }
+  .landList{
+    clear: both;
+    .item{
+      .pad{
+        
+      }
+      img{
+        
+      }
+      .desc{
+        .h3{
+          
+        } 
+        .pos{
+          
+        }
+        .text{
+          
+        }
+      }
+      .price{
+        .num{
+          
+        }
+        ul{
+          li{
+            span{
+              
+              &.bed{
+                
+              }
+              &.bath{
+                
+              }
+              &.car{
+                
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
