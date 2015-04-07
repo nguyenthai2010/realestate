@@ -164,29 +164,7 @@
                 <div class="separator"></div>
                 <h1 class="text-center">CURRENT PROMOTIONS</h1>
                 <div class="separator"></div>
-                <div class="row">
-                    <div class="span4 gap15">
-                        <div class="pic"><a class=""><img src="images/pages/home/promotion_03.png" style="visibility: visible; opacity: 1;"></a> <a href="http://cdn.pimg.co/p/800x600/456987/fff/img.png" class="zoom img-circle" rel="prettyPhoto[id]"> </a> </div>
-                        <h3><a href="#">Masterton Mansion Package</a></h3>
-                        <p>The Masterton Mansion Package is the most popular promotion we've EVER offered and it's easy to see why. </p>
-                        <a class="btn-homepage-menu btnpromotion" href="#">LEARN MORE</a>
-                    </div>
-                    <div class="span4 gap15">
-                        <div class="pic"><a class=""><img src="images/pages/home/promotion_02.png" style="visibility: visible; opacity: 1;"></a> <a href="http://cdn.pimg.co/p/800x600/254125/fff/img.png" class="zoom img-circle" rel="prettyPhoto[id]"> </a> </div>
-                        <h3><a href="#">YES INCLUSSIONS Special Offers</a></h3>
-                        <p>A huge choice of bonus features and inclusions. Now on offer when you say YES…to your new Masterton Home. </p>
-                        <a class="btn-homepage-menu btnpromotion" href="#">LEARN MORE</a>
-                    </div>
-                    <div class="span4 gap15">
-                        <div class="pic"><a class=""><img src="images/pages/home/promotion_01.png" style="visibility: visible; opacity: 1;"></a> <a href="http://cdn.pimg.co/p/800x600/632563/fff/img.png" class="zoom img-circle" rel="prettyPhoto[id]"> </a> </div>
-                        <h3><a href="#">Interior Design Workshop</a></h3>
-                        <p>
-                            Learn the secrets of successful styling by incorporating the elements and principles of design.
-                        </p>
-                        <a class="btn-homepage-menu btnpromotion" href="#">LEARN MORE</a>
-                    </div>
-                    <div class="clr"></div>
-                </div>
+                <?php get_template_part('tpl','promotion')?>
                 <!-- /now_page -->
             </div>
 

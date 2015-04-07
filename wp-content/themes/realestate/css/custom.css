@@ -92,7 +92,10 @@
     top: -2px; }
 
 body, p {
-  color: #444; }
+  color: #444;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1.2; }
 
 #content {
   padding: 0; }
@@ -1185,6 +1188,18 @@ select.selecthome {
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
         font-size: 12px; }
+
+.content_detail_new h2 {
+  color: #f38233;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  padding-top: 40px; }
+.content_detail_new p {
+  font-size: 16px; }
+  .content_detail_new p strong {
+    color: #f38233;
+    font-weight: 700; }
 
 @media only screen and (min-width: 890px) and (max-width: 1060px) {
   .menu ul li a, .menu ul li a.ms_top {

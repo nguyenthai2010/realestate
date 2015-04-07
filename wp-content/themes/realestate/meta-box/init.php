@@ -6,7 +6,7 @@ global $meta_boxes;
 
 $meta_boxes = array();
 
-// 1st meta box
+// 1st meta box - Home Designs
 $meta_boxes[] = array(
     // Meta box id, UNIQUE per meta box. Optional since 4.1.5
     'id' => 'homedesign',
@@ -101,7 +101,7 @@ $meta_boxes[] = array(
     )
 );
 
-// 2nd meta box
+// 2nd meta box - testimonials
 $meta_boxes[] = array(
     // Meta box id, UNIQUE per meta box. Optional since 4.1.5
     'id' => 'testimonials',
@@ -127,6 +127,36 @@ $meta_boxes[] = array(
             'type'  => 'url'
         ),
 
+    )
+);
+
+// 3rd meta box - promotion
+$meta_boxes[] = array(
+    // Meta box id, UNIQUE per meta box. Optional since 4.1.5
+    'id' => 'promotion',
+
+    // Meta box title - Will appear at the drag and drop handle bar. Required.
+    'title' => 'Description',
+
+    // Post types, accept custom post types as well - DEFAULT is array('post'). Optional.
+    'pages' => array( 'promotion'),
+
+    // Where the meta box appear: normal (default), advanced, side. Optional.
+    'context' => 'normal',
+
+    // Order of meta box: high (default), low. Optional.
+    'priority' => 'high',
+
+    // List of meta fields
+    'fields' => array(
+        // TEXT
+        array(
+            'name'  => '',
+            'id'    => "{$prefix}description",
+            'type' => 'textarea',
+            'cols' => 20,
+            'rows' => 3,
+        )
     )
 );
 
