@@ -1,3 +1,6 @@
+.clear{
+  clear: both;
+}
 .homeLand{
   .margin-left-0{
     margin-left: 0;
@@ -64,7 +67,6 @@
         border-radius: 10px;
           line-height: 1;
         &.viewlist{
-          background: #f59b5c;
           margin-right: 4px;
           span{
             background: url(../images/homeland/list.png) no-repeat left center;
@@ -79,8 +81,11 @@
             background: url(../images/homeland/map.png) no-repeat left center;
             padding-left: 31px;
             word-break: inherit;
-      display: inline-block;
+            display: inline-block;
           }
+        }
+        &:hover, &.active{
+          background: #f59b5c;
         }
       }
     }
@@ -109,8 +114,9 @@
       border: 1px solid #dfdfdf;
       border-radius: 2px;
       background: #fff;
+      margin-bottom: 20px;
       .pad{
-        padding: 15px;
+        padding: 15px 17px 15px 15px;
       }
       img{
         float: left;
@@ -126,36 +132,100 @@
           font-weight: 400;
           font-size: 18px;
           text-transform: uppercase;
+          margin-bottom:15px; 
         } 
         .pos{
           color: #666;
           font-family: 'Roboto', sans-serif;
           font-weight: 400;
           font-size: 14px;
+          background: url(../images/homeland/pos.png) no-repeat left center;
+          padding-left: 15px;
+          margin-bottom: 15px;
+          display: inline-block;
         }
         .text{
           color: #666;
           font-family: 'Roboto', sans-serif;
           font-weight: 400;
           font-size: 12px;
+          a{
+            color: #f59b5c;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            text-decoration: underline;
+          }
         }
       }
       .price{
+        float: right;
+        margin-top: 6px;
+        width: 160px;
         .num{
-          
+          color: #fff;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400;
+          font-size: 24px;
+          background: #f59b5c;
+          text-align: center;
+          padding: 6px 0;
+          border-radius: 5px;
         }
         ul{
+          list-style-type: none;
+          background: #efefef;
+          border: 1px solid #dfdfdf;
+          border-radius: 5px;
+          margin-left: 0;
+          margin-top: 5px;
+          padding: 8px 7px 2px;
           li{
+            label{
+              font-family: 'Roboto', sans-serif;
+              font-weight: 400;
+              font-size: 14px;
+              color: #666;
+              display: inline-block;
+            }
             span{
-              
-              &.bed{
-                
+              font-family: 'Roboto', sans-serif;
+              font-weight: 400;
+              font-size: 14px;
+              color: #666;
+              float:right;
+              i{
+                display: inline-block;
+                  margin-top: 4px;
               }
-              &.bath{
-                
+              span{
+                width: 25px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+                color: #f59b5c;
+                  text-align: right;
               }
-              &.car{
-                
+            }
+            &.bed{
+              i{
+                background: url(../images/homeland/bed.png) no-repeat;
+                width: 18px;
+                height: 9px;
+              }
+            }
+            &.bath{
+              i{
+                background: url(../images/homeland/bath.png) no-repeat;
+                width: 18px;
+                height: 9px;
+              }
+            }
+            &.car{
+              i{
+                background: url(../images/homeland/car.png) no-repeat;
+                width: 18px;
+                height: 14px;
               }
             }
           }

@@ -1,4 +1,4 @@
-<div class="now_carousel">
+<div class="now_carousel" style="min-height: 560px;">
     <div id="main-carousel" class="carousel slide">
         <!-- Carousel items -->
         <div class="carousel-inner">
@@ -59,43 +59,66 @@
             <ul>
                 <li class="prev"><!--<a class="carousel-control left" href="#main-carousel" data-slide="prev">&nbsp;</a>--></li>
                 <li >
-                    <div class="search-detail">
-                        <ul>
-                            <li class="title">
-                                Find your dream home
-                            </li>
-                            <li class="selectbox">
-                                <select class="selecthome" name="s_types">
-                                    <option value="">STOREY</option>
-                                    <option value="">STOREY</option>
-                                    <option value="">STOREY</option>
-                                    <option value="">STOREY</option>
-                                    <option value="">STOREY</option>
-                                </select>
-                            </li>
-                            <li class="line"><div></div></li>
-                            <li class="selectbox">
-                                <select class="selecthome" name="s_types">
-                                    <option value="">BATH</option>
-                                </select>
-                            </li>
-                            <li class="line"><div></div></li>
-                            <li class="selectbox">
-                                <select class="selecthome" name="s_types">
-                                    <option value="">BED</option>
-                                </select>
-                            </li>
-                            <li class="line"><div></div></li>
-                            <li class="selectbox">
-                                <select class="selecthome" name="s_types">
-                                    <option value="">LOT WIDTH</option>
-                                </select>
-                            </li>
-                            <li class="button">
-                                <a class="btn-homepage-menu btnpromotion" href="#">SEARCH</a>
-                            </li>
-                        </ul>
-                    </div>
+                	<form action="<?php echo bloginfo('url')?>/result/" method="get" id="searchDesign">
+	                    <div class="search-detail">
+	                        <ul>
+	                            <li class="title">
+	                                Find your dream home
+	                            </li>
+	                            <li class="selectbox">
+	                                <select class="selecthome" name="s_types">
+					    				<option value="">STOREY</option>
+					    				<?php
+											$categories = get_categories(); 
+											//print_r($categories);
+											$i = 0;
+											  foreach ($categories as $category) {
+											  	$i++;
+											  	$catname = $category->cat_name;
+												$catslug = $category->slug;
+										?>
+										<option value="<?php echo $catslug;?>"><?php echo $catname;?></option>
+										<?php }?>
+					    			</select>
+	                            </li>
+	                            <li class="line"><div></div></li>
+	                            <li class="selectbox">
+	                                <select class="selecthome" name="bedroom">
+	                                    <option value="">BATH</option>
+	                                    <option value="1">1</option>
+	                                    <option value="2">2</option>
+	                                    <option value="3">3</option>
+	                                    <option value="4">4</option>
+	                                </select>
+	                            </li>
+	                            <li class="line"><div></div></li>
+	                            <li class="selectbox">
+	                                <select class="selecthome" name="bathroom">
+	                                    <option value="">BED</option>
+	                                    <option value="1">1</option>
+	                                    <option value="2">2</option>
+	                                    <option value="3">3</option>
+	                                    <option value="4">4</option>
+	                                    <option value="5">5</option>
+	                                </select>
+	                            </li>
+	                            <li class="line"><div></div></li>
+	                            <li class="selectbox">
+	                                <select class="selecthome" name="s_types">
+	                                    <option value="">LOT WIDTH</option>
+	                                    <?php
+	                                    	for ($i = 8; $i <= 36; $i++) {
+	                                    ?>
+	                                    <option value="<?php echo $i;?>"><?php echo $i;?></option>
+	                                    <?php }?>
+	                                </select>
+	                            </li>
+	                            <li class="button">
+	                                <a class="btn-homepage-menu btnpromotion" onclick="$('#searchDesign').submit();" href="javascript:void(0);">SEARCH</a>
+	                            </li>
+	                        </ul>
+	                    </div>
+	                  </form>
                 </li>
                 <li class="next"><!--<a class="carousel-control right" href="#main-carousel" data-slide="next">&nbsp;</a>--></li>
             </ul>

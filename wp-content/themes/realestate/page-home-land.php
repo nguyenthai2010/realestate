@@ -22,9 +22,9 @@
 						<li><a class='page-numbers' href='http://localhost/page/14/'>9</a></li>
 					</ul>
 	    		</div>
-	    		<div class="viewhomeland span4">
+	    		<div class="viewhomeland span5">
 	    			<div class="middle">
-	    				<a href="#" class="viewlist">
+	    				<a href="#" class="viewlist active">
 		    				<span>VIEW<br/>LIST</span>
 		    			</a>
 		    			<a href="#" class="viewmap">
@@ -64,18 +64,53 @@
 	    					<ul>
 	    						<li class="bed">
 	    							<label>Bedrooms</label>
-	    							<span>4</span>
+	    							<span><i></i><span>4</span></span>
 	    						</li>
 	    						<li class="bath">
 	    							<label>Bathrooms</label>
-	    							<span>2</span>
+	    							<span><i></i><span>2</span></span>
 	    						</li>
 	    						<li class="car">
 	    							<label>Car Spaces</label>
-	    							<span>2</span>
+	    							<span><i></i><span>2</span></span>
 	    						</li>
 	    					</ul>
 	    				</div>
+	    				<div class="clear"></div>
+	    			</div>
+	    		</div>
+	    		<div class="item">
+	    			<div class="pad">
+	    				<img src="images/homeland/i-1.jpg"/>
+	    				<div class="desc">
+	    					<h3>"Prelude Elite - 600SQM Block Masterton Home and Land Package" </h3>
+	    					<span class="pos">"Prelude Elite - 600SQM Block Masterton Home and Land Package" </span>
+	    					<div class="text">
+	    						** 
+	    						SECURE YOUR DREAM HOME TODAY WITH A 100% FIXED HOME & LAND PACKAGE PRICE ** DESIGN FEATURES INCLUDE: Spacious, open plan living Home Theatre Gourmet Artline kitchen Luxury Createc high glos...
+	    						<a href="#">View the full details </a>
+	    					</div>
+	    				</div>
+	    				<div class="price">
+	    					<div class="num">
+	    						$749,500
+	    					</div>
+	    					<ul>
+	    						<li class="bed">
+	    							<label>Bedrooms</label>
+	    							<span><i></i><span>4</span></span>
+	    						</li>
+	    						<li class="bath">
+	    							<label>Bathrooms</label>
+	    							<span><i></i><span>2</span></span>
+	    						</li>
+	    						<li class="car">
+	    							<label>Car Spaces</label>
+	    							<span><i></i><span>2</span></span>
+	    						</li>
+	    					</ul>
+	    				</div>
+	    				<div class="clear"></div>
 	    			</div>
 	    		</div>
 	    	</div>
