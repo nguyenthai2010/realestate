@@ -87,6 +87,34 @@ $meta_boxes[] = array(
     )
 );
 
+// 2nd meta box
+$meta_boxes[] = array(
+    // Meta box id, UNIQUE per meta box. Optional since 4.1.5
+    'id' => 'testimonials',
+
+    // Meta box title - Will appear at the drag and drop handle bar. Required.
+    'title' => 'Testimonials',
+
+    // Post types, accept custom post types as well - DEFAULT is array('post'). Optional.
+    'pages' => array( 'testimonials'),
+
+    // Where the meta box appear: normal (default), advanced, side. Optional.
+    'context' => 'normal',
+
+    // Order of meta box: high (default), low. Optional.
+    'priority' => 'high',
+
+    // List of meta fields
+    'fields' => array(
+        // TEXT
+        array(
+            'name'  => 'Youtube\'s URL ',
+            'id'    => "{$prefix}type",
+            'type'  => 'url'
+        ),
+
+    )
+);
 
 /********************* META BOX REGISTERING ***********************/
 

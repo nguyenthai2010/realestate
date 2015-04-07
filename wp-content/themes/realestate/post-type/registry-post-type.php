@@ -113,7 +113,7 @@ function register_custom_contacts() {
     register_post_type('contacts',$contacts);
 }
 
-//Contact Us
+//Custom Sliders
 add_action( 'init', 'register_custom_sliders' );
 function register_custom_sliders() {
     $sliders_label = array(
