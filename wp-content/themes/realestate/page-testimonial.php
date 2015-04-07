@@ -26,42 +26,21 @@
     <div class="row">
         <?php
         foreach ($queryRows as $row) {
+            //print_r($row);
             $i++;
-            $idthump = get_post_meta($row->ID,'_cmb_gallery_image_thump',true);
-            $idlarge = get_post_meta($row->ID,'_cmb_gallery_image_large',true);
+            $url = wp_get_attachment_url(get_post_thumbnail_id($row->ID));
+            $youtube_url = get_post_meta($row->ID,'tt_type',true);
+
             ?>
             <div class="span3">
-                <div class="pic"> <a class=""><img src="images/pages/testimonials/p-1.png" style="visibility: visible; opacity: 1;"></a> <a href="http://cdn.pimg.co/p/800x600/456987/fff/img.png" class="zoom img-circle" rel="prettyPhoto[id]"></a> </div>
-                <h3><a href="#">Brian & Elayne</a></h3>
-                <p>Brian & Elayne talk about their experience of building a new home with Masterton Homes.</p>
-                <a class="btn-color-watch" href="#"><img src="images/pages/testimonials/play_s.png" width="25">WATCH NOW</a>
+                <div class="pic"> <a class=""><img src="<?php echo $url; ?>" style="visibility: visible; opacity: 1;"></a> <a href="<?php echo $youtube_url; ?>" class="zoom img-circle" rel="prettyPhoto[id]"></a> </div>
+                <h3><a href="#"><?php echo $row->post_name;?></a></h3>
+                <p><?php echo $row->post_content;?></p>
+                <a class="btn-color-watch" href="<?php echo $youtube_url; ?>" rel="prettyPhoto[id]"><img src="images/pages/testimonials/play_s.png" width="25">WATCH NOW</a>
             </div>
         <?php }?>
 
-        <!--<div class="span3">
-            <div class="pic"> <a class=""><img src="images/pages/testimonials/p-1.png" style="visibility: visible; opacity: 1;"></a> <a href="http://cdn.pimg.co/p/800x600/456987/fff/img.png" class="zoom img-circle" rel="prettyPhoto[id]"></a> </div>
-            <h3><a href="#">Brian & Elayne</a></h3>
-            <p>Brian & Elayne talk about their experience of building a new home with Masterton Homes.</p>
-            <a class="btn-color-watch" href="#"><img src="images/pages/testimonials/play_s.png" width="25">WATCH NOW</a>
-        </div>
-        <div class="span3">
-            <div class="pic"> <a class=""><img src="images/pages/testimonials/p-2.png" style="visibility: visible; opacity: 1;"></a> <a href="http://cdn.pimg.co/p/800x600/456987/fff/img.png" class="zoom img-circle" rel="prettyPhoto[id]"></a> </div>
-            <h3><a href="#">GREG & Sally </a></h3>
-            <p>GREG & Sally  talk about their experience of building a new home with Masterton Homes.</p>
-            <a class="btn-color-watch" href="#"><img src="images/pages/testimonials/play_s.png" width="25">WATCH NOW</a>
-        </div>
-        <div class="span3">
-            <div class="pic"> <a class=""><img src="images/pages/testimonials/p-3.png" style="visibility: visible; opacity: 1;"></a> <a href="http://cdn.pimg.co/p/800x600/456987/fff/img.png" class="zoom img-circle" rel="prettyPhoto[id]"></a> </div>
-            <h3><a href="#">MATTHEW & ALISHA</a></h3>
-            <p>MATTHEW & ALISHA talk about their experience of building a new home with Masterton Homes.</p>
-            <a class="btn-color-watch" href="#"><img src="images/pages/testimonials/play_s.png" width="25">WATCH NOW</a>
-        </div>
-        <div class="span3">
-            <div class="pic"> <a class=""><img src="images/pages/testimonials/p-4.png" style="visibility: visible; opacity: 1;"></a> <a href="http://cdn.pimg.co/p/800x600/456987/fff/img.png" class="zoom img-circle" rel="prettyPhoto[id]"></a> </div>
-            <h3><a href="#">PETER & DAWN</a></h3>
-            <p>PETER & DAWN talk about their experience of building a new home with Masterton Homes.</p>
-            <a class="btn-color-watch" href="#"><img src="images/pages/testimonials/play_s.png" width="25">WATCH NOW</a>
-        </div>-->
+
     </div>
     <div class="clr"></div>
     <div class="separator_small"></div>
