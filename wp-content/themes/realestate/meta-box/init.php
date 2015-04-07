@@ -25,12 +25,7 @@ $meta_boxes[] = array(
 
     // List of meta fields
     'fields' => array(
-        // TEXT
-        array(
-            'name'  => 'Text',
-            'id'    => "{$prefix}type",
-            'type'  => 'text'
-        ),
+
         array(
             'name' => 'Size (SQM)',
             'id'   =>  "{$prefix}size",
@@ -39,9 +34,7 @@ $meta_boxes[] = array(
         array(
             'name' => 'Width (Metres)',
             'id'   => "{$prefix}width",
-            'type' => 'number',
-            'min'  => 0,
-            'step' => 1,
+            'type' => 'text'
         ),
         array(
             'name' => 'Picture',
@@ -83,7 +76,28 @@ $meta_boxes[] = array(
                 '2'   => '2',
                 '3'     => '3'
             )
+        ),
+        array(
+            'name' => 'Storeys',
+            'id'   =>  "{$prefix}storeys",
+            'type' => 'text',
+        ),
+        array(
+            'name' => 'Display Centres',
+            'id'   =>  "{$prefix}display_centres",
+            'type' => 'text',
+        ),
+        array(
+            'name' => 'Facades',
+            'id'   =>  "{$prefix}facades",
+            'type' => 'text',
+        ),
+        array(
+            'name' => 'Address',
+            'id'   =>  "{$prefix}address",
+            'type' => 'text',
         )
+
     )
 );
 
