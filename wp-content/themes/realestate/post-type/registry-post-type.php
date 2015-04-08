@@ -182,7 +182,7 @@ function register_custom_homeland() {
         'hierarchical' => false,
         'menu_position' => 5,
         'menu_icon'	=> get_bloginfo('template_url').'/post-type/images/facities.png',
-        'taxonomies'		=> array('category'),
+        //'taxonomies'		=> array('category'),
         'supports' => array('title','editor','thumbnail'),
     );
     register_post_type('homeland',$promotion);
