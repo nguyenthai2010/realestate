@@ -25,11 +25,18 @@
   background: #bc8eda;
   padding-bottom: 50px;
 
-
+  .row {
+    margin-left: 0;
+    display: table;
+    width: 100%;
+    margin: 0 auto;
+  }
 
   .span4 {
     text-align: center;
     background: #fff;
+    margin: 0 10px;
+    width: 280px;
 
     h3 {
       a {

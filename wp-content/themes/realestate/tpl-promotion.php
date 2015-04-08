@@ -8,7 +8,7 @@ $args = array(
 $queryRows = get_posts($args);
 ?>
 
-<div class="row">
+<div class="row" style="display: table; width: 100%">
     <?php
     foreach ($queryRows as $row) {
         //print_r($row);
@@ -21,13 +21,12 @@ $queryRows = get_posts($args);
         //echo $row->post_content;
         ?>
 
-        <div class="span4 gap15">
+        <div class="span4 gap15" style="display: table-cell;">
             <div class="pic"><a class=""><img src="<?php echo $urlimage; ?>" style="visibility: visible; opacity: 1;"></a> <a href="<?php echo $urllink;?>" class="zoom img-circle"> </a> </div>
-            <h3><a href="<?php echo $urllink;?>"><?php echo $row->post_name;?></a></h3>
+            <h3><a href="<?php echo $urllink;?>"><?php echo $row->post_title;?></a></h3>
             <p><?php echo $description;?></p>
             <a class="btn-homepage-menu btnpromotion" href="<?php echo $urllink;?>">LEARN MORE</a>
         </div>
     <?php }?>
 
-    <div class="clr"></div>
 </div>

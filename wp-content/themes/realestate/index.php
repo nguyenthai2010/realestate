@@ -175,7 +175,7 @@
 
     <div class="row-slider fullscreen">
         <div class="resize">
-            <div id="gallery" class="sliderStyle1">
+            <div id="gallery" class="sliderStyle1 gallery3" >
                 <div class="container">
                     <div class="row">
                         <div class="row-fluid text-center">
@@ -184,104 +184,37 @@
                         </div>
                     </div>
                     <ul id="gallery-carousel" class="jcarousel-skin-tango" >
-                        <li>
-                            <div class="item">
-                                <div class="pic"> <img src="images/pages/home/thum1.png" alt="" height="234" width="139" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
-                                <div class="item-caption">
-                                    <p>1 Affinity</p>
-                                    <ul>
-                                        <li class="icon1">4</li>
-                                        <li class="icon4">2</li>
-                                        <li class="icon2">2</li>
-                                        <li class="icon3"></li>
-                                    </ul>
+                        <?php
+                        $i = 0;
+                        $args = array(
+                            'post_type' 	 => 'testimonials',
+                            'posts_per_page' => 20 ,
+                            'order'			 => 'asc'
+                        );
+                        $queryRows = get_posts($args);
+
+                        foreach ($queryRows as $row) {
+                            $i++;
+                            $url = wp_get_attachment_url(get_post_thumbnail_id($row->ID));
+                            $youtube_url = get_post_meta($row->ID,'tt_type',true);
+                            //
+
+                            $description = get_post_meta($row->ID,'tt_description',true);
+                            //echo $row->post_content;
+                            ?>
+
+
+                            <li>
+                                <div class="span3">
+                                    <div class="pic"> <a class=""><img src="<?php echo $url; ?>" style="visibility: visible; opacity: 1;"></a> <a href="<?php echo $youtube_url; ?>" class="zoom img-circle" rel="prettyPhoto[id]"></a> </div>
+                                    <h3><a href="#"><?php echo $row->post_name;?></a></h3>
+                                    <p><?php echo $row->post_content;?></p>
+                                    <a class="btn-color-watch" href="<?php echo $youtube_url; ?>" rel="prettyPhoto[id]"><img src="images/pages/testimonials/play_s.png" width="25">WATCH NOW</a>
                                 </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item">
-                                <div class="pic"> <img src="images/pages/home/thum1.png" alt="" height="234" width="139" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
-                                <div class="item-caption">
-                                    <p>2 Affinity</p>
-                                    <ul>
-                                        <li class="icon1">4</li>
-                                        <li class="icon4">2</li>
-                                        <li class="icon2">2</li>
-                                        <li class="icon3"></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item">
-                                <div class="pic"> <img src="images/pages/home/thum1.png" alt="" height="234" width="139" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
-                                <div class="item-caption">
-                                    <p>3 Affinity</p>
-                                    <ul>
-                                        <li class="icon1">4</li>
-                                        <li class="icon4">2</li>
-                                        <li class="icon2">2</li>
-                                        <li class="icon3"></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item">
-                                <div class="pic"> <img src="images/pages/home/thum1.png" alt="" height="234" width="139" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
-                                <div class="item-caption">
-                                    <p>4 Affinity</p>
-                                    <ul>
-                                        <li class="icon1">4</li>
-                                        <li class="icon4">2</li>
-                                        <li class="icon2">2</li>
-                                        <li class="icon3"></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item">
-                                <div class="pic"> <img src="images/pages/home/thum1.png" alt="" height="234" width="139" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
-                                <div class="item-caption">
-                                    <p>5 Affinity</p>
-                                    <ul>
-                                        <li class="icon1">4</li>
-                                        <li class="icon4">2</li>
-                                        <li class="icon2">2</li>
-                                        <li class="icon3"></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item">
-                                <div class="pic"> <img src="images/pages/home/thum1.png" alt="" height="234" width="139" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
-                                <div class="item-caption">
-                                    <p> 6 Affinity</p>
-                                    <ul>
-                                        <li class="icon1">4</li>
-                                        <li class="icon4">2</li>
-                                        <li class="icon2">2</li>
-                                        <li class="icon3"></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item">
-                                <div class="pic"> <img src="images/pages/home/thum1.png" alt="" height="234" width="139" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
-                                <div class="item-caption">
-                                    <p>Affinity</p>
-                                    <ul>
-                                        <li class="icon1">4</li>
-                                        <li class="icon4">2</li>
-                                        <li class="icon2">2</li>
-                                        <li class="icon3"></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
+                            </li>
+
+                        <?php }?>
+
                     </ul>
                 </div>
                 <!-- container -->

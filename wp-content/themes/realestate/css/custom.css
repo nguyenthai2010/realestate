@@ -512,9 +512,16 @@ select.selecthome {
 .row-promotion {
   background: #bc8eda;
   padding-bottom: 50px; }
+  .row-promotion .row {
+    margin-left: 0;
+    display: table;
+    width: 100%;
+    margin: 0 auto; }
   .row-promotion .span4 {
     text-align: center;
-    background: #fff; }
+    background: #fff;
+    margin: 0 10px;
+    width: 280px; }
     .row-promotion .span4 h3 {
       padding: 5px 10px; }
       .row-promotion .span4 h3 a {
