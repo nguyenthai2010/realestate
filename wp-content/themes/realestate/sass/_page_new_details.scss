@@ -1,8 +1,13 @@
 .content_detail_new {
-  h2 {
+  line-height: 1.3;
+  h2, h3 {
     color: #f38233;
     @include Roboto_bold(24px);
     padding-top: 40px;
+  }
+
+  h3 {
+    padding-top: 0;
   }
 
   p {
@@ -11,6 +16,36 @@
     strong {
       color: #f38233;
       font-weight: 700;
+    }
+
+    &.downloadpdf {
+      @include Roboto_italic(40px);
+
+      a {
+        float: left;
+      }
+
+      span {
+        display: block;
+        float: left;
+        padding-top: 65px;
+        padding-left: 10px;
+      }
+
+      strong {
+        color: #444;
+      }
+    }
+
+    img.floatleft {
+      float: left;
+      padding: 0 10px 10px 0;
+    }
+
+    &.imagedetail {
+      img {
+        padding: 5px 0;
+      }
     }
   }
 }

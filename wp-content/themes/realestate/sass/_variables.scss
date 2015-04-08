@@ -12,12 +12,22 @@ $color_main:#f38233;
 @mixin Roboto_regular( $value, $line:1.2 ) {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  font-size:$value;
   line-height: $line;
 }
 
 @mixin Roboto_bold( $value, $line:1.2 ) {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
+  font-size:$value;
+  line-height: $line;
+}
+
+@mixin Roboto_italic( $value, $line:1.2 ) {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size:$value;
+  font-style: italic;
   line-height: $line;
 }
 
