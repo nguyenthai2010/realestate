@@ -15,7 +15,7 @@ $meta_boxes[] = array(
     'title' => 'Home Design',
 
     // Post types, accept custom post types as well - DEFAULT is array('post'). Optional.
-    'pages' => array( 'post'),
+    'pages' => array( 'post','homeland'),
 
     // Where the meta box appear: normal (default), advanced, side. Optional.
     'context' => 'normal',
@@ -97,6 +97,45 @@ $meta_boxes[] = array(
             'id'   =>  "{$prefix}address",
             'type' => 'text',
         )
+
+    )
+);
+// 2nd meta box - Homeland
+$meta_boxes[] = array(
+    // Meta box id, UNIQUE per meta box. Optional since 4.1.5
+    'id' => 'homelands',
+
+    // Meta box title - Will appear at the drag and drop handle bar. Required.
+    'title' => 'Options',
+
+    // Post types, accept custom post types as well - DEFAULT is array('post'). Optional.
+    'pages' => array( 'homeland'),
+
+    // Where the meta box appear: normal (default), advanced, side. Optional.
+    'context' => 'normal',
+
+    // Order of meta box: high (default), low. Optional.
+    'priority' => 'high',
+
+    // List of meta fields
+    'fields' => array(
+        // TEXT
+        
+        array(
+            'name'  => 'Price',
+            'id'    => "{$prefix}price",
+            'type'  => 'slider',
+        // Text labels displayed before and after value
+			'prefix'     => __( '$', 'meta-box' ),
+			'suffix'     => __( ' USD', 'meta-box' ),
+
+			// jQuery UI slider options. See here http://api.jqueryui.com/slider/
+			'js_options' => array(
+				'min'  => 0,
+				'max'  => 1000000,
+				'step' => 100,
+			),
+        ),
 
     )
 );

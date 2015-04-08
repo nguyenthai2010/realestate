@@ -47,7 +47,7 @@
 			                                  <li class="icon1"><?php echo $bed;?></li>
 			                                  <li class="icon4"><?php echo $bath;?></li>
 			                                  <li class="icon2"><?php echo $garages;?></li>
-			                                  <li class="info"><a href="<?php echo get_the_permalink($projects->ID);?>"><img src="images/singledesign/info.png"/></a></li>
+			                                  <li class="info"><a href="<?php echo get_the_permalink($project->ID);?>"><img src="images/singledesign/info.png"/></a></li>
 			                              </ul>
 			                          </div>
 			                      </div>

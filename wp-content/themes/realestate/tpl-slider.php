@@ -1,4 +1,4 @@
-<div class="now_carousel" style="min-height: 560px;">
+<div class="now_carousel">
     <div id="main-carousel" class="carousel slide">
         <!-- Carousel items -->
         <div class="carousel-inner">
@@ -54,12 +54,11 @@
                 <li class="icon5">More+ </li>
             </ul>
         </nav>
-
         <nav class="search-slider">
             <ul>
                 <li class="prev"><!--<a class="carousel-control left" href="#main-carousel" data-slide="prev">&nbsp;</a>--></li>
                 <li >
-                	<form action="<?php echo bloginfo('url')?>/result/" method="get" id="searchDesign">
+                	<form action="<?php echo bloginfo('url')?>/result/" method="get" id="searchDesign"  onSubmit="return checkIt(this);">
 	                    <div class="search-detail">
 	                        <ul>
 	                            <li class="title">
@@ -104,7 +103,7 @@
 	                            </li>
 	                            <li class="line"><div></div></li>
 	                            <li class="selectbox">
-	                                <select class="selecthome" name="s_types">
+	                                <select class="selecthome" name="garage">
 	                                    <option value="">LOT WIDTH</option>
 	                                    <?php
 	                                    	for ($i = 8; $i <= 36; $i++) {
@@ -127,5 +126,14 @@
     <!-- carousel -->
 </div>
 <!-- now_carousel -->
-
-
+<script>
+	function checkIt(f)
+	{   
+		if (f.elements['s_types'].value=="" && f.elements['bedroom'].value=="" && f.elements['bathroom'].value=="" && f.elements['garage'].value=="")   
+		{      
+		//alert('You have not specified the products you wish to order please go back to step 2');
+		     return false;   
+		}   
+		return true;
+	}
+</script>

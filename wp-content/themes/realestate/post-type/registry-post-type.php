@@ -150,3 +150,40 @@ function register_custom_sliders() {
     );
     register_post_type('sliders',$sliders);
 }
+
+add_action( 'init', 'register_custom_homeland' );
+function register_custom_homeland() {
+    $promotion_label = array(
+        'name' => _x('Home land', 'Home land'),
+        'singular_name' => _x('homeland', 'homeland'),
+        'add_new' => _x('Add New', 'Homeland'),
+        'add_new_item' => __('Add New'),
+        'edit_item' => __('Edit '),
+        'new_item' => __('Add New'),
+        'all_items' => __('View All'),
+        'view_item' => __('View'),
+        'search_items' => __('Search'),
+        'not_found' =>  __('Not Find'),
+        'not_found_in_trash' => __('Not Find in Trash'),
+        'parent_item_colon' => '',
+        'menu_name' => 'Home land'
+    );
+    $promotion= array(
+        'labels' => $promotion_label,
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'show_in_nav_menus'=>true,
+        'query_var' => true,
+        'rewrite' =>  array('slug'=>'homeland'),
+        'capability_type' => 'post',
+        'has_archive' => true,
+        'hierarchical' => false,
+        'menu_position' => 5,
+        'menu_icon'	=> get_bloginfo('template_url').'/post-type/images/facities.png',
+        'taxonomies'		=> array('category'),
+        'supports' => array('title','editor','thumbnail'),
+    );
+    register_post_type('homeland',$promotion);
+}
