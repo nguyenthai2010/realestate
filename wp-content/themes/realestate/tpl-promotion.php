@@ -2,7 +2,7 @@
 $i = 0;
 $args = array(
     'post_type' 	 => 'promotion',
-    'posts_per_page' => 3 ,
+    'posts_per_page' => $posts_per_page ,
     'order'			 => 'asc'
 );
 $queryRows = get_posts($args);

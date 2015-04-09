@@ -164,7 +164,10 @@
                 <div class="separator"></div>
                 <h1 class="text-center">CURRENT PROMOTIONS</h1>
                 <div class="separator"></div>
-                <?php get_template_part('tpl','promotion')?>
+                <?php
+                    $posts_per_page = 3;
+                    get_template_part('tpl','promotion');
+                ?>
                 <!-- /now_page -->
             </div>
 

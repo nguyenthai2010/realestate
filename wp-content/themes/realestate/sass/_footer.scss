@@ -4,13 +4,31 @@
   .resize{
     
   }
+
+}
+
+.condition {
+  background: #efefef;
+
   .introbox{
-    text-align: center;
+    text-align: left;
     padding: 20px 50px;
     margin: 0 auto;
-    background: #ececec;
-    h1{
-      text-transform: uppercase;
+    background: #efefef;
+    clear: both;
+
+    h5{
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      color: #666;
+    }
+    p{
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      color: #666;
+      padding-top:12px;
     }
   }
 }
