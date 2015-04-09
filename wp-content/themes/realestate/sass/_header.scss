@@ -5,12 +5,47 @@
   font-size: 15px;
   font-family: "Arial";
   font-weight: normal;
-  color: #5a5a5a;
+  color: #222;
+  &:hover{
+    color: #222;
+  }
   span{
     font-family: "Arial";
     font-weight: normal;
   }
   
+}
+ul.menusm li{
+  padding: 0;
+  float: left;
+  font-weight: normal;
+  height: 45px;
+}
+ul.menusm li ul li{
+  height: auto;
+}
+.menu ul li ul li a{
+  height: auto;
+  padding: 9px 10px 7px 10px;
+  text-align: left;
+}
+.menu ul li a{
+  padding: 14px 15px;
+  display: block;
+  margin: 0;
+  color: #222;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 400;
+  height: 45px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.navbar .navmenu .menu{
+}
+.menu ul.menusm{
+  width: 100%;
 }
 .menu ul li.menu-item-home a, .menu ul li.ms_home a{
   text-indent: -9999px;

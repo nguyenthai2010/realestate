@@ -4,7 +4,7 @@
 /* DESIGN TOPNAV (mainmenu) */
 .menu { margin:19px 10px 0 0; padding:0; text-transform:uppercase; font-size:11px; font-weight:lighter; float:right; height:50px; font-family: 'Open Sans', sans-serif}
 /* level 0 */
-.menu ul.menusm { padding:0; margin:0 auto;  }
+.menu ul.menusm { padding:0; margin:0 auto;   width: auto; }
 .menu ul li.ms_top { padding:0; float:left; font-weight: normal; height:45px;}
 .menu ul li.last { padding-right:0; background:none;}
 .menu ul li a.ms_top { padding: 14px 15px; display:block; margin:0; color:#a4a4a4; text-decoration:none; text-align:center; font-weight: 400; height:45px; box-sizing:border-box; -moz-box-sizing: border-box; -webkit-box-sizing:border-box;}
