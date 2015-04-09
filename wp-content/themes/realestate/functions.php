@@ -14,6 +14,9 @@
     //change label post
     include 'inc/change_label_post.php';
 	
+	//paging ajax for homeland
+	include 'inc/page_nav.php';
+	
 	//add type columns
     include 'inc/type_column.php';
 	

@@ -10,14 +10,14 @@ $(document).ready(function() {
 			'surname': {
 				required: true
 			},
-			'phone': {
+			/*'phone': {
 				required: true
-			},
+			},*/
             'email': { 
                 required: true, 
                 email: true
             },
-            'comments':{
+            /*'comments':{
             	required: true 
             },
             'buildin' : {
@@ -31,7 +31,7 @@ $(document).ready(function() {
             },
             'contactyou': {
             	selectcheck: true
-            }
+            }*/
 		},
 		 
         errorPlacement: function(error, element){},

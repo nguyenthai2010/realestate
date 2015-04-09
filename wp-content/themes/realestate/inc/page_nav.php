@@ -25,3 +25,34 @@ function bt_paginate(){
 		echo paginate_links( $pagination );
 		
 }
+
+function paging_ajax_for_pagination() {
+	$paged = (get_query_var('paged')) ? get_query_var('paged') : 1; // Page number
+	$html = '';
+	$pag = 0;
+	if( filter_var( intval( $paged ), FILTER_VALIDATE_INT ) ) {
+		$pag = $paged;
+		$args = array(
+			'post_type' 	 => 'homeland',
+			'paged' => $pag, // Uses the page number passed via AJAX
+			'posts_per_page' => 2 // Change this as you wish
+		);
+		$loop = new WP_Query( $args );
+			
+		if( $loop->have_posts() ) {
+			while( $loop->have_posts() ) {
+				$loop->the_post();
+				// Build the HTML string with your post's contents
+			}
+				
+			wp_reset_query();
+		}
+	}
+		
+	echo $html;
+	exit();
+
+}
+
+add_action( 'wp_ajax_paging_homeland', 'paging_ajax_for_pagination' );
+add_action( 'wp_ajax_nopriv_paging_homeland', 'paging_ajax_for_pagination' );
