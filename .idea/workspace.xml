@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be15e2a8-27e3-4f75-9e45-d26d02dd68ff" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/realestate/footer.php" afterPath="$PROJECT_DIR$/wp-content/themes/realestate/footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/realestate/.sass-cache/87e8be333eae6486479da66c01ebf0936db022a8/_homeland.scssc" afterPath="$PROJECT_DIR$/wp-content/themes/realestate/.sass-cache/87e8be333eae6486479da66c01ebf0936db022a8/_homeland.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/realestate/.sass-cache/87e8be333eae6486479da66c01ebf0936db022a8/_style.scssc" afterPath="$PROJECT_DIR$/wp-content/themes/realestate/.sass-cache/87e8be333eae6486479da66c01ebf0936db022a8/_style.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/realestate/sass/_style.scss" afterPath="$PROJECT_DIR$/wp-content/themes/realestate/sass/_style.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/realestate/css/custom.css.map" afterPath="$PROJECT_DIR$/wp-content/themes/realestate/css/custom.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/realestate/css/custom.css" afterPath="$PROJECT_DIR$/wp-content/themes/realestate/css/custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BE.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -71,13 +76,13 @@
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/tpl-promotion.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/index.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/sass/custom.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/realestate/sass/_style.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/page-testimonial.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/sass/_page_home.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/page-promotions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/sass/_page_promotions.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/sass/_footer.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/footer.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/realestate/sass/_style.scss" />
       </list>
     </option>
   </component>
@@ -618,14 +623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/sass/_style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.103448" vertical-offset="400" max-vertical-offset="4180">
-          <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.103448" vertical-offset="265" max-vertical-offset="1260">
@@ -694,6 +691,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7026022" vertical-offset="2082" max-vertical-offset="3560">
           <caret line="123" column="18" selection-start-line="123" selection-start-column="18" selection-end-line="123" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/sass/_style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40892193" vertical-offset="640" max-vertical-offset="4260">
+          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
           <folding />
         </state>
       </provider>
