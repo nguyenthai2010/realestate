@@ -317,13 +317,26 @@ label[generated="true"] {
 #footer {
   height: auto;
   padding-bottom: 12px; }
-  #footer .introbox {
-    text-align: center;
+
+.condition {
+  background: #efefef; }
+  .condition .introbox {
+    text-align: left;
     padding: 20px 50px;
     margin: 0 auto;
-    background: #efefef; }
-    #footer .introbox h1 {
-      text-transform: uppercase; }
+    background: #efefef;
+    clear: both; }
+    .condition .introbox h5 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      color: #666; }
+    .condition .introbox p {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      color: #666;
+      padding-top: 12px; }
 
 .navbar {
   margin-bottom: 0; }
@@ -780,6 +793,9 @@ select.selecthome {
     min-height: 105px; }
 #gallery.gallery3 a.zoom {
   background: url(../images/pages/testimonials/play.png) no-repeat center; }
+
+.promotionPage {
+  background: #efefef; }
 
 .homedesignPage .pad40 {
   padding-top: 40px; }

@@ -2,7 +2,7 @@
 	get_header();
 ?>
 
-<div id="content" class="row-promotion testimonialsPage bgGray">
+<div id="content" class="row-promotion testimonialsPage promotionPage bgGray">
     <div class="container gallery3" id="gallery" style="background:none;">
         <div class="row">
             <div class="separator"></div>
