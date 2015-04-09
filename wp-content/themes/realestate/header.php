@@ -28,6 +28,9 @@
 </head>
 
 <body>
+<div class="loadingfull">
+    <img src="images/pages/loading.GIF" width="64" height="64">
+</div>
 <div id="wrapper">
   
   <div class="navbar">
