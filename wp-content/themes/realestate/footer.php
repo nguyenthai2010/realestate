@@ -121,6 +121,7 @@
   		<div class="pull-right">Web Design & Development by Involve Digital</div>
   	</div>
   </div>
+    <br clear="all">
 </div>
 <!-- #footer --> 
 
