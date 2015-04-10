@@ -1,25 +1,35 @@
 <?php
-$tax = get_queried_object();
+	$tax = get_queried_object();
+	$post_count  = wp_count_posts()->publish;
+	if(!empty($tax->term_id)){
+		$arrTax = array( 
+	            'taxonomy' => 'homelandtax', //or tag or custom taxonomy
+	            'field' => 'id', 
+	            'terms' => $tax->term_id
+	    );
+		$post_count = $tax -> count;
+	}
 	global $paged;
 	$args_homeland = array(
 		'post_type' 	 => 'homeland',
 		'posts_per_page' =>  4,
-		'order'			 => 'desc',
+		'order'			 => 'asc',
 		'paged'		=> $paged,
-		/*'tax_query' => array( 
-	        array( 
-	            'taxonomy' => 'homelandtax', //or tag or custom taxonomy
-	            'field' => 'id', 
-	            'terms' => $tax->ID
-	        ) 
-	    ) */
+		'tax_query' => array( 
+	        $arrTax
+	    ) 
 	);
 	$query_homelands = query_posts($args_homeland);
 ?>
 <div class="headerbox">
 	<div class="paging span4 margin-left-0">
-		<p class="total-title">Total Properties: <span><?php echo wp_count_posts()->publish;?></span></p>
-		<div class="paging-normal"><?php echo bt_paginate(); ?></div>
+		<p class="total-title">Total Properties: <span><?php echo $post_count;?></span></p>
+		<div class="paging-normal" id="pagingBox">
+			<?php echo bt_paginate(); ?>
+			<!--div id="pagination">
+				
+			</div-->
+		</div>
 	</div>
 	<div class="viewhomeland span5">
 		<div class="middle">
@@ -43,7 +53,14 @@ $tax = get_queried_object();
 		</div>
 	</div>
 </div>
-<div class="landList">
+<input name="ajaxurl" type="hidden" class="ajaxurl" value="<?php echo bloginfo('home').'/wp-admin/admin-ajax.php'; ?>"/>
+<input name="taxid" type="hidden" class="taxid" value="<?php echo $tax->term_id; ?>"/>
+<input name="taxcount" type="hidden" class="taxcount" value="<?php echo $tax->count; ?>"/>
+<input name="taxpage" type="hidden" class="taxpage" value="<?php echo $paged; ?>"/>
+<div class="landList" id="landpageList">
+	<!--Ajax orderby-->
+</div>
+<div class="landList" id="landpageItem">
 	<?php
 		//foreach ( $query_homelands as $land ) {
 		if(have_posts($query_homelands->$post)): while(have_posts($query_homelands->$post)): the_post($query_homelands->$post);

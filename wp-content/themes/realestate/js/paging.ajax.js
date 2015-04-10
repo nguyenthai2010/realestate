@@ -3,8 +3,8 @@
 	$.fn.wpPagination = function( options ) {
 		options = $.extend({
 			links: "a",
-			action: "paging_ajax_for_pagination",
-			ajaxURL: "http://" + location.host + "/wp-admin/admin-ajax.php",
+			action: "homeland_for_pagination",
+			ajaxURL: $('.ajaxurl').val(),
 			next: ".next",
 			previous: ".previous",
 			disablePreviousNext: true

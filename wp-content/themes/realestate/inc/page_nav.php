@@ -25,3 +25,107 @@ function bt_paginate(){
 		echo paginate_links( $pagination );
 		
 }
+
+
+/*function homeland_for_pagination() {
+	$paged = $_GET['page']; // Page number
+	$html = '';
+	$pag = 0;
+	if( filter_var( intval( $paged ), FILTER_VALIDATE_INT ) ) {
+		$pag = $paged;
+		$args = array(
+			'paged' => $pag, // Uses the page number passed via AJAX
+			'posts_per_page' => 2 // Change this as you wish
+		);
+		$loop = new WP_Query( $args );
+			
+		if( $loop->have_posts() ) {
+			while( $loop->have_posts() ) {
+				$loop->the_post();
+				// Build the HTML string with your post's contents
+			}
+				
+			wp_reset_query();
+		}
+	}
+		
+	echo $html;
+	exit();
+
+}
+
+add_action( 'wp_ajax_homeland_for_pagination', 'homeland_for_pagination' );
+add_action( 'wp_ajax_nopriv_homeland_for_pagination', 'homeland_for_pagination' );
+*/
+
+add_action( 'wp_ajax_orderbyHomeLand', 'orderbyHomeLand' );
+add_action( 'wp_ajax_nopriv_orderbyHomeLand', 'orderbyHomeLand' );
+function orderbyHomeLand(){
+	$taxid = $_POST['taxid'];
+	$taxcount = $_POST['taxcount'];
+	$order = $_POST['order'];
+	$taxpage = $_POST['taxpage'];
+	
+	$post_count  = wp_count_posts()->publish;
+	if(!empty($taxid)){
+		$arrTax = array( 
+	            'taxonomy' => 'homelandtax', //or tag or custom taxonomy
+	            'field' => 'id', 
+	            'terms' => $taxid
+	    );
+		$post_count = $taxcount;
+	}
+	$args_homeland = array(
+		'post_type' 	 => 'homeland',
+		'posts_per_page' =>  4,
+		'order'	=> $order,
+		'paged'		=> $taxpage,
+		'tax_query' => array( 
+	        $arrTax
+	    ) 
+	);
+	
+	$query_homelands = query_posts($args_homeland);
+	if(have_posts($query_homelands->$post)): while(have_posts($query_homelands->$post)): the_post($query_homelands->$post);
+		$price = get_post_meta(get_the_ID(),'tt_price',true);
+		$bed = get_post_meta(get_the_ID(),'tt_bedrooms',true);
+		$bath = get_post_meta(get_the_ID(),'tt_bathrooms',true);
+		$garages = get_post_meta(get_the_ID(),'tt_garages',true);
+		$bigImg = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()) );
+	?>
+	<div class="item">
+		<div class="pad">
+			<img src="<?php echo $bigImg;?>"/>
+			<div class="desc">
+				<h3><?php echo get_the_title(get_the_ID());?></h3>
+				<span class="pos"><?php echo get_field('position',get_the_ID());?> </span>
+				<div class="text">
+					** 
+					<?php echo wp_trim_words(get_the_content(get_the_ID()),35,$more='...');?> 
+					<a href="<?php echo get_the_permalink(get_the_ID())?>">View the full details </a>
+				</div>
+			</div>
+			<div class="price">
+				<div class="num">
+					$<?php echo number_format($price);?>
+				</div>
+				<ul>
+					<li class="bed">
+						<label>Bedrooms</label>
+						<span><i></i><span><?php echo $bed;?></span></span>
+					</li>
+					<li class="bath">
+						<label>Bathrooms</label>
+						<span><i></i><span><?php echo $bath;?></span></span>
+					</li>
+					<li class="car">
+						<label>Car Spaces</label>
+						<span><i></i><span><?php echo $garages;?></span></span>
+					</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<?php endwhile; endif;
+}
