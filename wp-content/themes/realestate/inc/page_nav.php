@@ -75,7 +75,7 @@ function orderbyHomeLand(){
 	    );
 		$post_count = $taxcount;
 	}
-	$args_homeland = array(
+	$args_homeland_ajax = array(
 		'post_type' 	 => 'homeland',
 		'posts_per_page' =>  4,
 		'order'	=> $order,
@@ -85,15 +85,17 @@ function orderbyHomeLand(){
 	    ) 
 	);
 	
-	$query_homelands = query_posts($args_homeland);
-	if(have_posts($query_homelands->$post)): while(have_posts($query_homelands->$post)): the_post($query_homelands->$post);
+	$query_homelands_ajax = query_posts($args_homeland_ajax);
+	$num = 0;
+	if(have_posts($query_homelands_ajax->$post)): while(have_posts($query_homelands_ajax->$post)): the_post($query_homelands_ajax->$post);
+		$num++;
 		$price = get_post_meta(get_the_ID(),'tt_price',true);
 		$bed = get_post_meta(get_the_ID(),'tt_bedrooms',true);
 		$bath = get_post_meta(get_the_ID(),'tt_bathrooms',true);
 		$garages = get_post_meta(get_the_ID(),'tt_garages',true);
 		$bigImg = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()) );
 	?>
-	<div class="item">
+	<div class="item" order="<?php echo $num;?>">
 		<div class="pad">
 			<img src="<?php echo $bigImg;?>"/>
 			<div class="desc">
@@ -128,4 +130,6 @@ function orderbyHomeLand(){
 		</div>
 	</div>
 	<?php endwhile; endif;
+	// Reset Query
+	wp_reset_query();
 }

@@ -55,22 +55,22 @@
 </div>
 <input name="ajaxurl" type="hidden" class="ajaxurl" value="<?php echo bloginfo('home').'/wp-admin/admin-ajax.php'; ?>"/>
 <input name="taxid" type="hidden" class="taxid" value="<?php echo $tax->term_id; ?>"/>
-<input name="taxcount" type="hidden" class="taxcount" value="<?php echo $tax->count; ?>"/>
+<input name="taxcount" type="hidden" class="taxcount" value="<?php echo $post_count; ?>"/>
 <input name="taxpage" type="hidden" class="taxpage" value="<?php echo $paged; ?>"/>
+
 <div class="landList" id="landpageList">
-	<!--Ajax orderby-->
-</div>
-<div class="landList" id="landpageItem">
 	<?php
 		//foreach ( $query_homelands as $land ) {
+		$num = 0;
 		if(have_posts($query_homelands->$post)): while(have_posts($query_homelands->$post)): the_post($query_homelands->$post);
+		$num++;
 			$price = get_post_meta(get_the_ID(),'tt_price',true);
 			$bed = get_post_meta(get_the_ID(),'tt_bedrooms',true);
 			$bath = get_post_meta(get_the_ID(),'tt_bathrooms',true);
 			$garages = get_post_meta(get_the_ID(),'tt_garages',true);
 			$bigImg = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()) );
 	?>
-	<div class="item">
+	<div class="item" order="<?php echo $num;?>">
 		<div class="pad">
 			<img src="<?php echo $bigImg;?>"/>
 			<div class="desc">
