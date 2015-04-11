@@ -14,6 +14,16 @@ function search_home_design($homestyle, $housesize, $housewidth, $bedroom, $bath
 				'compare' => 'LIKE'
 			),
 			array(
+				'key' => 'tt_size',
+				'value' => $housesize ,
+				'compare' => '<='
+			),
+			array(
+				'key' => 'tt_width',
+				'value' => $housewidth ,
+				'compare' => '<='
+			),
+			array(
 				'key' => 'tt_bathrooms',
 				'value' => $bathroom ,
 				'compare' => 'LIKE'
