@@ -57,10 +57,10 @@
     .headerbox{
       .viewhomeland {
         margin-left: 0;
-        width: 30%;
+        width: 40%;
         float: right;
         .middle{
-          
+          float: right;
         }
       }
       .paging {
@@ -71,7 +71,6 @@
         margin-top: 15px;
         .orderbyleft{
           float: right;
-          margin-right: 10px;
           label{
             text-align: right;
           }
@@ -112,6 +111,10 @@
     width: 40%!important;
   }
   .copyright{
+    .pull-left{
+      display: block;
+      float: none;
+    }
     .pull-right{
       float: left;
       margin-top: 10px;

@@ -4,11 +4,17 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title><?php echo get_bloginfo('name')?> | <?php echo get_bloginfo('description')?></title>
 <base href="<?php bloginfo('template_url')?>/"></base>
-
+<?php
+	//contact
+	require_once 'inc/clsMobileDetect.php'; 
+	require_once 'inc/application_top.php';
+?>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <!-- Mobile Specific Metas  ================================================== -->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<?php echo $iMobile == TRUE ? '<meta name="viewport" content="width=480" />':'' ?>
+<?php echo $iPad == TRUE ? '<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">':'' ?>
+
 <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
 <link rel="stylesheet" href="css/jcarousel_skin.css" type="text/css">
@@ -24,7 +30,15 @@
 <link rel="stylesheet" type="text/css" href="css/custom.css"/>
 <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
-
+<script type="text/javascript">
+	var LANG = "<?php echo $lang ?>";
+	var ROOT = "<?php echo ROOT_WS_NAME ?>";
+	var iMobile = <?php echo $iMobile == TRUE ? 'true':'false' ?>;
+	var iPad = <?php echo $iPad == TRUE ? 'true':'false' ?>;
+	var iTablet = <?php echo $iTablet == TRUE ? 'true':'false' ?>;
+	var isDesktop = <?php echo $isDesktop == TRUE ? 'true':'false' ?>;
+	var iSingle = <?php echo (is_single()) ? 'true':'false';?>;
+</script>
 </head>
 
 <body>

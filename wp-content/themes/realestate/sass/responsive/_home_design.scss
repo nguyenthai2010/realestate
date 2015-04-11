@@ -1,6 +1,79 @@
 @media only screen and (min-width: 768px) and (max-width: 1105px) {
  .homedesignPage .span8.spanRightcontent{
-   width: 69%;
+   width: 55%;
    margin-left: 1%;
+   .bgwhite{
+     width: 99%;
+   }
  } 
+ .singleGallery ul{
+     display: table-cell;
+    margin: 0 auto;
+    width: auto;
+    text-align: center;
+ }
+ .singleGallery ul li{
+   float: none;
+   display: inline-block;
+   vertical-align: top;
+ }
+ #gallery.sliderStyle1 .singleGallery .item .item-caption ul{
+   display: inline-block;
+ }
+}
+
+@media only screen and (min-width: 0) and (max-width: 768px) {
+  .homedesignPage{
+    .sidebar{
+      border-right: 0;
+      width: 100%;
+      #searchDesign{
+        float: left;
+        margin-right: 45px;
+      }
+      .row {
+       
+        select.select{
+          
+        }
+      }
+      .presstoJimForm{
+        float: left;
+        padding-top: 0;
+      }
+    }
+    
+  }
+  .homedesignPage .span8.spanRightcontent{
+     width: 99%;
+     margin-left: 1%;
+     margin-top: 25px;
+       
+     .bgwhite{
+       width: 99%;
+       padding-left: 0;
+     }
+   } 
+   .singleGallery ul{
+     display: table-cell;
+    margin: 0 auto;
+    width: auto;
+    text-align: center;
+ }
+ .singleGallery ul li{
+   float: none;
+   display: inline-block;
+   vertical-align: top;
+ }
+}
+
+@media only screen and (min-width: 0) and (max-width: 640px) {
+  .homedesignPage .sidebar .presstoJimForm, .homedesignPage .sidebar #searchDesign{
+    float: none;
+    display: table;
+    margin: 0 auto;
+  }
+  .homedesignPage .sidebar .presstoJimForm{
+    margin-top: 30px;
+  }
 }
