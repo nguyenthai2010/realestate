@@ -1,0 +1,120 @@
+@media only screen and (min-width: 768px) and (max-width: 1105px) {
+  .homedesignPage .container{
+    width: 99%;
+    margin: 0 auto;
+  }
+  .homeLand .landList .item .desc{
+    width: 47%;
+    padding-right: 2%;
+  }
+  
+  .homeLand .headerbox{
+    .paging{
+      width: 30%;
+    }
+    .viewhomeland{
+      width: 30%;
+      margin-left: 10px;
+    }
+    .orderbybox {
+      width: 30%;
+      select.select{
+        width: 100%;
+      }
+    }
+  }
+  .homeLand .landList .item .img-box{
+      margin-right: 15px;
+      width: 25%;
+  }
+  .homeLand .landList .item .desc h3{
+    
+  }
+  .condition{
+    .resize {
+      width: 100%;
+    }
+  }
+  #footer .resize{
+    width: 94%;
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: 768px) {
+  body{
+    min-width: 480px;
+  }
+  .homedesignPage .container{
+    width: 97%;
+  }
+  #footer .cols .span2{
+    width: 30%!important;
+  }
+  #footer .container {
+  width: 95%;
+}
+  .homeLand{
+    .headerbox{
+      .viewhomeland {
+        margin-left: 0;
+        width: 30%;
+        float: right;
+        .middle{
+          
+        }
+      }
+      .paging {
+        width: 40%;
+        float: left;
+      }
+      .orderbybox{
+        margin-top: 15px;
+        .orderbyleft{
+          float: right;
+          margin-right: 10px;
+          label{
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+  .homeLand {
+    .landList {
+      .item{
+        position: relative;
+         .desc{
+             margin-top: 20px;
+              padding-right: 0;
+              width: 100%;
+         }
+         .price {
+             position: absolute;
+            right: 15px;
+            top: 10px;
+         }
+      }
+    }
+  }
+  .condition{
+    .resize {
+      width: 97%;
+      .introbox{
+        width: 100%;
+          padding: 20px 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  #footer .cols .span2{
+    width: 40%!important;
+  }
+  .copyright{
+    .pull-right{
+      float: left;
+      margin-top: 10px;
+    }
+  }
+}

@@ -72,7 +72,9 @@
 	?>
 	<div class="item" order="<?php echo $num;?>">
 		<div class="pad">
-			<img src="<?php echo $bigImg;?>"/>
+			<div class="img-box">
+				<img src="<?php echo $bigImg;?>"/>
+			</div>
 			<div class="desc">
 				<h3><?php echo get_the_title(get_the_ID());?></h3>
 				<span class="pos"><?php echo get_field('position',get_the_ID());?> </span>
