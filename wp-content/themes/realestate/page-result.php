@@ -16,8 +16,10 @@
 								$homestyle = !empty($_GET['s_types']) ? $_GET['s_types']:"";
 								$bedroom = !empty($_GET['bedroom']) ? $_GET['bedroom']:"";
 								$bathroom = !empty($_GET['bathroom']) ? $_GET['bathroom']:"";
+								$housesize = !empty($_GET['housesize']) ? $_GET['housesize']:"";
+								$housewidth = !empty($_GET['housewidth']) ? $_GET['housewidth']:"";
 								$garage = !empty($_GET['garage']) ? $_GET['garage']:"";
-								$query_projects = search_home_design($homestyle,"","",$bedroom,$bathroom,$garage);
+								$query_projects = search_home_design($homestyle,$housesize,$housewidth,$bedroom,$bathroom,$garage);
 								foreach ($query_projects as $project) {
 									
 									$img = get_post_meta($project->ID,'tt_picture',true);

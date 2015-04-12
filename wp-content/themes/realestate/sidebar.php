@@ -21,14 +21,14 @@
 	    		<div class="row range">
 	    			<label>HOUSE SIZE (SQM)</label>
 	    			<div class="range-container">
-	    				<input type="hidden" class="slider-input" value="200" />
+	    				<input type="hidden" class="slider-input" name="housesize" value="200" />
 	    			</div>
 	    		</div>
 	    		
 	    		<div class="row range r02">
 	    			<label>HOUSE WIDTH (METRES)</label>
 	    			<div class="range-container">
-	    				<input type="hidden" class="slider-input-house" value="23" />
+	    				<input type="hidden" class="slider-input-house" name="housewidth" value="23" />
 	    			</div>
 	    		</div>
 	    		<div class="row brtop">

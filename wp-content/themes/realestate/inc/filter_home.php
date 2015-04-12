@@ -40,7 +40,7 @@ function search_home_design($homestyle, $housesize, $housewidth, $bedroom, $bath
 }
 
 function get_category_post($category){
-	print_r($category);
+	//print_r($category);
 	if ($category == 'view-all'){
 		$category = '';
 	}

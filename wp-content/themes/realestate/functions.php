@@ -53,7 +53,7 @@
 			exit();
 		}	
 	}
-	add_action( 'template_redirect', 'change_viewall_url_rewrite' );
+	//add_action( 'template_redirect', 'change_viewall_url_rewrite' );
 	
 	function get_page_id_by_slug($slug){
 	    global $wpdb;
