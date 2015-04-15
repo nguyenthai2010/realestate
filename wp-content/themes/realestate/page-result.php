@@ -34,7 +34,7 @@
 			                  <li>
 			                      <div class="item">
 			                          <div class="pic"> 
-			                          	<img src="<?php echo $src[0];?>" alt="" height="220" width="140" />
+			                          	<img src="<?php echo $src[0]=='' ? 'images/singledesign/i-1.jpg':$src[0] ;?>" alt="" height="220" width="140" />
 			                          	<div class="detailBox">
 			                          		<div class="shadow"></div>
 			                          		<a href="<?php echo get_the_permalink($project->ID);?>">

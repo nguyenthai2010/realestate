@@ -2,18 +2,14 @@
 
 function search_home_design($homestyle, $housesize, $housewidth, $bedroom, $bathroom, $garage){
 	$args_search = array(
-		'relation' 		 => 'OR',
+		'relation' 		 => 'AND',
 		'post_type' 	 => 'post',
-		'posts_per_page' =>  6 ,
+		'posts_per_page' =>  12 ,
 		'order'			 => 'asc',
 		'category_name'  => $homestyle,
 		'meta_query' => array(
-			'relation' => 'OR',
-			array(
-				'key' => 'tt_bedrooms',
-				'value' => $bedroom ,
-				'compare' => 'LIKE'
-			),
+			'relation' => 'AND',
+
 			array(
 				'key' => 'tt_size',
 				'value' => $housesize ,
@@ -24,15 +20,20 @@ function search_home_design($homestyle, $housesize, $housewidth, $bedroom, $bath
 				'value' => $housewidth ,
 				'compare' => '<='
 			),
-			array(
-				'key' => 'tt_bathrooms',
-				'value' => $bathroom ,
-				'compare' => 'LIKE'
-			),
+            array(
+                'key' => 'tt_bedrooms',
+                'value' => $bedroom ,
+                'compare' => '='
+            ),
+            array(
+                'key' => 'tt_bathrooms',
+                'value' => $bathroom ,
+                'compare' => '='
+            ),
 			array(
 				'key' => 'tt_garages',
 				'value' => $garage ,
-				'compare' => 'LIKE'
+				'compare' => '='
 			)
 		)
 	);
