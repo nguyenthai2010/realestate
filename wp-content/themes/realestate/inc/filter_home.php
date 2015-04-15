@@ -8,6 +8,7 @@ function search_home_design($homestyle, $housesize, $housewidth, $bedroom, $bath
 		'order'			 => 'asc',
 		'category_name'  => $homestyle,
 		'meta_query' => array(
+			'relation' => 'OR',
 			array(
 				'key' => 'tt_bedrooms',
 				'value' => $bedroom ,

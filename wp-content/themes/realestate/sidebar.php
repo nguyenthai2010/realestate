@@ -1,4 +1,4 @@
-<div class="sidebar">
+﻿<div class="sidebar">
 	    	<h2>FIND A DESIGN</h2>
 	    	<form action="<?php echo bloginfo('url')?>/result/" method="get" id="searchDesign">
 	    		<div class="row">
@@ -21,14 +21,14 @@
 	    		<div class="row range">
 	    			<label>HOUSE SIZE (SQM)</label>
 	    			<div class="range-container">
-	    				<input type="hidden" class="slider-input" name="housesize" value="200" />
+	    				<input type="hidden" class="slider-input" name="housesize" value="151" />
 	    			</div>
 	    		</div>
 	    		
 	    		<div class="row range r02">
 	    			<label>HOUSE WIDTH (METRES)</label>
 	    			<div class="range-container">
-	    				<input type="hidden" class="slider-input-house" name="housewidth" value="23" />
+	    				<input type="hidden" class="slider-input-house" name="housewidth" value="8" />
 	    			</div>
 	    		</div>
 	    		<div class="row brtop">
