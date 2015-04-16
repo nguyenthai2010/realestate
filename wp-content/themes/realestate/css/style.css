@@ -256,9 +256,6 @@ input {
 
 #main-carousel img{
 	width: 100%;
-	min-width: 960px;
-	height: 790px;
-	max-height:790px;
 	border:none;
 }
 

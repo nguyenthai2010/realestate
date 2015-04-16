@@ -46,12 +46,16 @@
 
         <nav class="lookingfor">
             <ul>
-                <li class="firstchild">I’M LOOKING FOR:</li>
-                <li class="icon1">Yes</li>
-                <li class="icon2">Mansion</li>
-                <li class="icon3">Knock down<br>rebuild </li>
-                <li class="icon4">Duplex</li>
-                <li class="icon5">More+ </li>
+                <li class="firstchild">
+                	I’M LOOKING FOR:
+                	<ul class="submenu">
+	                	<li class="icon1"><i><img src="images/pages/home/ico-slider_01.png"/></i><span>Yes</span></li>
+		                <li class="icon2"><i><img src="images/pages/home/ico-slider_02.png"/></i><span>Mansion</span></li>
+		                <li class="icon3"><i><img src="images/pages/home/ico-slider_03.png"/></i><span>Knock down<br>rebuild</span> </li>
+		                <li class="icon4"><i><img src="images/pages/home/ico-slider_04.png"/></i><span>Duplex</span></li>
+		                <li class="icon5"><i><img src="images/pages/home/ico-slider_05.png"/></i><span>More+ </span></li>
+	                </ul>
+                </li>                
             </ul>
         </nav>
         <nav class="search-slider">
