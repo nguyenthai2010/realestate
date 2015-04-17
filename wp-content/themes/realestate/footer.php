@@ -94,11 +94,11 @@
           <div class="span2 followus  col6">
             <h4>Follow Us</h4>
             <div class="link">
-            	<a class="soc" href="#"><img src="images/fb.jpg" /></a> 
-          		<a class="soc" href="#"><img src="images/twitter.jpg" /></a> 
+            	<a class="soc" href="https://www.facebook.com/MastertonHomes" target="_blank"><img src="images/fb.jpg" /></a> 
+          		<a class="soc" href="https://twitter.com/MastertonHomes" target="_blank""><img src="images/twitter.jpg" /></a> 
           		<a class="soc" href="#"><img src="images/pinterest.jpg" /></a> 
           		<a class="soc" href="#"><img src="images/rss.jpg" /></a>
-          		<a class="soc" href="#"><img src="images/youtube.jpg" /></a> 
+          		<a class="soc" href="https://www.youtube.com/user/MastertonHomes" target="_blank"><img src="images/youtube.jpg" /></a> 
             </div>
           </div>
         </div>
