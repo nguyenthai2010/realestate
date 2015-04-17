@@ -55,13 +55,13 @@
 	            <a href="<?php echo bloginfo('home');?>" class="extrabold"><img src="images/logo.jpg"/></a> </div>
 	          	<div class="social pull-right"> 
 	          		<div>
-	          			<a class="soc" href="#"><img src="images/fb.jpg" /></a> 
-		          		<a class="soc" href="#"><img src="images/twitter.jpg" /></a> 
-		          		<a class="soc" href="#"><img src="images/pinterest.jpg" /></a> 
-		          		<a class="soc" href="#"><img src="images/rss.jpg" /></a>
-		          		<a class="soc" href="#"><img src="images/youtube.jpg" /></a>  
-		          		<a class="soc" href="#"><img src="images/share.jpg" /></a> 
-		          		<a class="soc" href="#"><img src="images/favourite.jpg" /></a> 
+	          			<a class="soc" href="https://www.facebook.com/MastertonHomes" target="_blank"><img src="images/fb.jpg" /></a> 
+		          		<a class="soc" href="https://twitter.com/MastertonHomes" target="_blank"><img src="images/twitter.jpg" /></a> 
+		          		<a class="soc" href="#" target="_blank"><img src="images/pinterest.jpg" /></a> 
+		          		<a class="soc" href="#" target="_blank"><img src="images/rss.jpg" /></a>
+		          		<a class="soc" href="https://www.youtube.com/user/MastertonHomes" target="_blank"><img src="images/youtube.jpg" /></a>  
+		          		<a class="soc" href="#" target="_blank"><img src="images/share.jpg" /></a> 
+		          		<a class="soc" href="#" target="_blank"><img src="images/favourite.jpg" /></a> 
 	          		</div>
 	          		<div class="phone pull-right">
 		          		<span>1300 44 66 37</span>
