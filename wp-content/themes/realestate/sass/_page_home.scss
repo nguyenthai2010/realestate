@@ -37,7 +37,7 @@
     background: #fff;
     margin: 0 10px;
     width: 280px;
-
+    min-height: 423px;
     h3 {
       a {
         @include Arial(14px);
@@ -50,6 +50,7 @@
     p {
       padding: 10px 40px;
       @include Arial(12px);
+      min-height: 56px;
     }
 
     .btnpromotion {
