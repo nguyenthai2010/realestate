@@ -7,12 +7,10 @@ $(document).ready(function() {
 			'firstname': {
 				required: true
 			},
-			'surname': {
+			
+			'phone': {
 				required: true
 			},
-			/*'phone': {
-				required: true
-			},*/
             'email': { 
                 required: true, 
                 email: true
@@ -33,7 +31,7 @@ $(document).ready(function() {
             	selectcheck: true
             }*/
 		},
-		 
+		 /*
         errorPlacement: function(error, element){},
         highlight: function(element) {
             //console.log(element);
@@ -61,6 +59,9 @@ $(document).ready(function() {
                 }
             }
             form.submit();
-		},
+		},*/
+		submitHandler: function(form) {
+			form.submit();
+		}
 	});
 });

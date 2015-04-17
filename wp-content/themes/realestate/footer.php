@@ -147,19 +147,21 @@
 		    from: 151,
 		    to: 313,
 		    step: 1,
-		    scale: [151,313],
+		    scale: [151,212,245,313],
 		    format: '%s',
 		    width: 255,
-		    showLabels: false
+		    showLabels: true,
+		    isRange: true
 		});
 		$('.slider-input-house').jRange({
 		    from: 8,
 		    to: 36,
 		    step: 1,
-		    scale: [8,36],
+		    scale: [8,12,23,36],
 		    format: '%s',
 		    width: 255,
-		    showLabels: false
+		    showLabels: false,
+		    isRange: true
 		});
 	});
 </script>
