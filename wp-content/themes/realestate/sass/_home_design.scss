@@ -1,9 +1,16 @@
 .homedesignPage{
+  h2{
+    font-family: "HelveticaNeueLTStd-Md";
+    font-size: 24px;
+    color: #f38233;
+    text-transform: uppercase;
+      margin-bottom: 12px;
+  }
   .pad40{
     padding-top: 40px;
   }
   .container{
-    width: 1100px;
+    width: 1125px;
   }
   .span8{
     h2{
@@ -40,7 +47,7 @@
     }
   }
   .homedesignGallery{
-    padding: 30px 28px;
+    padding: 28px 15px;
     background: #fff;
   }
   .bigImage{
@@ -103,11 +110,11 @@
     }
   }
   .span7.spanRightcontent{
-    width: 505px;
+    width: 535px;
     border-right: 1px solid #dadada;
     border-left: 1px solid #dadada;
     margin-left: 0;
-    padding-left: 20px;
+    padding-left: 15px;
     background: #efefef;
     margin-bottom: 20px;
   }
@@ -127,10 +134,19 @@
     }
   }
 }
+.singleDesign{
+  .bgwhite {
+      width: 511px;
+      padding-left: 5px;
+  }
+}
 .sidebarright{
   width: 260px;
   .sidebar{
     
+    .presstoJimForm {
+      padding-top: 0;
+    }
     border-right: 0;
   }
 }
@@ -317,13 +333,13 @@
 }
 .homedesignGallery{
   .jcarousel-skin-tango .jcarousel-item{
-    width: 157px;
-    height: 107px; 
+    width: 155px;
+    height: 105px; 
     margin-right: 8px;
   }
 }
 #gallery .homedesignGallery .item{
-   width: 157px;
+   width: 155px;
    position: relative;
    .shadow{
      background: #fff;
@@ -339,21 +355,21 @@
    }
 }
 #gallery .homedesignGallery .item .pic img{
-  width: 157px;
-    height: 107px; 
+  width: 155px;
+    height: 105px; 
 }
 #gallery.sliderStyle1 .homedesignGallery .jcarousel-skin-tango .jcarousel-prev-horizontal{
     background: url(../images/arrmedium.png) 0 0 no-repeat;
     width: 10px;
     height: 30px;
-    left: -17px;
+    left: -15px;
     top: 45px;
 }
 #gallery.sliderStyle1 .homedesignGallery .jcarousel-skin-tango .jcarousel-next-horizontal{
     background: url(../images/arrmedium.png) right 0 no-repeat;
      width: 10px;
     height: 30px;
-    right: -17px;
+    right: -15px;
     top: 45px;
 }
 .homedesignPage #gallery.sliderStyle1{

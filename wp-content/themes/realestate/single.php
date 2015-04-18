@@ -2,7 +2,7 @@
 	get_header();
 ?>
   
-  <div id="content" class="homedesignPage bgGray">
+  <div id="content" class="homedesignPage bgGray singleDesign">
     <img src="images/home_design.jpg" width="100%"/>
     <div class="container pad40">
 	    <?php get_sidebar();?>
@@ -12,7 +12,7 @@
 			$bigImg = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()) );
 			$slideImg = get_post_meta(get_the_ID(),'tt_picture',false);
 		?>
-	    <div class="span8 spanRightcontent">
+	    <div class="span7 spanRightcontent">
 	    	<div class="bgwhite">
 	    		<h2> Overture</h2>
 		    	<div id="gallery" class="sliderStyle1 sliderStyleHomeDesign">
@@ -42,7 +42,7 @@
 			                  ?>
 			                  <li>
 			                      <div class="item">
-			                          <div class="pic"> <img src="<?php echo $thumb[0];?>" alt="" height="156" width="107" /> </div>
+			                          <div class="pic"> <img src="<?php echo $thumb[0];?>" alt="" height="150" width="105" /> </div>
 			                          <div class="item-caption">
 			                          	  <div class="shadow"></div>
 			                              <p><?php echo get_the_title(get_the_ID())?></p>
@@ -109,6 +109,7 @@
 	    <?php 	
 			endwhile; 
 		?>
+		 <?php get_template_part('tpl','jim-form');?>	
     </div>
   </div>
   <!-- #content--> 
