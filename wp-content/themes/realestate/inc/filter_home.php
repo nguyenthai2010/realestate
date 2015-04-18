@@ -1,6 +1,8 @@
 <?php
 
 function search_home_design($homestyle, $housesize, $housewidth, $bedroom, $bathroom, $garage){
+	$hsize = split(',',$housesize);
+	$hwidth = split(',',$housewidth);
 	$args_search = array(
 		'relation' 		 => 'AND',
 		'post_type' 	 => 'post',
@@ -12,13 +14,19 @@ function search_home_design($homestyle, $housesize, $housewidth, $bedroom, $bath
 
 			array(
 				'key' => 'tt_size',
-				'value' => $housesize ,
-				'compare' => '<='
+				'value' => array(
+						$hsize[0], // don't forget to escape user input
+						$hsize[1]
+				),
+				'compare' => 'BETWEEN'
 			),
 			array(
 				'key' => 'tt_width',
-				'value' => $housewidth ,
-				'compare' => '<='
+				'value' => array(
+						$hwidth[0], // don't forget to escape user input
+						$hwidth[1]
+				),
+				'compare' => 'BETWEEN'
 			),
             array(
                 'key' => 'tt_bedrooms',

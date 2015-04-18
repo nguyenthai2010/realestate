@@ -9,7 +9,12 @@ body, p {
 a:hover {
   color: #f38233;
 }
-
+.bold{
+  font-weight: bold;
+}
+.pad-left-5{
+  padding-left: 5px;
+}
 a.zoom {
   background: #f38233 url(../images/zoom.png) center center no-repeat;
 }

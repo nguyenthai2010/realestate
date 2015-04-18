@@ -143,25 +143,41 @@
 			active: 'selected',
 			header: 'Navigation' 
 		});
+		var house_vl = $('.slider-input').val().split(',');
+		$('#house_val_1').html(house_vl[0]);
+		$('#house_val_2').html(house_vl[1]);
+		var width_vl = $('.slider-input-house').val().split(',');
+		$('#width_val_1').html(width_vl[0]);
+		$('#width_val_2').html(width_vl[1]);
 		$('.slider-input').jRange({
 		    from: 151,
 		    to: 313,
 		    step: 1,
-		    scale: [151,212,245,313],
+		    scale: [151,'','',313],
 		    format: '%s',
 		    width: 255,
-		    showLabels: true,
-		    isRange: true
+		    showLabels: false,
+		    onstatechange: function(val){
+		    	//console.log(val);
+		    	var hvl = val.split(',');
+		    	$('#house_val_1').html(hvl[0]);
+		    	$('#house_val_2').html(hvl[1]);
+		    }
 		});
 		$('.slider-input-house').jRange({
 		    from: 8,
 		    to: 36,
 		    step: 1,
-		    scale: [8,12,23,36],
+		    scale: [8,'','',36],
 		    format: '%s',
 		    width: 255,
 		    showLabels: false,
-		    isRange: true
+		    onstatechange: function(val){
+		    	//console.log(val);
+		    	var wvl = val.split(',');
+		    	$('#width_val_1').html(wvl[0]);
+		    	$('#width_val_2').html(wvl[1]);
+		    }
 		});
 	});
 </script>

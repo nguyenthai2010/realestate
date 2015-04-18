@@ -19,16 +19,30 @@
 	    			</select>
 	    		</div>
 	    		<div class="row range">
-	    			<label>HOUSE SIZE (SQM)</label>
+	    			<label>HOUSE SIZE <span class="bold pad-left-5"><span id="house_val_1"></span> - <span id="house_val_2"></span> (SQM)</span></label>
 	    			<div class="range-container">
-	    				<input type="hidden" class="slider-input" name="housesize" value="212,245" />
+	    				<?php
+	    					$size_vl = split(',',$_GET['housesize']);
+							if($_GET['housesize'] == ''){
+								$size_vl[0] = 151;
+								$size_vl[1] = 313;
+							}
+	    				?>
+	    				<input type="hidden" class="slider-input" name="housesize" value="<?php echo $size_vl[0];?>,<?php echo $size_vl[1];?>" />
 	    			</div>
 	    		</div>
 	    		
 	    		<div class="row range r02">
-	    			<label>HOUSE WIDTH (METRES)</label>
+	    			<label>HOUSE WIDTH <span class="bold pad-left-5"><span id="width_val_1"></span> - <span id="width_val_2"></span> (METRES)</span></label>
 	    			<div class="range-container">
-	    				<input type="hidden" class="slider-input-house" name="housewidth" value="12,23" />
+	    				<?php
+	    					$width_vl = split(',',$_GET['housewidth']);
+							if($_GET['housewidth'] == ''){
+								$width_vl[0] = 8;
+								$width_vl[1] = 36;
+							}
+	    				?>
+	    				<input type="hidden" class="slider-input-house" name="housewidth" value="<?php echo $width_vl[0];?>,<?php echo $width_vl[1];?>" />
 	    			</div>
 	    		</div>
 	    		<div class="row brtop">
