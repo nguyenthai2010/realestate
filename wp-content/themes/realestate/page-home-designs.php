@@ -2,7 +2,7 @@
 	get_header();
 ?>
   
-  <div id="content" class="homedesignPage bgGray">
+  <div id="content" class="homedesignPage bgGray newDesignpage">
     <img src="images/home_design.jpg" width="100%"/>
     <div class="container pad40">
 	    <?php get_sidebar();?>
