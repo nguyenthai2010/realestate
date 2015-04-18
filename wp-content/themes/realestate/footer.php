@@ -118,7 +118,7 @@
 </div>
 <!-- #footer --> 
 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script> 
+
 <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script> 
 <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script> 
 <script type="text/javascript" src="prettyPhoto/js/jquery.prettyPhoto.js"></script> 
