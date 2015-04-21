@@ -31,6 +31,16 @@
 <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script> 
+<script type="text/javascript" src="js/map_location.js"></script> 
+<style type="text/css">
+
+.acf-map {
+	width: 100%;
+	height: 400px;
+}
+
+</style>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 <script type="text/javascript">
 	var LANG = "<?php echo $lang ?>";
 	var ROOT = "<?php echo ROOT_WS_NAME ?>";
