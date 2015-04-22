@@ -39,7 +39,7 @@ $meta_boxes[] = array(
         array(
             'name' => 'Picture',
             'id'   => "{$prefix}picture",
-            'type' => 'thickbox_image'
+            'type' => 'plupload_image'
         ),
         array(
             'name' => 'Bedrooms',
@@ -136,7 +136,27 @@ $meta_boxes[] = array(
 				'step' => 100,
 			),
         ),
-
+        array(
+            'name'  => 'Category',
+            'id'    => "{$prefix}category",
+            'type'  => 'text'
+        ),
+		array(
+            'name'  => 'Building',
+            'id'    => "{$prefix}building",
+            'type'  => 'text'
+        ),
+        array(
+            'name'  => 'Features',
+            'id'    => "{$prefix}features",
+            'type'  => 'text'
+        ),
+        array(
+            'name'  => 'Land',
+            'id'    => "{$prefix}land",
+            'type'  => 'text'
+        )
+        
     )
 );
 
