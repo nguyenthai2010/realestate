@@ -2,8 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
 <title><?php echo get_bloginfo('name')?> | <?php echo get_bloginfo('description')?></title>
 <base href="<?php bloginfo('template_url')?>/"></base>
+
 <?php
 	//contact
 	require_once 'inc/clsMobileDetect.php'; 
