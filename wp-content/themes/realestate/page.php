@@ -16,7 +16,7 @@ get_header();
                     <?php echo get_the_content(get_the_ID())?>
 
 
-                  
+
 
                     <div class="clr"></div>
                 </div>
