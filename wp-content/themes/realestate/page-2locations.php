@@ -5,7 +5,7 @@
 $i = 0;
 $args = array(
     'post_type' 	 => 'locations',
-    'posts_per_page' => -1,
+    'posts_per_page' => 20,
     'order'			 => 'asc'
 );
 $queryRows = get_posts($args);
@@ -14,13 +14,13 @@ $queryRows = get_posts($args);
   <div id="content" class="locationPage bgGray">
     <div class="container pad40">
         <div class="content_page content_detail_new">
-            <h2><span>Masterton Mansion Package</span></h2><br>
+            <h2><span>Display Centre Locations</span></h2><br>
             <div class="row">
                 <div class="span4">
                     <ul class="list-location">
                         <?php
                         $i = 0;
-                        $location_first = [];
+                        $location_first = array();
                         foreach ($queryRows as $row) {
                             $i++;
                             $location = get_field('google_position',$row->ID);//$location['lat'].$location['lng']

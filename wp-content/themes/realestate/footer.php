@@ -61,7 +61,7 @@
           <div class="span2 col3">
             <h4>Display Homes</h4>
             <ul>
-            	<li><a href="<?php echo bloginfo('home')?>/display-centre-locations">Display Centre Locations</a></li>
+            	<li><a href="<?php echo bloginfo('home')?>/2locations">Display Centre Locations</a></li>
             	<li><a href="<?php echo bloginfo('home')?>/display-homes-for-sale">Display Homes for Sale</a></li>
             	<li><a href="<?php echo bloginfo('home')?>/warwick-farm-display-village">Warwick Farm Display Village</a></li>
             </ul>
