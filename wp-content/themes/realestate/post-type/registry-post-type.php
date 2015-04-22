@@ -214,7 +214,7 @@ function register_custom_news() {
         'show_in_menu' => true,
         'show_in_nav_menus'=>true,
         'query_var' => true,
-        'rewrite' =>  array('slug'=>'promotion'),
+        'rewrite' =>  array('slug'=>'last-news'),
         'capability_type' => 'post',
         'has_archive' => true,
         'hierarchical' => false,

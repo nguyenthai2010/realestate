@@ -6,7 +6,7 @@
     <img src="images/homeland/bigimg.jpg" width="100%"/>
 	<div class="homeLand news">
 	    <div class="container pad40">
-	    	<h2 class="bigtitle">NEWS</h2>
+	    	<h2 class="bigtitle">LASTEST NEWS</h2>
 	    	<div class="landList" id="landpageList">
 			<?php
 				global $paged;
