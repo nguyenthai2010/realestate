@@ -1672,6 +1672,8 @@ select.selecthome {
     font-weight: 700;
     font-size: 18px;
     line-height: 1.2; }
+  .content_detail_new #dnn_ctr438_HtmlModule_lblContent td {
+    padding: 15px; }
 
 .locationPage .list-location {
   list-style: none;
