@@ -1,0 +1,24 @@
+.locationPage {
+  .list-location {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      background: #f38233;
+      padding: 5px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      @include Roboto_bold(18px);
+
+      &.active {
+        color: #fff;
+      }
+    }
+  }
+
+  #map-canvas {
+    width: 100%;
+    height: 500px;
+  }
+}

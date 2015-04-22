@@ -225,3 +225,41 @@ function register_custom_news() {
     );
     register_post_type('last-news',$news);
 }
+
+
+//Locations
+add_action( 'init', 'register_custom_locations' );
+function register_custom_locations() {
+    $locations_label = array(
+        'name' => _x('Locations', 'Locations'),
+        'singular_name' => _x('locations', 'locations'),
+        'add_new' => _x('Add New', 'Locations'),
+        'add_new_item' => __('Add New'),
+        'edit_item' => __('Edit '),
+        'new_item' => __('Add New'),
+        'all_items' => __('View All'),
+        'view_item' => __('View'),
+        'search_items' => __('Search'),
+        'not_found' =>  __('Not Find'),
+        'not_found_in_trash' => __('Not Find in Trash'),
+        'parent_item_colon' => '',
+        'menu_name' => 'Locations'
+    );
+    $locations= array(
+        'labels' => $locations_label,
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'show_in_nav_menus'=>true,
+        'query_var' => true,
+        'rewrite' =>  array('slug'=>'locations'),
+        'capability_type' => 'post',
+        'has_archive' => true,
+        'hierarchical' => false,
+        'menu_position' => 5,
+        'menu_icon'	=> get_bloginfo('template_url').'/post-type/images/facities.png',
+        'supports' => array('title','editor','thumbnail'),
+    );
+    register_post_type('locations',$locations);
+}

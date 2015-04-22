@@ -78,7 +78,7 @@
             	<li><a href="<?php echo bloginfo('home')?>/book-a-meeting-2">Book A Meeting</a></li>
             	<li><a href="http://www.mortgagecalculator.org/" target="_blank">Finance</a></li>
             	<li><a href="<?php echo bloginfo('home')?>/subscribe-newsletter">Subscribe Newsletter</a></li>
-            	<li><a href="<?php echo bloginfo('home')?>/suppliers-trade">Suppliers & Trade</a></li>
+            	<li><a href="http://trade.masterton.com.au/" target="_blank">Suppliers & Trade</a></li>
             	<li><a href="<?php echo bloginfo('home')?>/terms-of-use">Terms Of Use</a></li>
             	<li><a href="<?php echo bloginfo('home')?>/privacy-policy">Privacy Policy</a></li>
             </ul>
