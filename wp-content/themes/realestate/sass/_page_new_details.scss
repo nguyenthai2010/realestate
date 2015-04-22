@@ -1,6 +1,6 @@
 .content_detail_new {
   line-height: 1.3;
-  h2, h3 {
+  h1, h2, h3 {
     color: #f38233;
     @include Roboto_bold(24px);
     padding-top: 40px;
@@ -46,6 +46,21 @@
       img {
         padding: 5px 0;
       }
+    }
+  }
+
+  ul {
+    padding: 0;
+
+    li {
+      padding: 0;
+    }
+  }
+
+  #dnn_ctr613_HtmlModule_lblContent {
+    h1 {
+      color: #444;
+      @include Roboto_bold(18px);
     }
   }
 }
