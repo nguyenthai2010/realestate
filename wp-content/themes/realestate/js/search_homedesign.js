@@ -10,10 +10,10 @@ $(function() {
 		var href = $(this).attr('data-id');
 		$('.singleTab .homedesignGallery').removeClass('current').animate({
 			'display':'none', 'opacity': 0
-		});
+		},200);
 		$('.singleTab').find(href).addClass('current').animate({
 			'display':'block', 'opacity': 1
-		});
+		},200);
 		return false;
 	});
 });
