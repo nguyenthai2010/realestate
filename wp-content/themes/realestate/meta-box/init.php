@@ -37,8 +37,13 @@ $meta_boxes[] = array(
             'type' => 'text'
         ),
         array(
-            'name' => 'Picture',
+            'name' => 'Picture for INTERNALS',
             'id'   => "{$prefix}picture",
+            'type' => 'plupload_image'
+        ),
+        array(
+            'name' => 'Picture for FACADES',
+            'id'   => "{$prefix}picture_facades",
             'type' => 'plupload_image'
         ),
         array(
