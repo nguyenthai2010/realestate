@@ -178,7 +178,7 @@
 
     <div class="row-slider fullscreen">
         <div class="resize">
-            <div id="gallery" class="sliderStyle1 gallery3" >
+            <div id="gallery" class="sliderStyle1 gallery3 gallery-testimonials" >
                 <div class="container">
                     <div class="row">
                         <div class="row-fluid text-center">

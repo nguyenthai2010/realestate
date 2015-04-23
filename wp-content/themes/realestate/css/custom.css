@@ -422,9 +422,18 @@ ul.menusm li ul li {
 #main-carousel {
   padding-top: 0;
   height: auto; }
-  #main-carousel .carousel-inner .item img {
-    height: auto;
-    max-height: auto; }
+  #main-carousel .carousel-inner .item .bgimg {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative; }
+    #main-carousel .carousel-inner .item .bgimg img {
+      min-height: 600px;
+      max-width: none;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: auto; }
   #main-carousel .lookingfor {
     position: absolute;
     top: 0;
@@ -471,7 +480,7 @@ ul.menusm li ul li {
   #main-carousel .search-slider {
     position: absolute;
     display: block;
-    bottom: 240px;
+    top: 510px;
     left: 0;
     width: 100%; }
     #main-carousel .search-slider ul {
@@ -500,9 +509,11 @@ ul.menusm li ul li {
             min-width: 0;
             min-height: 0; }
         #main-carousel .search-slider ul li.prev {
-          background: black url("../images/pages/home/ico-arrow-pre.png") 10px 5px no-repeat; }
+          cursor: pointer;
+          background: rgba(0, 0, 0, 0.4) url("../images/pages/home/ico-arrow-pre.png") 10px 5px no-repeat; }
         #main-carousel .search-slider ul li.next {
-          background: black url("../images/pages/home/ico-arrow-next.png") 15px 5px no-repeat; }
+          cursor: pointer;
+          background: rgba(0, 0, 0, 0.4) url("../images/pages/home/ico-arrow-next.png") 15px 5px no-repeat; }
         #main-carousel .search-slider ul li.title {
           text-align: left;
           padding-left: 10px; }
@@ -623,7 +634,8 @@ select.selecthome {
     background: #fff;
     margin: 0 10px;
     width: 280px;
-    min-height: 423px; }
+    min-height: 423px;
+    margin-bottom: 20px; }
     .row-promotion .span4 h3 {
       padding: 5px 10px; }
       .row-promotion .span4 h3 a {
@@ -1796,8 +1808,24 @@ select.selecthome {
   .resize.fullscreen .now_page .container {
     width: 95%; }
 
+  #main-carousel .search-slider ul li.title {
+    display: none; } }
+@media only screen and (max-width: 767px) {
   #main-carousel .search-slider {
-    bottom: 215px; } }
+    display: none; }
+
+  .row-promotion.row, .promotionPage .row {
+    display: block !important; }
+    .row-promotion.row .span4, .promotionPage .row .span4 {
+      display: block !important;
+      margin: 0px;
+      margin-bottom: 20px;
+      width: 100%;
+      float: none;
+      overflow: hidden; }
+
+  .gallery-testimonials .span3 {
+    width: 100%; } }
 @media only screen and (min-width: 768px) and (max-width: 1105px) {
   .homedesignPage .container {
     width: 99%;

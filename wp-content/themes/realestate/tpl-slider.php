@@ -16,7 +16,8 @@
 
             ?>
                     <div class="<?php echo $i==1 ?'active ':'' ?>item">
-                        <img src="<?php echo $url; ?>" alt=""/>
+                        <div class="bgimg"><img src="<?php echo $url; ?>" alt=""/></div>
+
                         <div class="resize fullscreen">
                             <div class="now_page">
                                 <div class="container">

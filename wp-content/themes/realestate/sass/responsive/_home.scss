@@ -9,6 +9,36 @@
     width: 95%;
   }
   #main-carousel .search-slider{
-    bottom: 215px;
+
   }
+
+  #main-carousel .search-slider ul li.title {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #main-carousel .search-slider {
+    display: none;
+  }
+
+  .row-promotion.row, .promotionPage .row{
+    display: block !important;
+
+    .span4 {
+      display: block !important;
+      margin: 0px;
+      margin-bottom: 20px;
+      width: 100%;
+      float: none;
+      overflow: hidden;
+    }
+  }
+
+  .gallery-testimonials {
+    .span3 {
+      width: 100%;
+    }
+  }
+
 }
