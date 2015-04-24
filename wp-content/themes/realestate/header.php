@@ -53,6 +53,22 @@
 	var isDesktop = <?php echo $isDesktop == TRUE ? 'true':'false' ?>;
 	var iSingle = <?php echo (is_single()) ? 'true':'false';?>;
 </script>
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js" async="async"></script>
+<script type="text/javascript">
+	$(function() {
+        $("#bookmarkme").click(function() {
+            // Mozilla Firefox Bookmark
+            if ('sidebar' in window && 'addPanel' in window.sidebar) { 
+                window.sidebar.addPanel(location.href,document.title,"");
+            } else if( /*@cc_on!@*/false) { // IE Favorite
+                window.external.AddFavorite(location.href,document.title); 
+            } else { // webkit - safari/chrome
+                alert('Press ' + (navigator.userAgent.toLowerCase().indexOf('mac') != - 1 ? 'Command/Cmd' : 'CTRL') + ' + D to bookmark this page.');
+            }
+        });
+    });</script>
 </head>
 
 <body>
@@ -72,10 +88,11 @@
 	          			<a class="soc" href="https://www.facebook.com/MastertonHomes" target="_blank"><img src="images/fb.jpg" /></a> 
 		          		<a class="soc" href="https://twitter.com/MastertonHomes" target="_blank"><img src="images/twitter.jpg" /></a> 
 		          		<a class="soc" href="#" target="_blank"><img src="images/pinterest.jpg" /></a> 
-		          		<a class="soc" href="#" target="_blank"><img src="images/rss.jpg" /></a>
+						
+		          		<a class="soc" href="http://feeds.feedburner.com/Masterton" target="_blank"><img src="images/rss.jpg" /></a>
 		          		<a class="soc" href="https://www.youtube.com/user/MastertonHomes" target="_blank"><img src="images/youtube.jpg" /></a>  
-		          		<a class="soc" href="#" target="_blank"><img src="images/share.jpg" /></a> 
-		          		<a class="soc" href="#" target="_blank"><img src="images/favourite.jpg" /></a> 
+		          		<a class="addthis_button_compact soc"><img src="images/share.jpg" /></a> 
+		          		<a class="soc" href="javascript:void(0);" id="bookmarkme"><img src="images/favourite.jpg" /></a> 
 	          		</div>
 	          		<div class="phone pull-right">
 		          		<span>1300 44 66 37</span>
