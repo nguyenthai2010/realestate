@@ -1704,6 +1704,18 @@ select.selecthome {
     line-height: 1.2; }
     .locationPage .list-location li.active {
       color: #fff; }
+      .locationPage .list-location li.active .submenu {
+        display: block; }
+    .locationPage .list-location li .submenu {
+      display: none;
+      background: #fff; }
+      .locationPage .list-location li .submenu .row-moreinfo {
+        padding: 10px 5px; }
+        .locationPage .list-location li .submenu .row-moreinfo a {
+          font-size: 14px;
+          line-height: 1.2; }
+        .locationPage .list-location li .submenu .row-moreinfo p {
+          font-size: 14px; }
 .locationPage #map-canvas {
   width: 100%;
   height: 500px; }

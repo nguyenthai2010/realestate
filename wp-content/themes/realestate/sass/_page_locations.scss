@@ -13,6 +13,27 @@
 
       &.active {
         color: #fff;
+
+        .submenu {
+          display: block;
+        }
+      }
+
+      .submenu {
+        display: none;
+        background: #fff;
+
+        .row-moreinfo {
+          padding: 10px 5px;
+          a {
+            font-size: 14px;
+            line-height: 1.2;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
       }
     }
   }
