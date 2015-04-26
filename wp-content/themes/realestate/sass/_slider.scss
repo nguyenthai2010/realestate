@@ -54,6 +54,10 @@
             position: absolute;
             li{
               opacity: 1;
+
+              a {
+                display: block;
+              }
             }
           }
         i{

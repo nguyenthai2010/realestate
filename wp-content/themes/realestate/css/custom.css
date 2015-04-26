@@ -461,6 +461,8 @@ ul.menusm li ul li {
           position: absolute; }
           #main-carousel .lookingfor ul li ul.submenu li {
             opacity: 1; }
+            #main-carousel .lookingfor ul li ul.submenu li a {
+              display: block; }
         #main-carousel .lookingfor ul li i {
           display: inline-block; }
           #main-carousel .lookingfor ul li i img {
