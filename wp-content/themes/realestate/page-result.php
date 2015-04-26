@@ -20,14 +20,15 @@
 								$housewidth = !empty($_GET['housewidth']) ? $_GET['housewidth']:"";
 								$garage = !empty($_GET['garage']) ? $_GET['garage']:"";
 								$query_projects = search_home_design($homestyle,$housesize,$housewidth,$bedroom,$bathroom,$garage);
-								foreach ($query_projects as $project) {
-									
-									$img = get_post_meta($project->ID,'tt_picture',true);
+								//print_r($query_projects);
+								//foreach ($query_projects as $project) {
+								if ( $query_projects->have_posts() ) : while ( $query_projects->have_posts() ) : $query_projects->the_post();	
+									$img = get_post_meta(get_the_ID(),'tt_picture',true);
 									$src = wp_get_attachment_image_src($img ,'full');
-									$bed = get_post_meta($project->ID,'tt_bedrooms',true);
-									$bath = get_post_meta($project->ID,'tt_bathrooms',true);
-									$garages = get_post_meta($project->ID,'tt_garages',true);
-									$title_project = get_the_title($project->ID);
+									$bed = get_post_meta(get_the_ID(),'tt_bedrooms',true);
+									$bath = get_post_meta(get_the_ID(),'tt_bathrooms',true);
+									$garages = get_post_meta(get_the_ID(),'tt_garages',true);
+									$title_project = get_the_title(get_the_ID());
   									$first_title = explode(" ", $title_project,2);
 									//$url = wp_get_attachment_image_src( get_post_thumbnail_id($projects->ID), 'large' );
 							?>
@@ -54,7 +55,10 @@
 			                          </div>
 			                      </div>
 			                  </li>
-		                  <?php }?>
+		                  <?php endwhile; ?>
+		                  <?php else : ?>
+								<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+							<?php endif; ?>
 		              </ul>
 		              <!-- Pagination -->
 					  <p class="jcarousel-pagination" data-jcarouselpagination="true"></p>
