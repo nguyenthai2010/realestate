@@ -29,7 +29,36 @@ $queryRows = get_posts($args);
                                 $location_first = $location;
 
                             ?>
-                            <li class="location<?php echo $i;?>" lat="<?php echo $location['lat'];?>" lng="<?php echo $location['lng'];?>"><?php echo $row->post_title;?></li>
+                            <li class="location<?php echo $i;?>">
+                                <div class="poslocation" lat="<?php echo $location['lat'];?>" lng="<?php echo $location['lng'];?>"><?php echo $row->post_title;?></div>
+
+                                <div class="submenu">
+                                    <?php if( have_rows('group_more_info',$row->ID) ): ?>
+
+
+                                            <?php while( have_rows('group_more_info',$row->ID) ): the_row();
+
+                                                // vars
+                                                $title = get_sub_field('title');
+                                                $content = get_sub_field('description');
+                                                $link = get_sub_field('link');
+
+                                                ?>
+
+                                                <div class="row-moreinfo">
+
+                                                    <a href="<?php echo $link; ?>">
+                                                        <?php echo $title; ?>
+                                                    </a>
+                                                    <p><?php echo $content; ?></p>
+
+                                                </div>
+
+                                            <?php endwhile; ?>
+
+                                    <?php endif; ?>
+                                </div>
+                            </li>
                         <?php }?>
 
                     </ul>
@@ -48,16 +77,16 @@ $queryRows = get_posts($args);
   <!-- #content-->
     <script>
         $(window).load(function(){
-            initializeGoogle( $('.location1') );
+            initializeGoogle( $('.location1 .poslocation') );
 
-            $('.list-location li').click(function(){
+            $('.list-location li .poslocation').click(function(){
                 initializeGoogle($(this));
             });
         });
 
         function initializeGoogle($this) {
             $('.list-location li').removeClass('active');
-            $this.addClass('active');
+            $this.parent().addClass('active');
             $lat = parseFloat( $this.attr('lat') );
             $lng = parseFloat( $this.attr('lng') );
             $title = $this.html();

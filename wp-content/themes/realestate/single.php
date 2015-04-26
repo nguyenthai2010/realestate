@@ -59,10 +59,7 @@
 			              </ul>
 			              <!-- Pagination -->
 						  <p class="jcarousel-pagination" data-jcarouselpagination="true"></p>
-						  <div class="pdfFile">
-						 	<a href="#"><img src="images/pdf.png"/></a>
-						 	<a href="#" class="add">ADD TO FAVOURITES</a>
-						 </div>
+
 				    	</div>
 				    	<div class="homedesignGallery" id="singleTab03">
 				    		<div class="bigImage">
@@ -93,8 +90,15 @@
 				    	</div>
 			    	</div>
 				 </div>
-				 
+                <div class="pdfFile">
+                    <a href="#"><img src="images/pdf.png"/></a>
+                    <a href="#" class="add bookmarkme">ADD TO FAVOURITES</a>
+                </div>
+
 	    	</div>
+            <div class="introhomedesign">
+                <?php get_template_part('tpl','footer-intro');?>
+            </div>
 	    </div>
 	    <?php 	
 			endwhile; 

@@ -52,9 +52,9 @@
                 	<ul class="submenu">
 	                	<li class="icon1"><a href="/promotions/"><i><img src="images/pages/home/ico-slider_01.png"/></i><span>Yes</span></a></li>
 		                <li class="icon2"><a href="/promotion/masterton-mansion-package/"><i><img src="images/pages/home/ico-slider_02.png"/></i><span>Mansion</span></a></li>
-		                <li class="icon3"><a href="#"><i><img src="images/pages/home/ico-slider_03.png"/></i><span>Knock down<br>rebuild</span></a></li>
-		                <li class="icon4"><a href="#"><i><img src="images/pages/home/ico-slider_04.png"/></i><span>Duplex</span></a></li>
-		                <li class="icon5"><a href="/designs-subpage/"><i><img src="images/pages/home/ico-slider_05.png"/></i><span>More+ </span></a></li>
+		                <li class="icon3"><a href="/category/knock-down-rebuild/"><i><img src="images/pages/home/ico-slider_03.png"/></i><span>Knock down<br>rebuild</span></a></li>
+		                <li class="icon4"><a href="/category/duplex/"><i><img src="images/pages/home/ico-slider_04.png"/></i><span>Duplex</span></a></li>
+		                <li class="icon5"><a href="/home-designs/"><i><img src="images/pages/home/ico-slider_05.png"/></i><span>More+ </span></a></li>
 	                </ul>
                 </li>                
             </ul>
