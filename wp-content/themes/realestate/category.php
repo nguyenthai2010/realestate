@@ -9,7 +9,7 @@
     <div class="container pad40">
 	    <?php get_sidebar();?>
 	    
-	    <div class="span8 spanRightcontent">
+	    <div class="span7 spanRightcontent">
 	    	<div class="bgwhite fullwidth">
 		    	<div id="gallery" class="sliderStyle1">
 			    	<div class="singleGallery">
@@ -56,9 +56,12 @@
 					  <p class="jcarousel-pagination" data-jcarouselpagination="true"></p>
 			    	</div>
 				 </div>
-				 
+	    	</div>
+	    	<div class="introhomedesign">
+	    		<?php get_template_part('tpl','footer-intro');?>
 	    	</div>
 	    </div>
+	    <?php get_template_part('tpl','jim-form');?>
     </div>
   </div>
   <!-- #content--> 
