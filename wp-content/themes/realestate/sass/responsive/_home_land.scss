@@ -41,6 +41,13 @@
 }
 
 @media only screen and (min-width: 0) and (max-width: 768px) {
+  .sidebar h2{
+    text-align: center; 
+  }
+  .sidebarright {
+    display: table;
+    margin: 0 auto 40px;
+  }
   body{
     min-width: 480px;
   }
