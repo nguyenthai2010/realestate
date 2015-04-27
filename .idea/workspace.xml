@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be15e2a8-27e3-4f75-9e45-d26d02dd68ff" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/realestate/inc/filter_home.php" afterPath="$PROJECT_DIR$/wp-content/themes/realestate/inc/filter_home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/realestate/page-result.php" afterPath="$PROJECT_DIR$/wp-content/themes/realestate/page-result.php" />
     </list>
     <ignored path="BE.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,11 +27,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="filter_home.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="filter_home.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/inc/filter_home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47186932" vertical-offset="1020" max-vertical-offset="2960">
+            <state vertical-scroll-proportion="-2.7586207" vertical-offset="1200" max-vertical-offset="2960">
               <caret line="64" column="45" selection-start-line="64" selection-start-column="45" selection-end-line="64" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page-result.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/page-result.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.78066915" vertical-offset="840" max-vertical-offset="1680">
+              <caret line="63" column="65" selection-start-line="63" selection-start-column="65" selection-end-line="63" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -120,8 +129,8 @@
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/tpl-contact.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/page-contact.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/page-book-a-meeting.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/realestate/page-result.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/inc/filter_home.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/realestate/page-result.php" />
       </list>
     </option>
   </component>
@@ -713,14 +722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/page-result.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37174723" vertical-offset="240" max-vertical-offset="1680">
-          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/meta-box/demo/better-include.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.8112524" vertical-offset="2100" max-vertical-offset="2660">
@@ -755,8 +756,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/inc/filter_home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47186932" vertical-offset="1020" max-vertical-offset="2960">
+        <state vertical-scroll-proportion="-2.7586207" vertical-offset="1200" max-vertical-offset="2960">
           <caret line="64" column="45" selection-start-line="64" selection-start-column="45" selection-end-line="64" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/page-result.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.78066915" vertical-offset="840" max-vertical-offset="1680">
+          <caret line="63" column="65" selection-start-line="63" selection-start-column="65" selection-end-line="63" selection-end-column="65" />
           <folding />
         </state>
       </provider>
