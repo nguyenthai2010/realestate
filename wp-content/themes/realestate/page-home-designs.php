@@ -13,25 +13,27 @@
 			    	<div class="singleGallery">
 			    		<ul id="single-carousel" class="jcarousel-skin-tango" >
 			    		<?php
+			    				global $paged;
 								$args_projects = array(
 									'post_type' 	 => 'post',
-									'posts_per_page' =>  6 ,
-									'order'			 => 'asc'
+									'posts_per_page' =>  6,
+									'order'			 => 'asc',
+									'paged'		=> $paged
 								);
-								$query_projects = get_posts($args_projects);
-								foreach ( $query_projects as $projects ) {
-							    	$category = get_the_category($projects->ID);
+								$query_projects = query_posts($args_projects);
+								if(have_posts($query_projects->$post)): while(have_posts($query_projects->$post)): the_post($query_projects->$post);
+							    	$category = get_the_category(get_the_ID());
 									$cat_slug=  $category[0]->slug;
 									$strCat = '';	
 									$length = count($category);
 									for($i = 0; $i < $length; $i++){
 										$strCat .= $category[$i]->slug.' ';
 									}
-									$img = get_post_meta($projects->ID,'tt_picture',true);
+									$img = get_post_meta(get_the_ID(),'tt_picture',true);
 									$src = wp_get_attachment_image_src($img ,'full');
-									$bed = get_post_meta($projects->ID,'tt_bedrooms',true);
-									$bath = get_post_meta($projects->ID,'tt_bathrooms',true);
-									$garages = get_post_meta($projects->ID,'tt_garages',true);
+									$bed = get_post_meta(get_the_ID(),'tt_bedrooms',true);
+									$bath = get_post_meta(get_the_ID(),'tt_bathrooms',true);
+									$garages = get_post_meta(get_the_ID(),'tt_garages',true);
 									//$url = wp_get_attachment_image_src( get_post_thumbnail_id($projects->ID), 'large' );
 							?>
 		                  <li>
@@ -40,9 +42,9 @@
 		                          	<img src="<?php echo $src[0];?>" alt="" height="220" width="140" />
 		                          	<div class="detailBox">
 		                          		<div class="shadow"></div>
-		                          		<a href="<?php echo get_the_permalink($projects->ID);?>">
+		                          		<a href="<?php echo get_the_permalink(get_the_ID());?>">
 		                          			<i></i>
-		                          			<span><?php echo get_the_title($projects->ID);?></span>
+		                          			<span><?php echo get_the_title(get_the_ID());?></span>
 		                          		</a>
 		                          	</div> 
 		                          </div>
@@ -52,13 +54,21 @@
 		                                  <li class="icon1"><?php echo $bed;?></li>
 		                                  <li class="icon4"><?php echo $bath;?></li>
 		                                  <li class="icon2"><?php echo $garages;?></li>
-		                                  <li class="info"><a href="<?php echo get_the_permalink($projects->ID);?>"><img src="images/singledesign/info.png"/></a></li>
+		                                  <li class="info"><a href="<?php echo get_the_permalink(get_the_ID());?>"><img src="images/singledesign/info.png"/></a></li>
 		                              </ul>
 		                          </div>
 		                      </div>
 		                  </li>
-		                  <?php }?>
+		                 <?php endwhile; endif;?>
 		              </ul>
+		              <div class="paging">
+							<div class="paging-normal">
+								<?php echo bt_paginate(); ?>
+								<!--div id="pagination">
+									
+								</div-->
+							</div>
+						</div>
 		              <!-- Pagination -->
 					  <p class="jcarousel-pagination" data-jcarouselpagination="true"></p>
 			    	</div>

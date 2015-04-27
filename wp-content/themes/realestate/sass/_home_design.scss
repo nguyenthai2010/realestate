@@ -531,4 +531,19 @@
     padding-left: 25px;
     width: 520px;
   }
+  .paging{
+    clear: both;
+  }
+  .paging .page-numbers.prev, .paging .page-numbers.next{
+    display: inline-block;
+  }
+
+}
+.categoryDesign{
+  .paging{
+    clear: both;
+  }
+  .paging .page-numbers.prev, .paging .page-numbers.next{
+    display: inline-block;
+  }
 }

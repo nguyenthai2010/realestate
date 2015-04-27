@@ -3,6 +3,9 @@
 function search_home_design($homestyle, $housesize, $housewidth, $bedroom, $bathroom, $garage){
 	$hsize = split(',',$housesize);
 	$hwidth = split(',',$housewidth);
+	if(!empty($homestyle)){
+		
+	}
 	$args_search = array(
 		'relation' 		 => 'AND',
 		'post_type' 	 => 'post',
@@ -46,7 +49,7 @@ function search_home_design($homestyle, $housesize, $housewidth, $bedroom, $bath
 		)
 	);
 	
-	return query_posts($args_search);
+	return new WP_Query($args_search);
 }
 
 function get_category_post($category){
@@ -54,11 +57,13 @@ function get_category_post($category){
 	if ($category == 'view-all'){
 		$category = '';
 	}
+	global $paged;
 	$args_cat = array(
 		'post_type' 	 => 'post',
-		'posts_per_page' =>  9 ,
+		'posts_per_page' =>  -1 ,
 		'order'			 => 'asc',
 		'category_name'  => $category,
+		'paged'		=> $pageds
 	);
 	
 	return query_posts($args_cat);

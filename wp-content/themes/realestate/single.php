@@ -11,7 +11,9 @@
 			$post = get_post(get_the_ID());
 			$bigImg = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()) );
 			$slideImg = get_post_meta(get_the_ID(),'tt_picture',false);
+			$firstImg = wp_get_attachment_image_src($slideImg[0],'full');
 			$slideImg_2 = get_post_meta(get_the_ID(),'tt_picture_facades',false);
+			$firstImg_2 = wp_get_attachment_image_src($slideImg_2[0],'full');
 		?>
 	    <div class="span7 spanRightcontent">
 	    	<div class="bgwhite">
@@ -35,7 +37,7 @@
 				    	</div>
 			    		<div class="homedesignGallery" id="singleTab02">
 				    		<div class="bigImage">
-				    			<img src="<?php echo $bigImg;?>" />
+				    			<img src="<?php echo $firstImg[0];?>" />
 				    			<div class="description">
 				    				<div class="shadow"></div>
 				    				<p><?php echo get_the_title(get_the_ID())?></p>
@@ -63,7 +65,7 @@
 				    	</div>
 				    	<div class="homedesignGallery" id="singleTab03">
 				    		<div class="bigImage">
-				    			<img src="<?php echo $bigImg;?>" />
+				    			<img src="<?php echo $firstImg_2[0];?>" />
 				    			<div class="description">
 				    				<div class="shadow"></div>
 				    				<p><?php echo get_the_title(get_the_ID())?></p>
