@@ -2,6 +2,7 @@
 function bt_paginate(){ 
 		global $wp_query, $wp_rewrite;
 		$wp_query->query_vars['paged'] > 1 ? $current = $wp_query->query_vars['paged'] : $current = 1;
+		
 		$pagination = array(
 	    'base'         => @add_query_arg('paged','%#%'),
 	    'format'       => '',

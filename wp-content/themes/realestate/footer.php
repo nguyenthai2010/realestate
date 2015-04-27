@@ -1,5 +1,5 @@
 <?php 
-	if((!is_page('home-designs')) && (!is_single()) && (!is_category())){
+	if((!is_page('home-designs')) && (!is_single()) && (!is_category()) && (!is_page('result'))){
 		get_template_part('tpl','footer-intro');		
 	}	
 ?>

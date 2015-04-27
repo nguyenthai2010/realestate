@@ -95,6 +95,7 @@
           display: inline-block;
         border-radius: 10px;
           line-height: 1;
+          background: #cdcdcd;
         &.viewlist{
           margin-right: 4px;
           span{
@@ -492,5 +493,13 @@
          }
        }
      }
+  }
+}
+
+
+.homelandTab{
+  &.active{
+    display: block;
+  opacity: 1;
   }
 }

@@ -33,10 +33,10 @@
 	</div>
 	<div class="viewhomeland span5">
 		<div class="middle">
-			<a href="#" class="viewlist active">
+			<a href="#viewlist" class="viewlist active">
 				<span>VIEW<br/>LIST</span>
 			</a>
-			<a href="#" class="viewmap">
+			<a href="#viewmap" class="viewmap">
 				<span>VIEW<br/>MAP</span>
 			</a>
 		</div>
@@ -59,52 +59,82 @@
 <input name="taxpage" type="hidden" class="taxpage" value="<?php echo $paged; ?>"/>
 
 <div class="landList" id="landpageList">
-	<?php
-		//foreach ( $query_homelands as $land ) {
-		$num = 0;
-		if(have_posts($query_homelands->$post)): while(have_posts($query_homelands->$post)): the_post($query_homelands->$post);
-		$num++;
-			$price = get_post_meta(get_the_ID(),'tt_price',true);
-			$bed = get_post_meta(get_the_ID(),'tt_bedrooms',true);
-			$bath = get_post_meta(get_the_ID(),'tt_bathrooms',true);
-			$garages = get_post_meta(get_the_ID(),'tt_garages',true);
-			$bigImg = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()) );
-	?>
-	<div class="item" order="<?php echo $num;?>">
-		<div class="pad">
-			<div class="img-box">
-				<img src="<?php echo $bigImg;?>"/>
-			</div>
-			<div class="desc">
-				<h3><?php echo get_the_title(get_the_ID());?></h3>
-				<span class="pos"><?php echo get_field('position',get_the_ID());?> </span>
-				<div class="text">
-					** 
-					<?php echo wp_trim_words(get_the_content(get_the_ID()),35,$more='...');?> 
-					<a href="<?php echo get_the_permalink(get_the_ID())?>">View the full details </a>
+	<div class="homelandTab active" id="viewlist">
+		<?php
+			//foreach ( $query_homelands as $land ) {
+			$num = 0;
+			if(have_posts($query_homelands->$post)): while(have_posts($query_homelands->$post)): the_post($query_homelands->$post);
+			$num++;
+				$price = get_post_meta(get_the_ID(),'tt_price',true);
+				$bed = get_post_meta(get_the_ID(),'tt_bedrooms',true);
+				$bath = get_post_meta(get_the_ID(),'tt_bathrooms',true);
+				$garages = get_post_meta(get_the_ID(),'tt_garages',true);
+				$bigImg = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()) );
+				$location = get_field('google_map',get_the_ID());
+		?>
+		<div class="item" order="<?php echo $num;?>">
+			<div class="pad">
+				<div class="img-box">
+					<img src="<?php echo $bigImg;?>"/>
 				</div>
-			</div>
-			<div class="price">
-				<div class="num">
-					$<?php echo number_format($price);?>
+				<div class="desc">
+					<h3><?php echo get_the_title(get_the_ID());?></h3>
+					<span class="pos"><?php echo $location['address'];?> </span>
+					<div class="text">
+						** 
+						<?php echo wp_trim_words(get_the_content(get_the_ID()),35,$more='...');?> 
+						<a href="<?php echo get_the_permalink(get_the_ID())?>">View the full details </a>
+					</div>
 				</div>
-				<ul>
-					<li class="bed">
-						<label>Bedrooms</label>
-						<span><i></i><span><?php echo $bed;?></span></span>
-					</li>
-					<li class="bath">
-						<label>Bathrooms</label>
-						<span><i></i><span><?php echo $bath;?></span></span>
-					</li>
-					<li class="car">
-						<label>Car Spaces</label>
-						<span><i></i><span><?php echo $garages;?></span></span>
-					</li>
-				</ul>
+				<div class="price">
+					<div class="num">
+						$<?php echo number_format($price);?>
+					</div>
+					<ul>
+						<li class="bed">
+							<label>Bedrooms</label>
+							<span><i></i><span><?php echo $bed;?></span></span>
+						</li>
+						<li class="bath">
+							<label>Bathrooms</label>
+							<span><i></i><span><?php echo $bath;?></span></span>
+						</li>
+						<li class="car">
+							<label>Car Spaces</label>
+							<span><i></i><span><?php echo $garages;?></span></span>
+						</li>
+					</ul>
+				</div>
+				<div class="clear"></div>
 			</div>
-			<div class="clear"></div>
+		</div>
+		<?php endwhile; endif;?>
+	</div>
+	<div class="homelandTab" id="viewmap">
+		<?php
+			$locs = array();
+			$i = 0;
+	    	if(have_posts($query_homelands->$post)): while(have_posts($query_homelands->$post)): the_post($query_homelands->$post);
+			$i++;
+			$location = get_field('google_map',get_the_ID());
+			$latlng = array(
+				'address' => $location['address'], 
+				'lat' => $location['lat'], 
+				'lng' => $location['lng']
+			);
+			array_push($locs,$latlng);	
+		endwhile; endif;?>
+		<div class="acf-map">
+		<?php
+			foreach ($locs as $loc) {
+				if(!empty($loc['lat'])){
+			?>
+				
+				<div class="marker" data-lat="<?php echo $loc['lat']; ?>" data-lng="<?php echo $loc['lng']; ?>">
+					<h4 style="font-size: 12px;"><?php echo $loc['address']; ?></h4>
+				</div>
+				
+		<?php } }?>
 		</div>
 	</div>
-	<?php endwhile; endif;?>
 </div>
