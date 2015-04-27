@@ -2,7 +2,7 @@
 	get_header();
 ?>
   
-  <div id="content" class="homedesignPage bgGray">
+  <div id="content" class="homedesignPage bgGray resultSearch">
     <img src="images/home_design.jpg" width="100%"/>
     <div class="container pad40">
 	    <?php get_sidebar();?>
@@ -56,6 +56,14 @@
 			                      </div>
 			                  </li>
 		                  <?php endwhile; ?>
+		                  <div class="paging">
+							<div class="paging-normal">
+								<?php echo bt_paginate(); ?>
+								<!--div id="pagination">
+									
+								</div-->
+							</div>
+						</div>
 		                  <?php else : ?>
 								<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 							<?php endif; ?>
