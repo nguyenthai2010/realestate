@@ -75,7 +75,7 @@
           <div class="span2 col4">
             <h4><a href="<?php echo bloginfo('home')?>/services">SERVICES</a></h4>
             <ul>
-            	<li><a href="<?php echo bloginfo('home')?>/book-a-meeting-2">Book A Meeting</a></li>
+            	<li><a href="<?php echo bloginfo('home')?>/book-a-meeting">Book A Meeting</a></li>
             	<li><a href="http://www.mortgagecalculator.org/" target="_blank">Finance</a></li>
             	<li><a href="<?php echo bloginfo('home')?>/subscribe-newsletter">Subscribe Newsletter</a></li>
             	<li><a href="http://trade.masterton.com.au/" target="_blank">Suppliers & Trade</a></li>
