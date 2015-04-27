@@ -65,7 +65,7 @@
 							</div>
 						</div>
 		                  <?php else : ?>
-								<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+								<p>Your search did not return any results, please try again.</p>
 							<?php endif; ?>
 		              </ul>
 		              <!-- Pagination -->
