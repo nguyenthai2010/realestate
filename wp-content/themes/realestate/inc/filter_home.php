@@ -7,7 +7,7 @@ function search_home_design($homestyle, $housesize, $housewidth, $bedroom, $bath
     $args_search = array(
         'relation' 		 => 'AND',
         'post_type' 	 => 'post',
-        'posts_per_page' =>  12 ,
+        'posts_per_page' =>  100 ,
         'order'			 => 'asc',
 
         'meta_query' => array(
@@ -17,7 +17,7 @@ function search_home_design($homestyle, $housesize, $housewidth, $bedroom, $bath
     );
 
     if(!empty($homestyle)){
-        $args_search['category_name']  = $homestyle;
+            $args_search['category_name']  = $homestyle;
     }
 
     // size

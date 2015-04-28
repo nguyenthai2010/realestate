@@ -45,11 +45,53 @@
                           <div class="row-fluid text-center">
                               <h1>HOME DESIGNS</h1>
                               <div class="submenu">
-                                  <a class="btn-homepage-menu active" href="#">Single</a><a class="btn-homepage-menu" href="#">Double</a><a class="btn-homepage-menu" href="#">Duplex</a><a class="btn-homepage-menu" href="#">All</a>
+                                  <a class="btn-homepage-menu active">Single</a><a class="btn-homepage-menu" href="/category/double/">Double</a><a class="btn-homepage-menu" href="/category/duplex/">Duplex</a><a class="btn-homepage-menu" href="/home-designs/">All</a>
                               </div>
                           </div>
                       </div>
                       <ul id="gallery-carousel" class="jcarousel-skin-tango" >
+                          <?php
+                          global $paged;
+                          $args_projects = array(
+                              'post_type' 	 => 'post',
+                              'posts_per_page' =>  6,
+                              'order'			 => 'asc',
+                              'category_name'    => 'single-storey',
+                              'paged'		=> $paged
+                          );
+                          $query_projects = query_posts($args_projects);
+                          if(have_posts($query_projects->$post)): while(have_posts($query_projects->$post)): the_post($query_projects->$post);
+                              $category = get_the_category(get_the_ID());
+                              $cat_slug=  $category[0]->slug;
+                              $strCat = '';
+                              $length = count($category);
+                              for($i = 0; $i < $length; $i++){
+                                  $strCat .= $category[$i]->slug.' ';
+                              }
+                              $img = get_post_meta(get_the_ID(),'tt_picture',true);
+                              $src = wp_get_attachment_image_src($img ,'full');
+                              $bed = get_post_meta(get_the_ID(),'tt_bedrooms',true);
+                              $bath = get_post_meta(get_the_ID(),'tt_bathrooms',true);
+                              $garages = get_post_meta(get_the_ID(),'tt_garages',true);
+                              //$url = wp_get_attachment_image_src( get_post_thumbnail_id($projects->ID), 'large' );
+
+                              $img_src = empty($src[0])  ? 'images/pages/home/thum1.png':$src[0];
+                              ?>
+                              <li>
+                                  <div class="item">
+                                      <div class="pic"> <img src="<?php echo $img_src ;?>" alt="" height="234" width="139" /> <a href="<?php echo get_the_permalink(get_the_ID());?>" class="zoom img-circle"></a> </div>
+                                      <div class="item-caption">
+                                          <p><?php echo get_the_title(get_the_ID());?></p>
+                                          <ul>
+                                              <li class="icon1"><?php echo $bed;?></li>
+                                              <li class="icon4"><?php echo $bath;?></li>
+                                              <li class="icon2"><?php echo $garages;?></li>
+                                              <li class="icon3"></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </li>
+                          <?php endwhile; endif;?>
                           <li>
                               <div class="item">
                                   <div class="pic"> <img src="images/pages/home/thum1.png" alt="" height="234" width="139" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
@@ -64,90 +106,7 @@
                                   </div>
                               </div>
                           </li>
-                          <li>
-                              <div class="item">
-                                  <div class="pic"> <img src="images/pages/home/thum1.png" alt="" height="234" width="139" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
-                                  <div class="item-caption">
-                                      <p>2 Affinity</p>
-                                      <ul>
-                                          <li class="icon1">4</li>
-                                          <li class="icon4">2</li>
-                                          <li class="icon2">2</li>
-                                          <li class="icon3"></li>
-                                      </ul>
-                                  </div>
-                              </div>
-                          </li>
-                          <li>
-                              <div class="item">
-                                  <div class="pic"> <img src="images/pages/home/thum1.png" alt="" height="234" width="139" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
-                                  <div class="item-caption">
-                                      <p>3 Affinity</p>
-                                      <ul>
-                                          <li class="icon1">4</li>
-                                          <li class="icon4">2</li>
-                                          <li class="icon2">2</li>
-                                          <li class="icon3"></li>
-                                      </ul>
-                                  </div>
-                              </div>
-                          </li>
-                          <li>
-                              <div class="item">
-                                  <div class="pic"> <img src="images/pages/home/thum1.png" alt="" height="234" width="139" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
-                                  <div class="item-caption">
-                                      <p>4 Affinity</p>
-                                      <ul>
-                                          <li class="icon1">4</li>
-                                          <li class="icon4">2</li>
-                                          <li class="icon2">2</li>
-                                          <li class="icon3"></li>
-                                      </ul>
-                                  </div>
-                              </div>
-                          </li>
-                          <li>
-                              <div class="item">
-                                  <div class="pic"> <img src="images/pages/home/thum1.png" alt="" height="234" width="139" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
-                                  <div class="item-caption">
-                                      <p>5 Affinity</p>
-                                      <ul>
-                                          <li class="icon1">4</li>
-                                          <li class="icon4">2</li>
-                                          <li class="icon2">2</li>
-                                          <li class="icon3"></li>
-                                      </ul>
-                                  </div>
-                              </div>
-                          </li>
-                          <li>
-                              <div class="item">
-                                  <div class="pic"> <img src="images/pages/home/thum1.png" alt="" height="234" width="139" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
-                                  <div class="item-caption">
-                                      <p> 6 Affinity</p>
-                                      <ul>
-                                          <li class="icon1">4</li>
-                                          <li class="icon4">2</li>
-                                          <li class="icon2">2</li>
-                                          <li class="icon3"></li>
-                                      </ul>
-                                  </div>
-                              </div>
-                          </li>
-                          <li>
-                              <div class="item">
-                                  <div class="pic"> <img src="images/pages/home/thum1.png" alt="" height="234" width="139" /> <a href="http://cdn.pimg.co/p/800x600/183381/fff/img.png" rel="prettyPhoto[gallery]" class="zoom img-circle"></a> </div>
-                                  <div class="item-caption">
-                                      <p>Affinity</p>
-                                      <ul>
-                                          <li class="icon1">4</li>
-                                          <li class="icon4">2</li>
-                                          <li class="icon2">2</li>
-                                          <li class="icon3"></li>
-                                      </ul>
-                                  </div>
-                              </div>
-                          </li>
+
                       </ul>
                   </div>
                   <!-- container -->

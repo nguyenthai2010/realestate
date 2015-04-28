@@ -74,9 +74,7 @@
 			    	</div>
 				 </div>
 	    	</div>
-	    	<div class="introhomedesign">
-	    		<?php get_template_part('tpl','footer-intro');?>
-	    	</div>
+
 	    </div>
 	    
 	    <?php get_template_part('tpl','jim-form');?>	
