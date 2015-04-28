@@ -71,8 +71,7 @@ function search_home_design($homestyle, $housesize, $housewidth, $bedroom, $bath
             'compare' => '='
         ));
     }
-
-    return new WP_Query($args_search);
+	
     return query_posts($args_search);
 }
 
