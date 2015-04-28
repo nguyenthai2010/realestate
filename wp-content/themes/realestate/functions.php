@@ -16,6 +16,9 @@
 	
 	//paging ajax for homeland
 	include 'inc/page_nav.php';
+
+    //paging ajax for ajax_favourite
+    include 'inc/ajax_favourite.php';
 	
 	//add type columns
     include 'inc/type_column.php';

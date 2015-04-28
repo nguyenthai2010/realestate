@@ -1,6 +1,8 @@
 <?php
 	get_header();
 ?>
+
+
   
   <div id="content" class="homedesignPage bgGray singleDesign">
     <img src="images/home_design.jpg" width="100%"/>
@@ -92,9 +94,18 @@
 				    	</div>
 			    	</div>
 				 </div>
+
+
+
                 <div class="pdfFile">
-                    <a href="#"><img src="images/pdf.png"/></a>
-                    <a href="#" class="add bookmarkme">ADD TO FAVOURITES</a>
+                    <a href="javascript:void(0)"><img src="images/pdf.png"/></a>
+                    <?php
+                        $nonce = wp_create_nonce("my_user_vote_nonce");
+                        $link = admin_url('admin-ajax.php?action=user_favourite&post_id='.$post->ID.'&nonce='.$nonce);
+                        //echo '<a class="user_vote" data-nonce="' . $nonce . '" data-post_id="' . $post->ID . '" href="' . $link . '">vote for this article</a>';
+                        echo '<a href="javascript:void(0)" data-nonce="' . $nonce . '" data-post_id="' . $post->ID . '" data-url="' . $link . '" class="add bookmarkme">ADD TO FAVOURITES</a>';
+                    ?>
+                    <!--<a href="javascript:void(0)" class="add bookmarkme">ADD TO FAVOURITES</a>-->
                 </div>
 
 	    	</div>
@@ -112,5 +123,28 @@
   
 </div>
 <!-- #wrapper -->
+<script>
+    $(document).ready( function() {
 
+        $(".bookmarkme").click( function() {
+            alert(123);
+            var post_id = jQuery(this).attr("data-post_id")
+            var linkurl = jQuery(this).attr("data-url")
+
+
+            jQuery.ajax({
+                type : "post",
+                dataType : "json",
+                url : linkurl,
+                data : {action: "user_favourite", post_id : post_id},
+                success: function(response) {
+                    alert(123);
+                }
+            })
+
+        })
+
+    })
+
+</script>
 <?php get_footer(); ?>
