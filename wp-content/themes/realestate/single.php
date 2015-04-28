@@ -104,7 +104,7 @@
                         $link = admin_url('admin-ajax.php?action=user_favourite&post_id='.$post->ID.'&nonce='.$nonce);
 
                         //get cookies
-                        $array_favourite = [];
+                        $array_favourite = array();
                         if(count($_COOKIE['home_favourites']) > 0) {
                             $cookie = $_COOKIE['home_favourites'];
                             $cookie = stripslashes($cookie);

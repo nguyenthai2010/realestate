@@ -25,7 +25,7 @@
                                 $display = !empty($_GET['display']) ? $_GET['display']:"";
                                 if($display =='favourites'){
                                     //get cookies
-                                    $array_favourite = [];
+                                    $array_favourite = array();
                                     if(count($_COOKIE['home_favourites']) > 0) {
                                         $cookie = $_COOKIE['home_favourites'];
                                         $cookie = stripslashes($cookie);
@@ -33,7 +33,13 @@
                                     }
 
                                     //print_r($array_favourite);
-                                    $args_projects['post__in'] = $array_favourite;
+                                    if(count($array_favourite) > 0)
+                                        $args_projects['post__in'] = $array_favourite;
+                                    else{
+                                        $args_projects['post__in'] = array(-1);
+                                        echo 'You havent added any favourites yet';
+                                    }
+
 
                                 }
 

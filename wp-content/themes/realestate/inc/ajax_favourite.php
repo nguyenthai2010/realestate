@@ -2,7 +2,7 @@
 add_action("wp_ajax_user_favourite", "user_favourite");
 
 function user_favourite() {
-    $array_favourite = [];
+    $array_favourite = array();
     $post_id = $_REQUEST["post_id"];
 
     if(count($_COOKIE['home_favourites']) > 0) {
@@ -14,8 +14,6 @@ function user_favourite() {
     if(!in_array($post_id, $array_favourite)){
         array_push($array_favourite, $post_id);
     }
-
-    //print_r($array_favourite);
 
     $json = json_encode($array_favourite);
 
