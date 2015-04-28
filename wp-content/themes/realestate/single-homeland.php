@@ -16,7 +16,8 @@
 		$building = get_post_meta(get_the_ID(),'tt_building',true);
 		$features = get_post_meta(get_the_ID(),'tt_features',true);
 		$land = get_post_meta(get_the_ID(),'tt_land',true);
-		$location = get_field('location');
+		$location = get_field('google_map');
+		
 		$bigImg = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()) );
 	?>
 	<div class="homeLand">

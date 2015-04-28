@@ -539,11 +539,22 @@
   }
 
 }
-.categoryDesign{
+.resultSearch, .categoryDesign{
   .paging{
     clear: both;
   }
   .paging .page-numbers.prev, .paging .page-numbers.next{
     display: inline-block;
+  }
+}
+
+.wp-pagenavi{
+  span.current{
+    color: #f79d5b;
+    margin-right: 5px;
+  }
+  a{
+    
+    margin-right: 5px;
   }
 }

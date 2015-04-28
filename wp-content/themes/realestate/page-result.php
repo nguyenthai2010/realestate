@@ -2,12 +2,12 @@
 	get_header();
 ?>
   
-  <div id="content" class="homedesignPage bgGray">
+  <div id="content" class="homedesignPage bgGray resultSearch">
     <img src="images/home_design.jpg" width="100%"/>
     <div class="container pad40">
 	    <?php get_sidebar();?>
 	    
-	    <div class="span8 spanRightcontent">
+	    <div class="span7 spanRightcontent">
 	    	<div class="bgwhite fullwidth">
 		    	<div id="gallery" class="sliderStyle1">
 			    	<div class="singleGallery">
@@ -22,7 +22,7 @@
 								$query_projects = search_home_design($homestyle,$housesize,$housewidth,$bedroom,$bathroom,$garage);
 								//print_r($query_projects);
 								//foreach ($query_projects as $project) {
-								if ( $query_projects->have_posts() ) : while ( $query_projects->have_posts() ) : $query_projects->the_post();	
+								if(have_posts($query_projects->$post)): while(have_posts($query_projects->$post)): the_post($query_projects->$post);	
 									$img = get_post_meta(get_the_ID(),'tt_picture',true);
 									$src = wp_get_attachment_image_src($img ,'full');
 									$bed = get_post_meta(get_the_ID(),'tt_bedrooms',true);
@@ -56,10 +56,19 @@
 			                      </div>
 			                  </li>
 		                  <?php endwhile; ?>
+		                  
 		                  <?php else : ?>
 								<p>Your search did not return any results, please try again.</p>
 							<?php endif; ?>
 		              </ul>
+		              <div class="paging pagenavi">
+							<div class="paging-normal">
+								<?php wp_pagenavi( $query_projects ) ; ?>
+								<!--div id="pagination">
+									
+								</div-->
+							</div>
+						</div>
 		              <!-- Pagination -->
 					  <p class="jcarousel-pagination" data-jcarouselpagination="true"></p>
 			    	</div>
@@ -67,7 +76,11 @@
 				 
 				
 	    	</div>
+	    	<div class="introhomedesign">
+	    		<?php get_template_part('tpl','footer-intro');?>
+	    	</div>
 	    </div>
+	    <?php get_template_part('tpl','jim-form');?>
     </div>
   </div>
   <!-- #content--> 
