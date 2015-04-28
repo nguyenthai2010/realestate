@@ -14,8 +14,7 @@ function search_home_design($homestyle, $housesize, $housewidth, $bedroom, $bath
 
         'paged'			 => $paged,
         'meta_query' => array(
-            'relation' => 'AND',
-
+            'relation' => 'AND'
         )
     );
 

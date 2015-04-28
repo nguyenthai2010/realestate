@@ -80,7 +80,7 @@
 		          		<a class="soc" href="http://feeds.feedburner.com/Masterton" target="_blank"><img src="images/rss.jpg" /></a>
 		          		<a class="soc" href="https://www.youtube.com/user/MastertonHomes" target="_blank"><img src="images/youtube.jpg" /></a>  
 		          		<a class="addthis_button_compact soc"><img src="images/share.jpg" /></a> 
-		          		<a class="soc bookmarkme" href="javascript:void(0);" id="bookmarkme"><img src="images/favourite.jpg" /></a>
+		          		<a class="soc" href="<?php echo bloginfo('siteurl');?>/home-designs/?display=favourites" id="bookmarkme"><img src="images/favourite.jpg" /></a>
 	          		</div>
 	          		<div class="phone pull-right">
 		          		<span>1300 44 66 37</span>

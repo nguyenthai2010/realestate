@@ -102,8 +102,17 @@
                     <?php
                         $nonce = wp_create_nonce("my_user_vote_nonce");
                         $link = admin_url('admin-ajax.php?action=user_favourite&post_id='.$post->ID.'&nonce='.$nonce);
-                        //echo '<a class="user_vote" data-nonce="' . $nonce . '" data-post_id="' . $post->ID . '" href="' . $link . '">vote for this article</a>';
-                        echo '<a href="javascript:void(0)" data-nonce="' . $nonce . '" data-post_id="' . $post->ID . '" data-url="' . $link . '" class="add bookmarkme">ADD TO FAVOURITES</a>';
+
+                        //get cookies
+                        $array_favourite = [];
+                        if(count($_COOKIE['home_favourites']) > 0) {
+                            $cookie = $_COOKIE['home_favourites'];
+                            $cookie = stripslashes($cookie);
+                            $array_favourite = json_decode($cookie, true);
+                        }
+
+                        if(!in_array($post->ID, $array_favourite))
+                            echo '<a href="javascript:void(0)" data-nonce="' . $nonce . '" data-post_id="' . $post->ID . '" data-url="' . $link . '" class="add bookmarkme">ADD TO FAVOURITES</a>';
                     ?>
                     <!--<a href="javascript:void(0)" class="add bookmarkme">ADD TO FAVOURITES</a>-->
                 </div>
@@ -127,7 +136,7 @@
     $(document).ready( function() {
 
         $(".bookmarkme").click( function() {
-            alert(123);
+
             var post_id = jQuery(this).attr("data-post_id")
             var linkurl = jQuery(this).attr("data-url")
 
@@ -138,7 +147,7 @@
                 url : linkurl,
                 data : {action: "user_favourite", post_id : post_id},
                 success: function(response) {
-                    alert(123);
+                    $(".bookmarkme").css('display','none');
                 }
             })
 

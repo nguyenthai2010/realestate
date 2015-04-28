@@ -20,6 +20,23 @@
 									'order'			 => 'asc',
 									'paged'		=> $paged
 								);
+
+                                // FAVOURITES
+                                $display = !empty($_GET['display']) ? $_GET['display']:"";
+                                if($display =='favourites'){
+                                    //get cookies
+                                    $array_favourite = [];
+                                    if(count($_COOKIE['home_favourites']) > 0) {
+                                        $cookie = $_COOKIE['home_favourites'];
+                                        $cookie = stripslashes($cookie);
+                                        $array_favourite = json_decode($cookie, true);
+                                    }
+
+                                    //print_r($array_favourite);
+                                    $args_projects['post__in'] = $array_favourite;
+
+                                }
+
 								$query_projects = query_posts($args_projects);
 								if(have_posts($query_projects->$post)): while(have_posts($query_projects->$post)): the_post($query_projects->$post);
 							    	$category = get_the_category(get_the_ID());
