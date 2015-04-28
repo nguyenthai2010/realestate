@@ -56,19 +56,7 @@
 
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js" async="async"></script>
-<script type="text/javascript">
-	$(function() {
-        $(".bookmarkme").click(function() {
-            // Mozilla Firefox Bookmark
-            if ('sidebar' in window && 'addPanel' in window.sidebar) { 
-                window.sidebar.addPanel(location.href,document.title,"");
-            } else if( /*@cc_on!@*/false) { // IE Favorite
-                window.external.AddFavorite(location.href,document.title); 
-            } else { // webkit - safari/chrome
-                alert('Press ' + (navigator.userAgent.toLowerCase().indexOf('mac') != - 1 ? 'Command/Cmd' : 'CTRL') + ' + D to bookmark this page.');
-            }
-        });
-    });</script>
+
 </head>
 
 <body>

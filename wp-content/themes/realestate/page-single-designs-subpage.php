@@ -99,7 +99,7 @@
 			    	</div>
 				 </div>
 				 <div class="pdfFile">
-				 	<a href="#"><img src="images/pdf.png"/></a>
+				 	<a href="javascript:void(0)"><img src="images/pdf.png"/></a>
 				 	<a href="#" class="add">ADD TO FAVOURITES</a>
 				 </div>
 				 <div class="introbox">
