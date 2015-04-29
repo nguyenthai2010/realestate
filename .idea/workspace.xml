@@ -2,10 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be15e2a8-27e3-4f75-9e45-d26d02dd68ff" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/realestate/.sass-cache/87e8be333eae6486479da66c01ebf0936db022a8/_home_design.scssc" afterPath="$PROJECT_DIR$/wp-content/themes/realestate/.sass-cache/87e8be333eae6486479da66c01ebf0936db022a8/_home_design.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/realestate/.sass-cache/87e8be333eae6486479da66c01ebf0936db022a8/_homeland.scssc" afterPath="$PROJECT_DIR$/wp-content/themes/realestate/.sass-cache/87e8be333eae6486479da66c01ebf0936db022a8/_homeland.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/realestate/.sass-cache/87e8be333eae6486479da66c01ebf0936db022a8/_page_contact.scssc" afterPath="$PROJECT_DIR$/wp-content/themes/realestate/.sass-cache/87e8be333eae6486479da66c01ebf0936db022a8/_page_contact.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/realestate/.sass-cache/87e8be333eae6486479da66c01ebf0936db022a8/_page_new_details.scssc" afterPath="$PROJECT_DIR$/wp-content/themes/realestate/.sass-cache/87e8be333eae6486479da66c01ebf0936db022a8/_page_new_details.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/realestate/.sass-cache/87e8be333eae6486479da66c01ebf0936db022a8/_responsive.scssc" afterPath="$PROJECT_DIR$/wp-content/themes/realestate/.sass-cache/87e8be333eae6486479da66c01ebf0936db022a8/_responsive.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/realestate/.sass-cache/87e8be333eae6486479da66c01ebf0936db022a8/_style.scssc" afterPath="$PROJECT_DIR$/wp-content/themes/realestate/.sass-cache/87e8be333eae6486479da66c01ebf0936db022a8/_style.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/realestate/sass/_page_new_details.scss" afterPath="$PROJECT_DIR$/wp-content/themes/realestate/sass/_page_new_details.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/realestate/sass/_responsive.scss" afterPath="$PROJECT_DIR$/wp-content/themes/realestate/sass/_responsive.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/realestate/inc/ajax_favourite.php" afterPath="$PROJECT_DIR$/wp-content/themes/realestate/inc/ajax_favourite.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/realestate/page-home-designs.php" afterPath="$PROJECT_DIR$/wp-content/themes/realestate/page-home-designs.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/realestate/single.php" afterPath="$PROJECT_DIR$/wp-content/themes/realestate/single.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/realestate/css/custom.css.map" afterPath="$PROJECT_DIR$/wp-content/themes/realestate/css/custom.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/realestate/css/custom.css" afterPath="$PROJECT_DIR$/wp-content/themes/realestate/css/custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/realestate/footer.php" afterPath="$PROJECT_DIR$/wp-content/themes/realestate/footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/realestate/tpl-slider.php" afterPath="$PROJECT_DIR$/wp-content/themes/realestate/tpl-slider.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-config.php" afterPath="$PROJECT_DIR$/wp-config.php" />
     </list>
     <ignored path="BE.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,29 +40,7 @@
     <favorites_list name="BE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="page-home-designs.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/page-home-designs.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37174723" vertical-offset="580" max-vertical-offset="2360">
-              <caret line="39" column="81" selection-start-line="39" selection-start-column="81" selection-end-line="39" selection-end-column="81" />
-              <folding>
-                <marker date="1430236989947" expanded="true" signature="2708:4003" placeholder="..." />
-                <marker date="1430236989947" expanded="true" signature="2751:3977" placeholder="..." />
-                <marker date="1430236989947" expanded="true" signature="2797:3324" placeholder="..." />
-                <marker date="1430236989947" expanded="true" signature="2948:3288" placeholder="..." />
-                <marker date="1430236989947" expanded="true" signature="3092:3252" placeholder="..." />
-                <marker date="1430236989947" expanded="true" signature="3379:3946" placeholder="..." />
-                <marker date="1430236989947" expanded="true" signature="3474:3911" placeholder="..." />
-                <marker date="1430236989947" expanded="true" signature="4106:4265" placeholder="..." />
-                <marker date="1430236989947" expanded="true" signature="4141:4252" placeholder="..." />
-                <marker date="1430236989947" expanded="true" signature="4192:4236" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -72,9 +61,7 @@
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/sass/_font.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/sass/_header.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/page-designs-subpage.php" />
-        <option value="$PROJECT_DIR$/wp-config.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/prettyPhoto/js/jquery.prettyPhoto.js" />
-        <option value="$PROJECT_DIR$/wp-content/themes/realestate/sass/_responsive.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/sass/_page_testimonials.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/meta-box/init.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/single-promotion.php" />
@@ -93,28 +80,30 @@
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/post-type/registry-post-type.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/sass/custom.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/page-locations.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/realestate/sass/_page_new_details.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/sass/_page_home.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/sass/responsive/_home.scss" />
         <option value="$PROJECT_DIR$/../../../../../HAPPINESS SAIGON/2015/Newsletter/sourcecode/html/newsletter0422/index.html" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/sass/_slider.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/sass/_page_locations.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/page-2locations.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/realestate/tpl-slider.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/tpl-contact.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/page-contact.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/page-book-a-meeting.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/realestate/footer.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/page-result.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/index.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/page-single-designs-subpage.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/inc/ajax.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/inc/filter_home.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/realestate/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/single.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/realestate/inc/ajax_favourite.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realestate/page-home-designs.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/realestate/tpl-slider.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/realestate/footer.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/realestate/inc/ajax_favourite.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/realestate/sass/_page_new_details.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/realestate/header.php" />
+        <option value="$PROJECT_DIR$/wp-config.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/realestate/sass/_responsive.scss" />
       </list>
     </option>
   </component>
@@ -245,6 +234,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TEMP - Real-estate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="realestate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="inc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -285,15 +300,15 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
       <tasks />
       <pass-parent-env-vars>false</pass-parent-env-vars>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -313,7 +328,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1364" height="736" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -321,7 +336,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2633997" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2672282" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -362,34 +377,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/page-testimonial.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.034483" vertical-offset="269" max-vertical-offset="820">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/sass/_home_design.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.172414" vertical-offset="1620" max-vertical-offset="9740">
-          <caret line="103" column="3" selection-start-line="88" selection-start-column="0" selection-end-line="103" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/sass/_page_promotions.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6896552" vertical-offset="0" max-vertical-offset="180">
-          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/sass/_footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58076227" vertical-offset="0" max-vertical-offset="800">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6472663" vertical-offset="3073" max-vertical-offset="3640">
@@ -481,20 +468,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/sass/_page_new_details.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8911071" vertical-offset="129" max-vertical-offset="800">
-          <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/sass/_page_home.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.724138" vertical-offset="460" max-vertical-offset="3300">
-          <caret line="40" column="24" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/sass/responsive/_home.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.85480946" vertical-offset="309" max-vertical-offset="980">
@@ -534,13 +507,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14498141" vertical-offset="1502" max-vertical-offset="2500">
           <caret line="79" column="45" selection-start-line="79" selection-start-column="45" selection-end-line="79" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/tpl-slider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40892193" vertical-offset="900" max-vertical-offset="2980">
-          <caret line="56" column="65" selection-start-line="56" selection-start-column="65" selection-end-line="56" selection-end-column="65" />
         </state>
       </provider>
     </entry>
@@ -593,18 +559,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43494424" vertical-offset="1306" max-vertical-offset="3080">
-          <caret line="77" column="73" selection-start-line="77" selection-start-column="73" selection-end-line="77" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../GEORGIA/sourcecode/v2/wp-config - preview.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1540">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -612,7 +570,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22304833" vertical-offset="820" max-vertical-offset="4040">
           <caret line="47" column="126" selection-start-line="47" selection-start-column="126" selection-end-line="47" selection-end-column="126" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -620,7 +577,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="580">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -628,7 +584,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.55390334" vertical-offset="1722" max-vertical-offset="2500">
           <caret line="101" column="47" selection-start-line="101" selection-start-column="29" selection-end-line="101" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -636,7 +591,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.45190564" vertical-offset="249" max-vertical-offset="1940">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -644,15 +598,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6896552" vertical-offset="180" max-vertical-offset="1940">
           <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/inc/ajax.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -660,7 +605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -668,7 +612,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.929368" vertical-offset="202" max-vertical-offset="2900">
           <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -676,7 +619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.4832714" vertical-offset="442" max-vertical-offset="2840">
           <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -684,15 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.5925925" vertical-offset="180" max-vertical-offset="2980">
           <caret line="16" column="31" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.137931" vertical-offset="1462" max-vertical-offset="2000">
-          <caret line="82" column="101" selection-start-line="82" selection-start-column="101" selection-end-line="82" selection-end-column="101" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -700,18 +633,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.827586" vertical-offset="180" max-vertical-offset="1940">
           <caret line="16" column="90" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.185185" vertical-offset="120" max-vertical-offset="2360">
-          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-          <folding>
-            <marker date="1430236313437" expanded="true" signature="-1:-1" placeholder="SELECT ID FR..wp_posts..." />
-            <marker date="1430236313437" expanded="true" signature="-1:-1" placeholder="SELECT ID FR..wp_posts..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -719,34 +640,103 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.689655" vertical-offset="2042" max-vertical-offset="3300">
           <caret line="106" column="24" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/page-home-designs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.8965516" vertical-offset="580" max-vertical-offset="2360">
+          <caret line="39" column="81" selection-start-line="39" selection-start-column="81" selection-end-line="39" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/tpl-slider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.206897" vertical-offset="900" max-vertical-offset="2980">
+          <caret line="54" column="84" selection-start-line="54" selection-start-column="84" selection-end-line="54" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/inc/ajax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5947955" vertical-offset="120" max-vertical-offset="2360">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/inc/ajax_favourite.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50816697" vertical-offset="40" max-vertical-offset="620">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.22813688" vertical-offset="0" max-vertical-offset="600">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.669145" vertical-offset="1620" max-vertical-offset="3080">
+          <caret line="99" column="55" selection-start-line="99" selection-start-column="55" selection-end-line="99" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/sass/_page_new_details.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45553538" vertical-offset="1249" max-vertical-offset="2060">
+          <caret line="75" column="6" selection-start-line="75" selection-start-column="6" selection-end-line="75" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="169" max-vertical-offset="2000">
+          <caret line="17" column="71" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1486989" vertical-offset="762" max-vertical-offset="1620">
+          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Musician/sourcecode/BE/wp-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1062" max-vertical-offset="1600">
+          <caret line="84" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/page-home-designs.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/sass/_home_design.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37174723" vertical-offset="580" max-vertical-offset="2360">
-          <caret line="39" column="81" selection-start-line="39" selection-start-column="81" selection-end-line="39" selection-end-column="81" />
-          <folding>
-            <marker date="1430236989947" expanded="true" signature="2708:4003" placeholder="..." />
-            <marker date="1430236989947" expanded="true" signature="2751:3977" placeholder="..." />
-            <marker date="1430236989947" expanded="true" signature="2797:3324" placeholder="..." />
-            <marker date="1430236989947" expanded="true" signature="2948:3288" placeholder="..." />
-            <marker date="1430236989947" expanded="true" signature="3092:3252" placeholder="..." />
-            <marker date="1430236989947" expanded="true" signature="3379:3946" placeholder="..." />
-            <marker date="1430236989947" expanded="true" signature="3474:3911" placeholder="..." />
-            <marker date="1430236989947" expanded="true" signature="4106:4265" placeholder="..." />
-            <marker date="1430236989947" expanded="true" signature="4141:4252" placeholder="..." />
-            <marker date="1430236989947" expanded="true" signature="4192:4236" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="10517" max-vertical-offset="11320">
+          <caret line="540" column="1" selection-start-line="527" selection-start-column="0" selection-end-line="540" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/sass/_responsive.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7459165" vertical-offset="2489" max-vertical-offset="3120">
+          <caret line="145" column="17" selection-start-line="145" selection-start-column="17" selection-end-line="145" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/realestate/sass/_page_home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49183303" vertical-offset="2749" max-vertical-offset="3300">
+          <caret line="151" column="28" selection-start-line="151" selection-start-column="28" selection-end-line="151" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>

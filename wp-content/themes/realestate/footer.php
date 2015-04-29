@@ -67,9 +67,9 @@
             </ul>
             <h4><a href="<?php echo bloginfo('home')?>/promotions">Promotions</a></h4>
             <ul>
-            	<li><a href="<?php echo bloginfo('home')?>/mansion-package">Mansion Package</a></li>
-            	<li><a href="<?php echo bloginfo('home')?>/yes-inclusions">Yes Inclusions</a></li>
-            	<li><a href="<?php echo bloginfo('home')?>/design-workshop">Design Workshop</a></li>
+            	<li><a href="<?php echo bloginfo('home')?>/promotion/masterton-mansion-package/">Mansion Package</a></li>
+            	<li><a href="<?php echo bloginfo('home')?>/promotion/yes-inclussions-special-offers/">Yes Inclusions</a></li>
+            	<li><a href="<?php echo bloginfo('home')?>/promotion/interior-design-workshop/">Design Workshop</a></li>
             </ul>
           </div>
           <div class="span2 col4">
@@ -88,7 +88,7 @@
             <ul>
             	<li><a href="<?php echo bloginfo('home')?>">Home</a></li>
             	<li><a href="<?php echo bloginfo('home')?>/contact">Contact Us</a></li>
-            	<li><a href="<?php echo bloginfo('home')?>/login">Login</a></li>
+            	<li><a href="javascript:void(0)">Login</a></li>
             </ul>
           </div>
           <div class="span2 followus  col6">
@@ -96,8 +96,8 @@
             <div class="link">
             	<a class="soc" href="https://www.facebook.com/MastertonHomes" target="_blank"><img src="images/fb.jpg" /></a> 
           		<a class="soc" href="https://twitter.com/MastertonHomes" target="_blank""><img src="images/twitter.jpg" /></a> 
-          		<a class="soc" href="#"><img src="images/pinterest.jpg" /></a> 
-          		<a class="soc" href="#"><img src="images/rss.jpg" /></a>
+          		<a class="soc" href="javascript:void(0)"><img src="images/pinterest.jpg" /></a>
+          		<a class="soc" href="javascript:void(0)"><img src="images/rss.jpg" /></a>
           		<a class="soc" href="https://www.youtube.com/user/MastertonHomes" target="_blank"><img src="images/youtube.jpg" /></a> 
             </div>
           </div>

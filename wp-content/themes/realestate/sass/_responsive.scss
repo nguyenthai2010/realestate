@@ -116,3 +116,36 @@
     }
   }
 }
+@media only screen and (max-width: 640px) {
+  .row-history {
+    .one_half_pad {
+      width: 90%;
+    }
+  }
+  #gallery.sliderStyle1 {
+
+    .jcarousel-skin-tango {
+
+      .jcarousel-prev-horizontal {
+        left: -30px;
+      }
+
+      .jcarousel-next-horizontal {
+        right: -30px;
+      }
+    }
+  }
+
+  .homedesignPage{
+    .span7.spanRightcontent{
+      padding: 0;
+      border: 0;
+      width: 100%;
+
+      .bgwhite {
+        width: 99%;
+      }
+    }
+
+  }
+}

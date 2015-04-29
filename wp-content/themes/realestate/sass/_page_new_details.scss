@@ -69,4 +69,30 @@
       padding: 15px;
     }
   }
+
+  #dnn_ctr414_ModuleContent {
+    .NewsArticles {
+      margin-top: 50px;
+
+    }
+    .article {
+      border-top: 1px solid;
+      clear: both;
+      padding-bottom: 50px;
+
+      h1 {
+        padding-top: 20px;
+      }
+    }
+    .articleAuthor {
+      float: left;
+      margin-right: 20px;
+    }
+
+    .articleEntry {
+      h1 {
+        padding-top: 0;
+      }
+    }
+  }
 }
