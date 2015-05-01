@@ -24,7 +24,7 @@
 	    				<?php
 	    					$size_vl = split(',',$_GET['housesize']);
 							if($_GET['housesize'] == ''){
-								$size_vl[0] = 151;
+								$size_vl[0] = 0;
 								$size_vl[1] = 313;
 							}
 	    				?>
@@ -38,7 +38,7 @@
 	    				<?php
 	    					$width_vl = split(',',$_GET['housewidth']);
 							if($_GET['housewidth'] == ''){
-								$width_vl[0] = 8;
+								$width_vl[0] = 0;
 								$width_vl[1] = 36;
 							}
 	    				?>
@@ -114,10 +114,10 @@
 				$('#width_val_1').html(width_vl[0]);
 				$('#width_val_2').html(width_vl[1]);
 				$('.slider-input').jRange({
-				    from: 151,
+				    from: 0,
 				    to: 313,
 				    step: 1,
-				    scale: [151,'','',313],
+				    scale: [0,'','',313],
 				    format: '%s',
 				    width: 255,
 				    showLabels: false,
@@ -129,10 +129,10 @@
 				    }
 				});
 				$('.slider-input-house').jRange({
-				    from: 8,
+				    from: 0,
 				    to: 36,
 				    step: 1,
-				    scale: [8,'','',36],
+				    scale: [0,'','',36],
 				    format: '%s',
 				    width: 255,
 				    showLabels: false,

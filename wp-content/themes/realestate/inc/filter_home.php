@@ -17,9 +17,9 @@ function search_home_design($homestyle, $housesize, $housewidth, $bedroom, $bath
             'relation' => 'AND'
         )
     );
-
+	$cat_id = get_category_by_slug($homestyle);
     if(!empty($homestyle)){
-        $args_search['category_name']  = $homestyle;
+        $args_search['category']  = $cat_id->term_id;
     }
 
     // size
@@ -32,7 +32,7 @@ function search_home_design($homestyle, $housesize, $housewidth, $bedroom, $bath
         ),
         'compare' => 'BETWEEN'
     ));
-
+	
     // width
     array_push($args_search['meta_query'], array(
         'key' => 'tt_width',
@@ -43,7 +43,6 @@ function search_home_design($homestyle, $housesize, $housewidth, $bedroom, $bath
         ),
         'compare' => 'BETWEEN'
     ));
-
     // bedroom
     if(!empty($bedroom)){
         array_push($args_search['meta_query'], array(
@@ -70,7 +69,7 @@ function search_home_design($homestyle, $housesize, $housewidth, $bedroom, $bath
             'compare' => '='
         ));
     }
-	
+	//print_r($args_search);	
     return query_posts($args_search);
 }
 
