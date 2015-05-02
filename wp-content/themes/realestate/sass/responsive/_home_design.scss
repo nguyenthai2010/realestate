@@ -1,4 +1,9 @@
 @media only screen and (min-width: 768px) and (max-width: 1105px) {
+  .sidebar{
+    float: none;
+    margin: 0 auto;
+    border: none;
+  }
  .homedesignPage .span8.spanRightcontent{
    width: 55%;
    margin-left: 1%;
@@ -6,27 +11,61 @@
      width: 99%;
    }
  } 
+ .newDesignpage .span7.spanRightcontent{
+     margin: 20px auto;
+    padding-left: 0;
+    width: 100%;
+ }
+ .newDesignpage .paging .paging-normal{
+   text-align: center;
+ }
+ .sidebarright{
+   float: none;
+   margin: 0 auto;
+ }
  .singleGallery ul{
-     display: table-cell;
+     display: table;
     margin: 0 auto;
-    width: auto;
+    width: 500px;
     text-align: center;
+ }
+ #gallery .item .item-caption{
+   width: 100%;
  }
  .singleGallery ul li{
    float: none;
    display: inline-block;
    vertical-align: top;
+   margin-left: 13px;
+   margin-right: 10px;
+ }
+ #gallery .item{
+   width: 220px;
  }
  #gallery.sliderStyle1 .singleGallery .item .item-caption ul{
    display: inline-block;
  }
+ .homedesignPage .span7.spanRightcontent{
+    border: none;
+  }
 }
 
-@media only screen and (min-width: 0) and (max-width: 768px) {
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  .homedesignPage .span7.spanRightcontent{
+      border: none;
+  padding-left: 0;
+  margin: 0 auto;
+  display: table;
+  float: none;
+  }
+  .newDesignpage .paging .paging-normal{
+   text-align: center;
+ }
   .homedesignPage{
     .sidebar{
-      border-right: 0;
-      width: 100%;
+      float: none;
+    margin: 0 auto;
+    border: none;
       #searchDesign{
         float: left;
         margin-right: 45px;
@@ -64,6 +103,8 @@
    float: none;
    display: inline-block;
    vertical-align: top;
+   margin-left: 13px;
+   margin-right: 10px;
  }
 }
 

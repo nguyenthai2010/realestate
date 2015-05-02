@@ -99,7 +99,7 @@ if(!empty($_POST['email']))
                 </select>
             </div>
         </div>
-        <input type="submit" type="SUBMIT"/>
+        <input type="submit" type="SUBMIT" value="SEND"/>
     </form>
 </div>
 <script type="text/javascript">

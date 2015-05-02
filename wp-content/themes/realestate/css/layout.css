@@ -70,7 +70,7 @@
 		.top { margin-left: -384px; }  
 		
 		#gallery .item { width: 172px; }  
-		#gallery .item .pic img { width: 172px; height: 160px; }
+		#gallery .item .pic img {  }
 		.now_page .main { padding: 50px 20px; width: 528px; }  
 		#gallery .item .item-caption { width: 172px; } 
 		.jcarousel-skin-tango .jcarousel-item { width: 172px; }
@@ -201,7 +201,7 @@
 		
 		.content_box { padding: 12px 0; }
 		
-		.jcarousel-skin-tango .jcarousel-item, #gallery .item, #gallery .item .item-caption{ width: 190px; }
+		.jcarousel-skin-tango .jcarousel-item, #gallery .item, #gallery .item .item-caption{  }
 		
 		/* Typography */
 		#navbar .navbar-inner { padding-right: 0px; padding-left: 0px; }
