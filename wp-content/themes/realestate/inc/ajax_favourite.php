@@ -1,7 +1,8 @@
 <?php
-add_action("wp_ajax_user_favourite", "user_favourite");
+add_action("wp_ajax_user_favourite", "user_favourite_callback");
+add_action("wp_ajax_nopriv_user_favourite", "user_favourite_callback");
 
-function user_favourite() {
+function user_favourite_callback() {
     $array_favourite = array();
     $post_id = $_REQUEST["post_id"];
     if(count($_COOKIE['home_favourites']) > 0) {
@@ -18,7 +19,6 @@ function user_favourite() {
 
     setcookie("home_favourites", $json, time()+3600 * 24 * 365, COOKIEPATH, COOKIE_DOMAIN, false);
 
-    return true;
-    die();
+    wp_die();
 }
 

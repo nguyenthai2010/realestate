@@ -100,8 +100,7 @@
                 <div class="pdfFile">
                     <a href="javascript:void(0)"><img src="images/pdf.png"/></a>
                     <?php
-                        $nonce = wp_create_nonce("my_user_vote_nonce");
-                        $link = admin_url('admin-ajax.php?action=user_favourite&post_id='.$post->ID.'&nonce='.$nonce);
+                        $link = admin_url('admin-ajax.php');
 
                         //get cookies
                         $array_favourite = array();
