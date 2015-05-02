@@ -6,7 +6,10 @@
 	    			<select class="select" name="s_types">
 	    				<option value="">Select Home Type</option>
 	    				<?php
-							$categories = get_categories(); 
+							$categories = get_categories();
+                            $maxsize = (int)get_field('opt_house_size', 'option');
+                            $maxwidth = (int)get_field('opt_house_width', 'option');
+
 							//print_r($categories);
 							$i = 0;
 							  foreach ($categories as $category) {
@@ -24,8 +27,9 @@
 	    				<?php
 	    					$size_vl = split(',',$_GET['housesize']);
 							if($_GET['housesize'] == ''){
+
 								$size_vl[0] = 0;
-								$size_vl[1] = 313;
+								$size_vl[1] = $maxsize;
 							}
 	    				?>
 	    				<input type="hidden" class="slider-input" name="housesize" value="<?php echo $size_vl[0];?>,<?php echo $size_vl[1];?>" />
@@ -39,7 +43,7 @@
 	    					$width_vl = split(',',$_GET['housewidth']);
 							if($_GET['housewidth'] == ''){
 								$width_vl[0] = 0;
-								$width_vl[1] = 36;
+								$width_vl[1] = $maxwidth;
 							}
 	    				?>
 	    				<input type="hidden" class="slider-input-house" name="housewidth" value="<?php echo $width_vl[0];?>,<?php echo $width_vl[1];?>" />
@@ -105,8 +109,15 @@
 	    	</form>
 	    	
 	    </div>
+
+
 	    <script>
+
+            <?php  ?>
 	    	$(function () {
+                var maxsize = parseInt(<?php echo $maxsize; ?>);
+                var maxwidth = parseInt(<?php echo $maxwidth; ?>);
+
 		    	var house_vl = $('.slider-input').val().split(',');
 				$('#house_val_1').html(house_vl[0]);
 				$('#house_val_2').html(house_vl[1]);
@@ -115,9 +126,9 @@
 				$('#width_val_2').html(width_vl[1]);
 				$('.slider-input').jRange({
 				    from: 0,
-				    to: 313,
+				    to: maxsize,
 				    step: 1,
-				    scale: [0,'','',313],
+				    scale: [0,'','',maxsize],
 				    format: '%s',
 				    width: 255,
 				    showLabels: false,
@@ -130,9 +141,9 @@
 				});
 				$('.slider-input-house').jRange({
 				    from: 0,
-				    to: 36,
+				    to: maxwidth,
 				    step: 1,
-				    scale: [0,'','',36],
+				    scale: [0,'','',maxwidth],
 				    format: '%s',
 				    width: 255,
 				    showLabels: false,
