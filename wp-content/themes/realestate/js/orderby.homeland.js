@@ -15,10 +15,10 @@ $(document).ready(function(){
 	    });
 	    
 	    // clear the list and re-add sorted items on button click 
-	    jQuery('#landpageList').css('opacity',0);
-		jQuery('#landpageList').html();
-		jQuery('#landpageList').html( sorted );
-		jQuery('#landpageList').animate({'opacity':1},500);	
+	    jQuery('#viewlist').css('opacity',0);
+		jQuery('#viewlist').html();
+		jQuery('#viewlist').html( sorted );
+		jQuery('#viewlist').animate({'opacity':1},500);	
 		
 		//var url_ajax = $('.ajaxurl').val();
 		/** Get Post ID */
